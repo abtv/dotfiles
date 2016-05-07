@@ -29,6 +29,7 @@ values."
      emacs-lisp
      git
      markdown
+     (shell :variables shell-default-term-shell "/bin/zsh")
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
