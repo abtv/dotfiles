@@ -52,6 +52,17 @@ values."
    ;; the list `dotspacemacs-configuration-layers'. (default t)
    dotspacemacs-delete-orphan-packages t))
 
+(defun get-font ()
+  (if (eq system-type 'darwin)
+      '("Menlo"
+        :size 16
+        :weight normal
+        :width normal)
+    '("DejaVu Sans Mono"
+     :size 14
+     :weight normal
+     :width normal)))
+
 (defun dotspacemacs/init ()
   "Initialization function.
 This function is called at the very startup of Spacemacs initialization
@@ -106,10 +117,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("DejaVu Sans Mono"
-                               :size 14
-                               :weight normal
-                               :width normal)
+   dotspacemacs-default-font (get-font)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
