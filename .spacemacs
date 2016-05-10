@@ -27,26 +27,21 @@ values."
      better-defaults
      clojure
      emacs-lisp
-     git
+     (git :variables
+          git-magit-status-fullscreen t)
      go
      markdown
      rust
      (shell :variables shell-default-term-shell "/bin/zsh")
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
      syntax-checking
-     version-control
-     )
+     version-control)
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(rainbow-delimiters)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
@@ -257,8 +252,12 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (global-hl-line-mode -1) ; Disable current line highlight
+  (global-linum-mode)      ; Show line numbers by default
+  ;; Clojure mode config
   (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
-  )
+  (add-hook 'clojure-mode-hook #'highlight-parentheses-mode)
+ )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
