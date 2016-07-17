@@ -1,3 +1,5 @@
+The things which I use in Spacemacs.
+
 ## 1. Description
 
 Languages support:
@@ -26,12 +28,19 @@ Project navigation with `Projectile`.
 * SPC h SPC - open help
 
 
-### Buffers and windows
+### Buffers
 
 * SPC TAB - last buffer
 * SPC b b - list of opened/recent buffers
 * SPC b k - kill current buffer
-* SPC w m - maximize buffer
+
+
+### Windows
+
+* SPC w m - maximize/minimize window
+* SPC w c - close window
+* SPC w u - undo window layout
+* SPC w U - redo window layout
 
 
 ### Navigation
