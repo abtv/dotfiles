@@ -47,6 +47,17 @@ Project navigation with `Projectile`.
 * K - kill current buffer
 
 
+### File manipulations
+
+* SPC f c - copy current file to a different location
+* SPC f D - delete a file and the associated buffer (ask for confirmation)
+* SPC f f - open file with `helm`
+* SPC f j - jump to the current buffer file in dired
+* SPC f R - rename current file
+* SPC f t - toggle file tree side bar using NeoTree
+* SPC f y - how current file absolute path in the minibuffer
+
+
 ### Windows
 
 * SPC w m - maximize/minimize window
