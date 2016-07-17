@@ -58,6 +58,21 @@ Project navigation with `Projectile`.
 * SPC f y - how current file absolute path in the minibuffer
 
 
+### NeoTree navigation
+
+* TAB - toggle stretching of the buffer
+* c - create a node
+* d - delete a node
+* l or RET - expand directory
+* RET - open file in last active window
+* # RET - open file in window number #
+* K - parent directory, when reaching the root change it to parent directory
+* r - rename a node
+* R - make a directory the root directory
+* | - open file in an vertically split window
+* - - open file in an horizontally split window
+ 
+
 ### Windows
 
 * SPC w m - maximize/minimize window
