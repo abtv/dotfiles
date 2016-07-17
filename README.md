@@ -33,7 +33,10 @@ Project navigation with `Projectile`.
 * SPC TAB - last buffer
 * SPC b b - list of opened/recent buffers
 * SPC b d - kill the current buffer
+* SPC b e - erases current buffer (with confirmation)
 * SPC b k - kill a buffer
+* SPC b K - kill all the buffers except current one
+* SPC b w - switch to readonly buffer and back
 
 
 ### Buffer manipulation micro-state
