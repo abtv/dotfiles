@@ -32,7 +32,16 @@ Project navigation with `Projectile`.
 
 * SPC TAB - last buffer
 * SPC b b - list of opened/recent buffers
-* SPC b k - kill current buffer
+* SPC b d - kill the current buffer
+* SPC b k - kill a buffer
+
+
+### Buffer manipulation micro-state
+
+* SPC b . - initiate micro-state, then:
+* n - next buffer
+* N - previous buffer
+* K - kill current buffer
 
 
 ### Windows
