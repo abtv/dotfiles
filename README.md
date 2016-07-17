@@ -42,16 +42,22 @@ Project navigation with `Projectile`.
 * SPC w u - undo window layout
 * SPC w U - redo window layout
 * SPC w w - cycle and focus between windows
+* SPC w R - rotate windows
 
 
 ### Window manipulation micro-state
 
-* SPC w . - initiate micro-state
+* SPC w . - initiate micro-state, then:
+* c - close window
+* C - close other windows
 * [ - shrink window horizontally
 * ] - enlarge window horizontally
 * { - shrink window vertically
 * } - enlarge window vertically
 * g - toggle golden-ration on/off
+* h, j, k, l - go to window on the left, below, above, right
+* H, J, K, L - move window to the left, bottom, top, right
+* R - rotate windows
 
 
 ### Navigation
