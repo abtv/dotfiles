@@ -5,6 +5,7 @@ The things which I use in Spacemacs.
 Languages support:
 
 * Clojure
+* JavaScript
 * Go
 * Rust
 

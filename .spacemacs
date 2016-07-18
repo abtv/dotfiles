@@ -24,6 +24,8 @@ values."
      (git :variables
           git-magit-status-fullscreen t)
      go
+     java
+     javascript
      markdown
      rust
      (shell :variables shell-default-term-shell "/bin/zsh")
@@ -48,7 +50,7 @@ values."
         :weight normal
         :width normal)
     '("DejaVu Sans Mono"
-     :size 14
+     :size 16
      :weight normal
      :width normal)))
 
@@ -99,7 +101,7 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(tao-yang
+   dotspacemacs-themes '(adwaita
                          whiteboard
                          monokai)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -245,7 +247,9 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-hl-line-mode -1) ; Disable current line highlight
-  (display-time-mode t))
+  (display-time-mode t)
+  (set-background-color "#CFCFCF")
+  (linum-relative-toggle))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
