@@ -1,5 +1,12 @@
 The things which I use in Spacemacs.
 
+## 0. Setup
+Add the following line to your .zshrc file
+
+`export TERM=xterm-256color`
+
+You can run Emacs in console mode with `emacs -nw`
+
 ## 1. Description
 
 Languages support:
