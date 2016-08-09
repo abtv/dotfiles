@@ -28,6 +28,7 @@ values."
      javascript
      markdown
      rust
+     react
      (shell :variables shell-default-term-shell "/bin/zsh")
      syntax-checking
      version-control)
@@ -101,7 +102,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(adwaita
+   dotspacemacs-themes '(zenburn
+                         adwaita
                          whiteboard
                          monokai)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -237,7 +239,16 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  (setq-default rust-enable-racer t))
+  (setq-default rust-enable-racer t)
+  (setq-default
+   ;; js2-mode
+   js2-basic-offset 2
+   ;; web-mode
+   css-indent-offset 2
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2))
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -248,9 +259,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-hl-line-mode -1) ; Disable current line highlight
   (display-time-mode t)
-  (set-background-color "#CFCFCF")
+  ;(set-background-color "#CFCFCF")
   (linum-relative-toggle))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
-
