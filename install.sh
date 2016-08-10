@@ -20,6 +20,9 @@ sudo chmod u+x lein
 cd ~
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
+sudo npm install -g tern
+sudo npm install -g js-beautify
+sudo npm install -g jshint
 sudo apt-get install -y emacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/abtv/dotfiles.git
