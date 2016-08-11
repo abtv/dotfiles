@@ -51,11 +51,6 @@ echo 'export TERM=xterm-256color' >> ~/.zshrc
 echo 'alias emacs="emacs -nw"' >> ~/.zshrc
 echo 'Emacs was installed\n\n\n'
 
-echo 'Installing Oh my zsh'
-sudo apt-get install -y zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
-echo 'Oh my zsh was installed\n\n\n'
-
 echo 'Installing ElasticSearch...'
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.3.5/elasticsearch-2.3.5.deb
 sudo dpkg -i elasticsearch-2.3.5.deb
@@ -70,5 +65,11 @@ sudo ufw default deny incoming
 sudo ufw default allow outcoming
 sudo ufw allow ssh
 sudo ufw enable -y
-echo 'UFW was configured'
+echo 'UFW was configured\n\n\n'
+
+echo 'Installing Oh my zsh'
+sudo apt-get install -y zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
+echo 'Oh my zsh was installed\n\n\n'
+
 echo 'Setup is done!'
