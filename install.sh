@@ -46,6 +46,14 @@ echo 'alias emacs="emacs -nw"' >> ~/.zshrc
 sudo apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
 
+#ElasticSearch
+wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.3.5/elasticsearch-2.3.5.deb
+sudo dpkg -i elasticsearch-2.3.5.deb
+rm elasticsearch-2.3.5.deb
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+sudo /bin/systemctl start elasticsearch.service
+
 #ufw
 sudo ufw default deny incoming
 sudo ufw default allow outcoming
