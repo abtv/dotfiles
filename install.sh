@@ -10,6 +10,7 @@ sudo apt-get install -y zip
 sudo apt-get install -y unzip
 sudo apt-get install -y curl
 sudo apt-get install -y git
+sudo apt-get install -y build-essential
 echo 'Packages were installed\n\n\n'
 
 echo 'Installing Java...'
@@ -59,6 +60,15 @@ sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable elasticsearch.service
 sudo /bin/systemctl start elasticsearch.service
 echo 'ElasticSearch was installed\n\n\n'
+
+echo 'Installing Redis'
+wget http://download.redis.io/redis-stable.tar.gz
+tar xzf redis-stable.tar.gz
+cd redis-stable
+make
+sudo make install
+cd ..
+echo 'Redis was installed\n\n\n'
 
 echo 'Configuring UFW...'
 sudo ufw default deny incoming
