@@ -40,6 +40,7 @@ sudo apt-get install -y nodejs
 sudo npm install -g tern
 sudo npm install -g js-beautify
 sudo npm install -g jshint
+sudo npm install -g karma-cli
 echo 'Nodejs was installed\n\n\n'
 
 echo 'Installing Emacs...'
