@@ -82,6 +82,8 @@ cd redis-stable
 make
 sudo make install
 cd ..
+rm -rf redis-stable
+rm redis-stable.tar.gz
 echo 'Redis was installed\n\n\n'
 
 echo 'Configuring UFW...'
