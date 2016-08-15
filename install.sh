@@ -3,6 +3,12 @@ sudo add-apt-repository ppa:webupd8team/java -y
 sudo apt-get update -y
 echo 'Packages were updated\n\n\n'
 
+echo 'Creating bin dir...'
+cd ~
+mkdir bin
+echo 'export PATH="/root/bin:$PATH"' >> .zshrc
+echo 'bin dir was created'
+
 echo 'Installing packages...'
 sudo apt-get install -y language-pack-ru
 sudo apt-get install -y htop
@@ -27,8 +33,7 @@ su - postgres -c "psql -U postgres -d postgres -c \"alter user postgres with pas
 echo 'Postgres was installed\n\n\n'
 
 echo 'Installing Leiningen'
-mkdir bin
-cd bin
+cd ~/bin
 wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
 sudo chmod u+x lein
 cd ~
@@ -42,6 +47,14 @@ sudo npm install -g js-beautify
 sudo npm install -g jshint
 sudo npm install -g karma-cli
 echo 'Nodejs was installed\n\n\n'
+
+echo 'Installing PhantomJS...'
+wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+tar xf phantomjs-2.1.1-linux-x86_64.tar.bz2
+rm phantomjs-2.1.1-linux-x86_64.tar.bz2
+cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs ~/bin/ 
+rm -rf phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+echo 'PhantomJS was installed\n\n\n'
 
 echo 'Installing Emacs...'
 sudo apt-get install -y emacs
