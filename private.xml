@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+	    <name>Vim movements</name>
+	    <identifier>private.vim_movements</identifier>
+	    <autogen>
+	    	__KeyToKey__
+  			KeyCode::K, ModifierFlag::COMMAND_L,
+  			KeyCode::CURSOR_UP
+  		</autogen>
+  		<autogen>
+	    	__KeyToKey__
+  			KeyCode::J, ModifierFlag::COMMAND_L,
+  			KeyCode::CURSOR_DOWN
+  		</autogen>
+  		<autogen>
+	    	__KeyToKey__
+  			KeyCode::H, ModifierFlag::COMMAND_L,
+  			KeyCode::CURSOR_LEFT
+  		</autogen>
+  		<autogen>
+	    	__KeyToKey__
+  			KeyCode::L, ModifierFlag::COMMAND_L,
+  			KeyCode::CURSOR_RIGHT
+  		</autogen>
+	</item>
+	<item>
+	    <name>Additional commands</name>
+	    <identifier>private.additional_commands</identifier>
+  		<autogen>
+	    	__KeyToKey__
+  			KeyCode::COMMA, ModifierFlag::COMMAND_L,
+  			KeyCode::COMMA, ModifierFlag::CONTROL_L
+  		</autogen>
+
+  		<autogen>
+	    	__KeyToKey__
+  			KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L,
+  			KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+  		</autogen>
+
+	    <autogen>
+	        __KeyToKey__
+	        KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L,
+	        KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+	    </autogen>
+
+	    <autogen>
+		    __KeyToKey__
+	  		KeyCode::U, ModifierFlag::COMMAND_L,
+	  		KeyCode::PAGEUP
+	  	</autogen>
+
+	  	<autogen>
+		    __KeyToKey__
+	  		KeyCode::N, ModifierFlag::COMMAND_L,
+	  		KeyCode::PAGEDOWN
+	  	</autogen>
+	</item>
+</root>
