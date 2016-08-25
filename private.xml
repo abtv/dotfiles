@@ -45,12 +45,12 @@
 	      <autogen>
 		        __KeyToKey__
 	  		    KeyCode::U, ModifierFlag::COMMAND_L,
-	  		    KeyCode::PAGEUP
+	  		    KeyCode::U, ModifierFlag::CONTROL_L
 	  	  </autogen>
 	  	  <autogen>
 		        __KeyToKey__
 	  		    KeyCode::N, ModifierFlag::COMMAND_L,
-	  		    KeyCode::PAGEDOWN
+	  		    KeyCode::D, ModifierFlag::CONTROL_L
 	  	  </autogen>
 	   </item>
 </root>
