@@ -44,12 +44,12 @@
 	      </autogen>
 	      <autogen>
 		        __KeyToKey__
-	  		    KeyCode::U, ModifierFlag::COMMAND_L,
+	  		    KeyCode::U, ModifierFlag::OPTION_L,
 	  		    KeyCode::U, ModifierFlag::CONTROL_L
 	  	  </autogen>
 	  	  <autogen>
 		        __KeyToKey__
-	  		    KeyCode::N, ModifierFlag::COMMAND_L,
+	  		    KeyCode::N, ModifierFlag::OPTION_L,
 	  		    KeyCode::D, ModifierFlag::CONTROL_L
 	  	  </autogen>
 	   </item>
