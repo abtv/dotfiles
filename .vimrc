@@ -35,3 +35,9 @@ set isk+=-
 "markdown files patch
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
+"json files patch
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+
+"open files tree
+map <F8> :Vex <CR>
+
