@@ -26,5 +26,7 @@ Vagrant.configure("2") do |config|
     rm /home/ubuntu/.spacemacs
     wget https://raw.githubusercontent.com/abtv/dotfiles/master/.spacemacs
     chown -R ubuntu:ubuntu /home/ubuntu/.spacemacs
+
+    sudo npm install -g tern
   SHELL
 end
