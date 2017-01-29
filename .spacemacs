@@ -260,6 +260,8 @@ you should place your code here."
   (global-hl-line-mode -1) ; Disable current line highlight
   (display-time-mode t)
   ;(set-background-color "#CFCFCF")
+  (setq js2-strict-missing-semi-warning nil)
+  (setq js2-missing-semi-one-line-override t)
   (linum-relative-toggle))
 
 ;; Do not write anything past this comment. This is where Emacs will
