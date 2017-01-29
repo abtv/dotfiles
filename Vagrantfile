@@ -28,5 +28,6 @@ Vagrant.configure("2") do |config|
     chown -R ubuntu:ubuntu /home/ubuntu/.spacemacs
 
     sudo npm install -g tern
+    sudo npm install -g express-generator
   SHELL
 end
