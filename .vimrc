@@ -21,6 +21,8 @@ if has("autocmd")
   filetype plugin on
 endif
 
+set incsearch
+
 set path+=**
 set wildmenu
 
