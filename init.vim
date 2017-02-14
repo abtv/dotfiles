@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " common
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'morhetz/gruvbox'
 " c/c++
 Plug 'Rip-Rip/clang_complete', { 'for': [ 'c', 'cpp' ] }
 " clojure & clojurescript
@@ -76,7 +77,8 @@ set splitbelow
 " enable 256 colors
 set t_Co=256
 " choose color scheme
-colorscheme slate
+colorscheme gruvbox
+set background=dark
 " enable syntax highlighting
 syntax enable
 " enable line numbers (set nonumber to disable it)
