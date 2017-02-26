@@ -60,6 +60,10 @@ if os == 'Darwin' || os == 'Mac'
   set clipboard^=unnamedplus"
 endif
 
+set wildignore+=*.class
+set wildignore+=*/target/*
+set wildignore+=*/node_modules/*
+
 " no need to be compatible with some old stuff
 set nocompatible
 " no bells
@@ -116,4 +120,5 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 "open files tree
 map <F8> :Vex <CR>
 
-"nnoremap <D-m> :Sex <CR>
+let mapleader = "\<Space>"
+nnoremap <Leader>o :CtrlP<CR>
