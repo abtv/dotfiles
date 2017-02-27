@@ -1,6 +1,8 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 " common
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
