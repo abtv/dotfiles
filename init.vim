@@ -113,14 +113,15 @@ let g:netrw_liststyle=3     " tree view
 
 set isk+=-
 
-"markdown files patch
-autocmd BufNewFile,BufRead *.md set filetype=markdown
+let g:vim_markdown_folding_disabled = 1
 
 "json files patch
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
-"open files tree
-map <F8> :Vex <CR>
-
-let mapleader = "\<Space>"
-nnoremap <Leader>o :CtrlP<CR>
+"custom configuration
+:au BufAdd,BufNewFile * nested tab sball "always open file in new tab
+let mapleader = "\<Space>"       "space is a leader key
+nnoremap <Leader>o :CtrlP<CR>    "open file dialog
+"nnoremap <Leader>[ gT<CR>        "move to previous tab
+"nnoremap <Leader>] gt<CR>        "move to next tab
+"nnoremap <Leader>w tabclose<CR>  "close current tab
