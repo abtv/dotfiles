@@ -122,6 +122,6 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 :au BufAdd,BufNewFile * nested tab sball "always open file in new tab
 let mapleader = "\<Space>"       "space is a leader key
 nnoremap <Leader>o :CtrlP<CR>    "open file dialog
-"nnoremap <Leader>[ gT<CR>        "move to previous tab
-"nnoremap <Leader>] gt<CR>        "move to next tab
-"nnoremap <Leader>w tabclose<CR>  "close current tab
+nmap <C-[> gT
+nmap <C-]> gt
+nmap <C-w> :tabclose<CR>
