@@ -124,4 +124,4 @@ let mapleader = "\<Space>"       "space is a leader key
 nnoremap <Leader>o :CtrlP<CR>    "open file dialog
 nmap <C-[> gT
 nmap <C-]> gt
-nmap <C-w> :tabclose<CR>
+"nmap <C-w> :tabclose<CR>
