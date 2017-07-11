@@ -17,17 +17,17 @@ values."
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
-   '(auto-completion
+   '(
+     sql
+     yaml
      better-defaults
      clojure
      emacs-lisp
      (git :variables
           git-magit-status-fullscreen t)
      go
-     java
      javascript
      markdown
-     rust
      react
      (shell :variables shell-default-term-shell "/bin/zsh")
      syntax-checking
@@ -75,7 +75,7 @@ values."
    dotspacemacs-elpa-timeout 5
    ;; If non nil then spacemacs will check for updates at startup
    ;; when the current branch is not `develop'. (default t)
-   dotspacemacs-check-for-update t
+   dotspacemacs-check-for-update nil
    ;; One of `vim', `emacs' or `hybrid'. Evil is always enabled but if the
    ;; variable is `emacs' then the `holy-mode' is enabled at startup. `hybrid'
    ;; uses emacs key bindings for vim's insert mode, but otherwise leaves evil
@@ -102,10 +102,10 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(zenburn
+   dotspacemacs-themes '(gandalf
                          adwaita
-                         whiteboard
-                         monokai)
+                         zenburn
+                         wombat)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -206,7 +206,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers t
+   dotspacemacs-line-numbers nil
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode t
@@ -243,6 +243,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (setq-default
    ;; js2-mode
    js2-basic-offset 2
+   js2-strict-missing-semi-warning t
+   js2-missing-semi-one-line-override t
    ;; web-mode
    css-indent-offset 2
    web-mode-markup-indent-offset 2
@@ -259,11 +261,22 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-hl-line-mode -1) ; Disable current line highlight
   (display-time-mode t)
-  ;(set-background-color "#CFCFCF")
-  (setq js2-strict-missing-semi-warning nil)
-  (setq js2-missing-semi-one-line-override t)
-  ;(linum-relative-toggle)
-)
+  (set-background-color "#C0C0C0")
+  (linum-relative-toggle))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(js2-mode-show-parse-errors nil)
+ '(js2-mode-show-strict-warnings nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
