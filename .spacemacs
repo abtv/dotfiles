@@ -17,7 +17,7 @@ values."
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
-   '(
+   '(python
      sql
      yaml
      better-defaults
@@ -103,9 +103,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(gandalf
-                         adwaita
-                         zenburn
-                         wombat)
+                         zenburn)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -216,7 +214,7 @@ values."
    dotspacemacs-highlight-delimiters 'current
    ;; If non nil advises quit functions to keep server open when quitting.
    ;; (default nil)
-   dotspacemacs-persistent-server nil
+   dotspacemacs-persistent-server t
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
@@ -259,9 +257,12 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  ;;don't kill emacs daemon when quit
+  (evil-leader/set-key
+    "q q" 'spacemacs/frame-killer)
   (global-hl-line-mode -1) ; Disable current line highlight
   (display-time-mode t)
-  (set-background-color "#C0C0C0")
+  (set-background-color "#c8c8c8")
   (linum-relative-toggle))
 
 ;; Do not write anything past this comment. This is where Emacs will

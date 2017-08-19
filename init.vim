@@ -83,12 +83,14 @@ set splitbelow
 " enable 256 colors
 set t_Co=256
 " choose color scheme
-colorscheme gruvbox
-set background=dark
+colorscheme delek
 " enable syntax highlighting
 syntax enable
-" enable line numbers (set nonumber to disable it)
-set number
+" customize colors
+hi MatchParen cterm=none ctermbg=black ctermfg=white
+hi Special    cterm=none ctermfg=black
+hi Comment    term=none  cterm=none    ctermfg=darkgray
+hi Paren      cterm=none ctermbg=black ctermfg=white
 
 if has("autocmd")
   filetype on
@@ -124,4 +126,4 @@ let mapleader = "\<Space>"       "space is a leader key
 nnoremap <Leader>o :CtrlP<CR>    "open file dialog
 nmap <C-[> gT
 nmap <C-]> gt
-"nmap <C-w> :tabclose<CR>
+nmap <C-s> :w<CR>
