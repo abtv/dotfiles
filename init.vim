@@ -121,9 +121,10 @@ let g:vim_markdown_folding_disabled = 1
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 "custom configuration
-:au BufAdd,BufNewFile * nested tab sball "always open file in new tab
+":au BufAdd,BufNewFile * nested tab sball "always open file in new tab
 let mapleader = "\<Space>"       "space is a leader key
 nnoremap <Leader>o :CtrlP<CR>    "open file dialog
-nmap <C-[> gT
-nmap <C-]> gt
+nmap <C-n> :bnext<CR>
+nmap <C-[> :bprevious<CR>
+nmap <C-]> :bnext<CR>
 nmap <C-s> :w<CR>

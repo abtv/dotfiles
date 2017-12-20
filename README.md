@@ -34,6 +34,7 @@ Project navigation with `Projectile`.
 
 * SPC f e d - open ~/.spacemacs file
 * SPC h SPC - open help
+* SPC h d k - describe key
 
 
 ### Buffers
