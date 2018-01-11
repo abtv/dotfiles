@@ -6,6 +6,7 @@ Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
 " c/c++
 Plug 'Rip-Rip/clang_complete', { 'for': [ 'c', 'cpp' ] }
 " clojure & clojurescript
@@ -124,7 +125,12 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 ":au BufAdd,BufNewFile * nested tab sball "always open file in new tab
 let mapleader = "\<Space>"       "space is a leader key
 nnoremap <Leader>o :CtrlP<CR>    "open file dialog
+nmap <Leader>t :NERDTreeToggle<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>b :Gblame<CR>
 nmap <C-n> :bnext<CR>
-nmap <C-[> :bprevious<CR>
-nmap <C-]> :bnext<CR>
+"nmap <C-[> :bprevious<CR>
+"nmap <C-]> :bnext<CR>
 nmap <C-s> :w<CR>
+nnoremap <C-[> :bprevious<CR>
+nnoremap <C-]> :bnext<CR>
