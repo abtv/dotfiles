@@ -127,9 +127,10 @@ let mapleader = "\<Space>"       "space is a leader key
 nnoremap <Leader>p :CtrlP<CR>    "open file dialog
 nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>b :Gblame<CR>
+nmap <Leader>gb :Gblame<CR>
 nmap <Leader>wm :only<CR> "maximize current window
-nmap <Leader>ww <C-W>w "switch to next window
+nmap <Leader>ww <C-W>w  "switch to next window
+nmap <Leader>bd :bd<CR> "delete buffer
 nmap <C-n> :bnext<CR>
 nmap <C-s> :w<CR>
 nnoremap <C-[> :bprevious<CR>
