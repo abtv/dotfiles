@@ -5,7 +5,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 " c/c++
 Plug 'Rip-Rip/clang_complete', { 'for': [ 'c', 'cpp' ] }
@@ -129,7 +128,7 @@ nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>wm :only<CR> "maximize current window
-nmap <Leader>ww <C-W>w  "switch to next window
+"nmap <Leader>ww <C-W>w  "switch to next window
 nmap <Leader>bd :bd<CR> "delete buffer
 nmap <C-n> :bnext<CR>
 nmap <C-s> :w<CR>
