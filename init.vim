@@ -91,6 +91,7 @@ hi MatchParen cterm=none ctermbg=black ctermfg=white
 hi Special    cterm=none ctermfg=black
 hi Comment    term=none  cterm=none    ctermfg=darkgray
 hi Paren      cterm=none ctermbg=black ctermfg=white
+hi EndOfBuffer ctermfg=white ctermbg=white
 
 if has("autocmd")
   filetype on
@@ -114,6 +115,12 @@ let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
 
 set isk+=-
+
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
+
+" Use deoplete.
+"let g:deoplete#enable_at_startup = 1
 
 let g:vim_markdown_folding_disabled = 1
 
