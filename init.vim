@@ -135,10 +135,6 @@ nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>s :w<CR>
 nmap <Leader>gb :Gblame<CR>
-nmap <Leader>wm :only<CR> "maximize current window
-"nmap <Leader>ww <C-W>w  "switch to next window
-nmap <Leader>bd :bd<CR> "delete buffer
-nmap <C-n> :bnext<CR>
-"nmap <C-s> :w<CR>
-nnoremap <C-[> :bprevious<CR>
-nnoremap <C-]> :bnext<CR>
+nmap <Leader>wm :only<CR>
+nmap <Leader>ww <C-W>w
+nmap <Leader>bd :bd<CR>
