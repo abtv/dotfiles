@@ -29,4 +29,5 @@
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "terminal.integrated.fontSize": 15,
+    "editor.formatOnSave": true,
 }
