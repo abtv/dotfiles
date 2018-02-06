@@ -30,5 +30,6 @@
     "editor.cursorBlinking": "solid",
     "terminal.integrated.fontSize": 15,
     "editor.formatOnSave": true,
-    "window.restoreFullscreen": true
+    "window.restoreFullscreen": true,
+    "workbench.activityBar.visible": false
 }
