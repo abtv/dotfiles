@@ -6,8 +6,8 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-         "key": "ctrl+,",
-         "command": "workbench.action.navigateBack"
+        "key": "ctrl+,",
+        "command": "workbench.action.navigateBack"
     },
     {
         "key": "cmd+f",
@@ -23,7 +23,11 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
+        "key": "cmd+1",
+        "command": "workbench.view.explorer"
+    },
+    {
         "key": "cmd+2",
         "command": "workbench.action.terminal.toggleTerminal"
-    }
+    },
 ]
