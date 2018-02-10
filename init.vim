@@ -36,6 +36,8 @@ Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
 " toml
 Plug 'cespare/vim-toml', { 'for': 'toml' }
+" testing
+Plug 'janko-m/vim-test'
 
 " Initialize plugin system
 call plug#end()
@@ -94,6 +96,7 @@ let g:vim_markdown_folding_disabled = 1
 
 " json files patch
 autocmd BufNewFile,BufRead *.json set filetype=javascript
+
 " save automatically when text is changed
 set updatetime=200
 au CursorHold * silent! update
