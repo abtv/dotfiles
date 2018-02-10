@@ -92,14 +92,16 @@ set isk+=-
 
 let g:vim_markdown_folding_disabled = 1
 
-"json files patch
+" json files patch
 autocmd BufNewFile,BufRead *.json set filetype=javascript
+" save automatically when text is changed
+set updatetime=200
+au CursorHold * silent! update
 
 "custom keybindings
 let mapleader = "\<Space>"
 nmap <Leader>pf :CtrlP<CR>
 nmap <Leader>pt :NERDTreeToggle<CR>
-nmap <Leader>s :w<CR>
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
