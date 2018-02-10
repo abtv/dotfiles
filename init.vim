@@ -94,6 +94,8 @@ set isk+=-
 
 let g:vim_markdown_folding_disabled = 1
 
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+
 " json files patch
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
