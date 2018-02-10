@@ -130,11 +130,16 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 "custom configuration
 ":au BufAdd,BufNewFile * nested tab sball "always open file in new tab
 let mapleader = "\<Space>"       "space is a leader key
-nnoremap <Leader>p :CtrlP<CR>    "open file dialog
-nmap <Leader>t :NERDTreeToggle<CR>
-nmap <Leader>q :q<CR>
+nmap <Leader>pf :CtrlP<CR>
+nmap <Leader>pt :NERDTreeToggle<CR>
+nmap <Leader>qq :q<CR>
+nmap <Leader>q! :q!<CR>
+nmap <Leader>q1 :q!<CR>
 nmap <Leader>s :w<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
+nmap <Leader>bb :buffers<CR>
 nmap <Leader>bd :bd<CR>
+nmap <Leader>bn :bnext<CR>
+nmap <Leader>bp :bprevious<CR>
