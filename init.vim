@@ -81,7 +81,7 @@ set wildmenu
 
 "always show status line with file path, row numbers, column number, file type
 set laststatus=2
-set statusline=[%F][%2l/%LR][%2vC]%y
+set statusline=[%f][%2l/%LR][%2vC]%y
 
 let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
