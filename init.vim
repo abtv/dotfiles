@@ -6,13 +6,6 @@ Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
-" c/c++
-Plug 'Rip-Rip/clang_complete', { 'for': [ 'c', 'cpp' ] }
-" clojure & clojurescript
-Plug 'tpope/vim-fireplace', { 'for': ['clojure', 'clojurescript'] }
-Plug 'guns/vim-clojure-static', { 'for': ['clojure', 'clojurescript'] }
-Plug 'guns/vim-clojure-highlight', { 'for': ['clojure', 'clojurescript'] }
-Plug 'vim-scripts/paredit.vim', { 'for': ['clojure', 'clojurescript'] }
 " css/less/stylus/scss
 Plug 'ap/vim-css-color', { 'for': ['css', 'scss', 'sass', 'less', 'stylus'] }
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss', 'sass'] }
@@ -41,12 +34,6 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 " python
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
-" ruby
-Plug 'tpope/vim-bundler', { 'for': 'ruby' }
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-" rust
-Plug 'wting/rust.vim', { 'for': 'rust' }
 " toml
 Plug 'cespare/vim-toml', { 'for': 'toml' }
 
@@ -80,19 +67,6 @@ set splitright
 " split vertical window to the bottow of the current window
 set splitbelow
 
-" enable 256 colors
-set t_Co=256
-" choose color scheme
-colorscheme delek
-" enable syntax highlighting
-syntax enable
-" customize colors
-hi MatchParen cterm=none ctermbg=black ctermfg=white
-hi Special    cterm=none ctermfg=black
-hi Comment    term=none  cterm=none    ctermfg=darkgray
-hi Paren      cterm=none ctermbg=black ctermfg=white
-hi EndOfBuffer ctermfg=white ctermbg=white
-
 if has("autocmd")
   filetype on
   filetype indent on
@@ -116,20 +90,13 @@ let g:netrw_liststyle=3     " tree view
 
 set isk+=-
 
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
-
-" Use deoplete.
-"let g:deoplete#enable_at_startup = 1
-
 let g:vim_markdown_folding_disabled = 1
 
 "json files patch
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
-"custom configuration
-":au BufAdd,BufNewFile * nested tab sball "always open file in new tab
-let mapleader = "\<Space>"       "space is a leader key
+"custom keybindings
+let mapleader = "\<Space>"
 nmap <Leader>pf :CtrlP<CR>
 nmap <Leader>pt :NERDTreeToggle<CR>
 nmap <Leader>s :w<CR>
@@ -143,3 +110,17 @@ nmap <Leader>bd :bd<CR>
 nmap <Leader>bn :bnext<CR>
 nmap <Leader>bp :bprevious<CR>
 nmap <Leader>gb :Gblame<CR>
+
+" enable 256 colors
+set t_Co=256
+" choose color scheme
+colorscheme delek
+" enable syntax highlighting
+syntax enable
+" customize colors
+hi MatchParen cterm=none ctermbg=black ctermfg=white
+hi Special    cterm=none ctermfg=black
+hi Comment    term=none  cterm=none    ctermfg=darkgray
+hi Paren      cterm=none ctermbg=black ctermfg=white
+hi EndOfBuffer ctermfg=white ctermbg=white
+
