@@ -1,11 +1,11 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 " common
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'rking/ag.vim', { 'on': 'Ag' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " css/less/stylus/scss
 Plug 'ap/vim-css-color', { 'for': ['css', 'scss', 'sass', 'less', 'stylus'] }
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss', 'sass'] }
