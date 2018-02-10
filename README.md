@@ -2,6 +2,8 @@
 
 ## vi mappings
 
+### general
+
 SPC q q - close window
 
 SPC p f - show files finder
@@ -9,6 +11,10 @@ SPC p f - show files finder
 SPC p t - show project as a tree view
 
 SPC t n - run tests in file
+
+SPC g b - git blame
+
+### windows & buffers
 
 SPC w m - maximize current window
 
