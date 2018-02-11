@@ -76,17 +76,12 @@ endif
 
 set path+=**
 set wildmenu
-
-"always show status line with file path, row numbers, column number, file type
-set laststatus=2
-set statusline=[%f][%2l/%LR][%2vC]%y
-
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-
 set isk+=-
+
+" always show status line
+set laststatus=2
+" status line should have file path, row numbers, column number, file type
+set statusline=[%f][%2l/%LR][%2vC]%y
 
 let g:vim_markdown_folding_disabled = 1
 
@@ -99,7 +94,7 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 set updatetime=200
 au CursorHold * silent! update
 
-"custom keybindings
+" custom keybindings
 let mapleader = "\<Space>"
 nmap <Leader>pf :CtrlP<CR>
 nmap <Leader>pt :NERDTreeToggle<CR>
