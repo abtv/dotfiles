@@ -114,6 +114,8 @@ nmap <Leader>bn :bnext<CR>
 nmap <Leader>bp :bprevious<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gp :Gpush<CR>
+nmap <Leader>gl :Gpull<CR>
 nmap <Leader>tn :TestNearest<CR>
 
 " enable 256 colors
