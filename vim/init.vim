@@ -74,8 +74,7 @@ if has("autocmd")
   filetype plugin on
 endif
 
-set path+=**
-set wildmenu
+" set dash as a keyword (useful for Clojure)
 set isk+=-
 
 " always show status line
