@@ -27,9 +27,3 @@ SPC b d - delete current buffer
 SPC b n - next buffer
 
 SPC b p - previous buffer
-
-## Useful settings
-
-```
-git config --global core.editor /usr/local/bin/nvim
-```
