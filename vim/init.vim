@@ -51,10 +51,6 @@ if os == 'Darwin' || os == 'Mac'
   set clipboard^=unnamedplus"
 endif
 
-set wildignore+=*.class
-set wildignore+=*/target/*
-set wildignore+=*/node_modules/*
-
 " no need to be compatible with some old stuff
 set nocompatible
 " no bells
