@@ -98,6 +98,7 @@ au CursorHold * silent! update
 let mapleader = "\<Space>"
 nmap <Leader>pf :CtrlP<CR>
 nmap <Leader>pt :NERDTreeToggle<CR>
+nmap <Leader>ps :Ag 
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>

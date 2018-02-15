@@ -8,7 +8,9 @@ SPC q q - close window
 
 SPC p f - show files finder
 
-SPC p t - show project as a tree view
+SPC p t - show files as a tree view
+
+SPC p s - search in files
 
 SPC t n - run tests in file
 
