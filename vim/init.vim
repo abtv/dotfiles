@@ -96,23 +96,33 @@ au CursorHold * silent! update
 
 " custom keybindings
 let mapleader = "\<Space>"
-nmap <Leader>pf :CtrlP<CR>
-nmap <Leader>pt :NERDTreeToggle<CR>
-nmap <Leader>ps :Ag 
+nmap <Leader>p :CtrlP<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
+nmap <Leader>f :Ag 
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
 nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
-nmap <Leader>bb :buffers<CR>
-nmap <Leader>bd :bd<CR>
-nmap <Leader>bn :bnext<CR>
-nmap <Leader>bp :bprevious<CR>
+nmap <Leader>we :vsplit<CR>
+nmap <Leader>ws :split<CR>
+nmap <Leader>b :buffers<CR>
+nmap <Leader>d :bd<CR>
+nmap <Leader>k :bnext<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
-nmap <Leader>tn :TestNearest<CR>
+nmap <Leader>t :TestNearest<CR>
+" ctrl + movement keys to window switching
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
+" turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
+nmap j gj
+nmap k gk
 
 " enable 256 colors
 set t_Co=256
