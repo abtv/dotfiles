@@ -38,6 +38,8 @@ Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
 Plug 'cespare/vim-toml', { 'for': 'toml' }
 " testing
 Plug 'janko-m/vim-test'
+" don't lose window splits when kill a buffer
+Plug 'qpkorr/vim-bufkill'
 
 " Initialize plugin system
 call plug#end()
@@ -107,7 +109,8 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 nmap <Leader>b :buffers<CR>
-nmap <Leader>d :bd<CR>
+"delete a buffer, but don't lose a window
+nmap <Leader>d :BD<CR>
 nmap <Leader>k :bnext<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
