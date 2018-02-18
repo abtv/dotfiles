@@ -31,6 +31,10 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
+        "key": "cmd+3",
+        "command": "workbench.actions.view.problems"
+    },
+    {
         "key": "cmd+r",
         "command": "editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
