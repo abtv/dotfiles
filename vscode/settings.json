@@ -2,6 +2,7 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.colorCustomizations": {
+        "editorSuggestWidget.background": "#cacaca",
         "editor.background": "#c0c0c0",
         "dropdown.background": "#c0c0c0",
         "panel.background": "#c0c0c0",
