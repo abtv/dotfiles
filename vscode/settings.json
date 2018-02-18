@@ -29,6 +29,7 @@
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "terminal.integrated.fontSize": 15,
+    "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
     "window.restoreFullscreen": true,
     "workbench.activityBar.visible": false
