@@ -33,5 +33,6 @@
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
     "window.restoreFullscreen": true,
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "editor.tabSize": 2,
 }
