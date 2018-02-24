@@ -3,6 +3,8 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.colorCustomizations": {
         "editorSuggestWidget.background": "#cacaca",
+        "sideBar.background": "#e9e9e9",
+        "sideBar.border": "#dddddd",
         "editor.background": "#c0c0c0",
         "dropdown.background": "#c0c0c0",
         "panel.background": "#c0c0c0",
@@ -34,5 +36,7 @@
     "editor.formatOnSave": true,
     "window.restoreFullscreen": true,
     "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
     "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
 }
