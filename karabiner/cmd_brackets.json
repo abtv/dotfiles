@@ -2,7 +2,7 @@
   "title": "Cmd+Brackets", 
   "rules": [ 
     { 
-       "description": "Cmd+[ to Cmd+Shift+[",
+       "description": "Cmd+Bracket to Cmd+Shift+Bracket",
        "manipulators": [ 
          { 
             "type": "basic", 
@@ -18,7 +18,22 @@
                  "modifiers": [ "left_command", "left_shift" ] 
               } 
             ] 
-          } 
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "close_bracket",
+              "modifiers": {
+                "mandatory": [ "left_command" ]
+              }
+            },
+            "to": [
+              {
+                 "key_code": "close_bracket",
+                 "modifiers": [ "left_command", "left_shift" ]
+              }
+            ]
+          }
         ] 
      } 
    ] 
