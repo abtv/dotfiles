@@ -1,0 +1,25 @@
+{ 
+  "title": "Cmd+, to Ctrl+,", 
+  "rules": [ 
+    { 
+       "description": "Cmd+, to Ctrl+,",
+       "manipulators": [ 
+         { 
+            "type": "basic", 
+            "from": { 
+              "key_code": ",", 
+              "modifiers": { 
+                "mandatory": [ "left_command" ] 
+              } 
+            }, 
+            "to": [ 
+              { 
+                 "key_code": ",", 
+                 "modifiers": [ "left_control" ] 
+              } 
+            ] 
+          } 
+        ] 
+     } 
+   ] 
+}
