@@ -7,14 +7,14 @@
          { 
             "type": "basic", 
             "from": { 
-              "key_code": ",", 
+              "key_code": "comma",
               "modifiers": { 
                 "mandatory": [ "left_command" ] 
               } 
             }, 
             "to": [ 
               { 
-                 "key_code": ",", 
+                 "key_code": "comma",
                  "modifiers": [ "left_control" ] 
               } 
             ] 
