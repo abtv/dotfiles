@@ -1,10 +1,11 @@
 Parallels setting (add Parallels mapping) for Visual Studio:
 Mac => Win
-1. Next tab: Shift + Cmd + ]  =>  Ctrl + F6
-2. Previous tab: Shift + Cmd + [  =>  Ctrl + Shift + F6
+1. Next tab: Shift + Cmd + ]  =>  Ctrl + Alt + PgDown
+2. Previous tab: Shift + Cmd + [  =>  Ctrl + Alt + PgUp
 3. Go to definition: Cmd + .  => F12
 4. Find all references: Cmd + M => Shift + F12
 5. Rename: Cmd + R => Ctrl + R
+Need to install Productivity Power Tools for Visual Studio
 
 .bash_profile:
 alias gst="git status "
