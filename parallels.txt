@@ -2,14 +2,18 @@ Parallels setting (add Parallels mapping) for Visual Studio:
 Mac => Win
 1. Next tab: Shift + Cmd + ]  =>  Ctrl + Alt + PgDown
 2. Previous tab: Shift + Cmd + [  =>  Ctrl + Alt + PgUp
-3. Go to definition: Cmd + .  => F12
+3. Close current tab: Cmd + W  => Ctrl + F4
+4. Go to definition: Cmd + .  => F12
 4. Find all references: Cmd + M => Shift + F12
 5. Rename: Cmd + R => Ctrl + R
 Need to install Productivity Power Tools for Visual Studio
 
 .bash_profile:
 alias gst="git status "
-alias glg="git log --oneline "
+alias glg="git log --stat "
+alias glol='git log --graph --pretty='\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit '
+alias gd="git diff "
+alias ga="git add "
 alias gca="git commit -a "
 alias gca1="git commit -a --amend "
 alias gca!="git commit -a --amend "
@@ -17,6 +21,5 @@ alias gl="git pull "
 alias gp="git push "
 alias gm="git merge "
 alias grb="git rebase "
-alias tig="git log --oneline"
 alias gb="git branch "
-alias la="ls -la "
+alias la="ls -lAh "
