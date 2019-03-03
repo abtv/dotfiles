@@ -1,8 +1,8 @@
 { 
-  "title": "Cmd+, to Ctrl+,", 
+  "title": "Cmd+, to Ctrl+Hyphen",
   "rules": [ 
     { 
-       "description": "Cmd+, to Ctrl+,",
+       "description": "Cmd+, to Ctrl+Hyphen",
        "manipulators": [ 
          { 
             "type": "basic", 
@@ -14,7 +14,7 @@
             }, 
             "to": [ 
               { 
-                 "key_code": "comma",
+                 "key_code": "hyphen",
                  "modifiers": [ "left_control" ] 
               } 
             ] 
