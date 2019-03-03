@@ -9,6 +9,7 @@ Mac => Win
 Visual Studio settings (Ctrl+D/U are already in use. We need to reassign them to be able to use in Vim mode):
 1. Remove Edit.MakeLowercase from Options->Environment->Keyboard
 2. Remove Edit.Duplicate from Options->Environment->Keyboard
+3. Map Edit.GoToAll to Ctrl + P in Options->Environment->Keyboard
 Need to install Productivity Power Tools for Visual Studio
 
 .bash_profile:
