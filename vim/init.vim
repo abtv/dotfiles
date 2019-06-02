@@ -21,6 +21,7 @@ Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
 Plug 'wizicer/vim-jison', { 'for': 'javascript' }
+Plug 'posva/vim-vue', { 'for': 'vue' }
 " go
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'nsf/gocode', { 'for': 'go' }
