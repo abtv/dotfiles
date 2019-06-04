@@ -30,6 +30,7 @@ Plug 'gregsexton/MatchTag', { 'for': ['html', 'javascript'] }
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'javascript'] }
 Plug 'tpope/vim-haml', { 'for': 'haml'}
+Plug 'mustache/vim-mustache-handlebars'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 " python
