@@ -84,7 +84,7 @@ set isk+=-
 " always show status line
 set laststatus=2
 " status line should have file path, row numbers, column number, file type
-set statusline=[%f][%2l/%LR][%2vC]%y
+set statusline=[%f][%2lR/%2vC][%LR]%y
 
 let g:vim_markdown_folding_disabled = 1
 
@@ -141,4 +141,4 @@ hi Special    cterm=none ctermfg=black
 hi Comment    term=none  cterm=none    ctermfg=darkgray
 hi Paren      cterm=none ctermbg=black ctermfg=white
 hi EndOfBuffer ctermfg=white ctermbg=white
-
+hi StatusLine ctermbg=darkgray ctermfg=white
