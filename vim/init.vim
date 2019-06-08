@@ -141,4 +141,4 @@ hi Special    cterm=none ctermfg=black
 hi Comment    term=none  cterm=none    ctermfg=darkgray
 hi Paren      cterm=none ctermbg=black ctermfg=white
 hi EndOfBuffer ctermfg=white ctermbg=white
-hi StatusLine ctermbg=darkgray ctermfg=white
+hi StatusLine ctermbg=248 ctermfg=white
