@@ -22,6 +22,7 @@ Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
 Plug 'wizicer/vim-jison', { 'for': 'javascript' }
 Plug 'posva/vim-vue', { 'for': 'vue' }
+Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
 " GraphQL
 Plug 'jparise/vim-graphql'
 " go
