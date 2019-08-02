@@ -129,7 +129,11 @@ map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
-
+"faster line movements
+nnoremap J 7j
+nnoremap K 7k
+vnoremap J 7j
+vnoremap K 7k
 " turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
 nmap j gj
 nmap k gk
@@ -141,10 +145,6 @@ colorscheme delek
 " enable syntax highlighting
 syntax enable
 " customize colors
-"hi MatchParen cterm=none ctermbg=black ctermfg=white
-"hi Special    cterm=none ctermfg=black
 hi Comment    term=none  cterm=none    ctermfg=darkgray
-"hi Paren      cterm=none ctermbg=black ctermfg=white
-"hi EndOfBuffer ctermfg=white ctermbg=white
 hi StatusLine ctermbg=248 ctermfg=white
 hi StatusLineNC ctermbg=248 ctermfg=white
