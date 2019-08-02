@@ -139,10 +139,10 @@ colorscheme delek
 " enable syntax highlighting
 syntax enable
 " customize colors
-hi MatchParen cterm=none ctermbg=black ctermfg=white
-hi Special    cterm=none ctermfg=black
+"hi MatchParen cterm=none ctermbg=black ctermfg=white
+"hi Special    cterm=none ctermfg=black
 hi Comment    term=none  cterm=none    ctermfg=darkgray
-hi Paren      cterm=none ctermbg=black ctermfg=white
-hi EndOfBuffer ctermfg=white ctermbg=white
+"hi Paren      cterm=none ctermbg=black ctermfg=white
+"hi EndOfBuffer ctermfg=white ctermbg=white
 hi StatusLine ctermbg=248 ctermfg=white
 hi StatusLineNC ctermbg=248 ctermfg=white
