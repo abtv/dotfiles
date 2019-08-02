@@ -45,6 +45,8 @@ Plug 'cespare/vim-toml', { 'for': 'toml' }
 Plug 'janko-m/vim-test'
 " don't lose window splits when kill a buffer
 Plug 'qpkorr/vim-bufkill'
+" navigation
+Plug 'easymotion/vim-easymotion'
 
 " Initialize plugin system
 call plug#end()
