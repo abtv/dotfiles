@@ -137,6 +137,8 @@ vnoremap K 7k
 " turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
 nmap j gj
 nmap k gk
+" center scroll vertically
+set scrolloff=999
 
 " enable 256 colors
 set t_Co=256

@@ -1,5 +1,6 @@
 set isk+=-
 set clipboard+=unnamed
+set scrolloff=999
 nnoremap J 7j
 nnoremap K 7k
 vnoremap J 7j
