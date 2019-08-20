@@ -138,7 +138,7 @@ vnoremap K 7k
 nmap j gj
 nmap k gk
 " center scroll vertically
-set scrolloff=999
+"set scrolloff=999
 
 " enable 256 colors
 set t_Co=256
