@@ -94,7 +94,7 @@ set statusline=[%f][%2lR/%2vC][%LR]%y
 let g:vim_markdown_folding_disabled = 1
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-let g:ctrlp_match_window = 'min:4,max:50'
+let g:ctrlp_match_window = 'min:4,max:25'
 let NERDTreeIgnore = ['node_modules', 'dist']
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
 
@@ -105,7 +105,14 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 set updatetime=200
 au CursorHold * silent! update
 
+" ide key bindings
+nmap <C-q> :q<CR>
+nmap <C-o> :NERDTreeToggle<CR>
+nmap <C-f> :Ag<CR>
+" testing key bindings
+nmap <C-y> :TestNearest<CR>
 " custom keybindings
+"
 let mapleader = "\<Space>"
 "nmap <Leader>p :CtrlP<CR>
 nmap <Leader>e :NERDTreeToggle<CR>
