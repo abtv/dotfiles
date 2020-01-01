@@ -111,6 +111,8 @@ nmap <C-o> :NERDTreeToggle<CR>
 nmap <C-f> :Ag<CR>
 " testing key bindings
 nmap <C-y> :TestNearest<CR>
+" Refactoring: <C-r><new word> then n and .
+map <C-r> *Nciw
 " custom keybindings
 "
 let mapleader = "\<Space>"
