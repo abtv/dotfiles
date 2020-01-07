@@ -154,10 +154,11 @@ nmap k gk
 " enable 256 colors
 set t_Co=256
 " choose color scheme
-colorscheme delek
+colorscheme desert
+"colorscheme delek
 " enable syntax highlighting
 syntax enable
 " customize colors
-hi Comment    term=none  cterm=none    ctermfg=darkgray
-hi StatusLine ctermbg=248 ctermfg=white
-hi StatusLineNC ctermbg=248 ctermfg=white
+"hi Comment    term=none  cterm=none    ctermfg=darkgray
+"hi StatusLine ctermbg=248 ctermfg=white
+"hi StatusLineNC ctermbg=248 ctermfg=white
