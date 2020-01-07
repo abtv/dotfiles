@@ -77,6 +77,8 @@ au CursorHold * silent! update
 nmap <C-q> :q<CR>
 nmap <C-o> :NERDTreeToggle<CR>
 nmap <C-f> :Ag<CR>
+nmap <C-j> :bprevious<CR>
+nmap <C-k> :bnext<CR>
 " testing key bindings
 nmap <C-y> :TestNearest<CR>
 " Refactoring: <C-r><new word> then n and .
@@ -104,10 +106,10 @@ nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
 nmap <Leader>t :TestNearest<CR>
 " ctrl + movement keys to window switching
-map <C-k> <C-w><Up>
-map <C-j> <C-w><Down>
-map <C-l> <C-w><Right>
-map <C-h> <C-w><Left>
+"map <C-k> <C-w><Up>
+"map <C-j> <C-w><Down>
+"map <C-l> <C-w><Right>
+"map <C-h> <C-w><Left>
 "faster line movements
 nnoremap J 7j
 nnoremap K 7k
