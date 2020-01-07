@@ -1,52 +1,58 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
+
 " common
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim', { 'on': 'Ag' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" css/less/stylus/scss
-Plug 'ap/vim-css-color', { 'for': ['css', 'scss', 'sass', 'less', 'stylus'] }
-Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss', 'sass'] }
-Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'scss'] }
-Plug 'wavded/vim-stylus', { 'for': 'stylus' }
-" jade
-Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] }
-" javascript
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
-Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' }
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
-Plug 'wizicer/vim-jison', { 'for': 'javascript' }
-Plug 'posva/vim-vue', { 'for': 'vue' }
-Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
-" GraphQL
-Plug 'jparise/vim-graphql'
-" go
-Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'nsf/gocode', { 'for': 'go' }
-" html
-Plug 'gregsexton/MatchTag', { 'for': ['html', 'javascript'] }
-Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
-Plug 'othree/html5.vim', { 'for': ['html', 'javascript'] }
-Plug 'tpope/vim-haml', { 'for': 'haml'}
-Plug 'mustache/vim-mustache-handlebars'
-" markdown
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-" python
-Plug 'klen/python-mode', { 'for': 'python' }
-Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
-" toml
-Plug 'cespare/vim-toml', { 'for': 'toml' }
+
 " testing
 Plug 'janko-m/vim-test'
+
+" GraphQL
+Plug 'jparise/vim-graphql'
+
+" markdown
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+
+
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" css/less/stylus/scss
+"Plug 'ap/vim-css-color', { 'for': ['css', 'scss', 'sass', 'less', 'stylus'] }
+"Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss', 'sass'] }
+"Plug 'groenewege/vim-less', { 'for': 'less' }
+"Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'scss'] }
+"Plug 'wavded/vim-stylus', { 'for': 'stylus' }
+" jade
+"Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] }
+" javascript
+"Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+"Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+"Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' }
+"Plug 'othree/yajs.vim', { 'for': 'javascript' }
+"Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
+"Plug 'wizicer/vim-jison', { 'for': 'javascript' }
+"Plug 'posva/vim-vue', { 'for': 'vue' }
+"Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
+" go
+"Plug 'fatih/vim-go', { 'for': 'go' }
+"Plug 'nsf/gocode', { 'for': 'go' }
+" html
+"Plug 'gregsexton/MatchTag', { 'for': ['html', 'javascript'] }
+"Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
+"Plug 'othree/html5.vim', { 'for': ['html', 'javascript'] }
+"Plug 'tpope/vim-haml', { 'for': 'haml'}
+"Plug 'mustache/vim-mustache-handlebars'
+" python
+"Plug 'klen/python-mode', { 'for': 'python' }
+"Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
+" toml
+"Plug 'cespare/vim-toml', { 'for': 'toml' }
 " don't lose window splits when kill a buffer
-Plug 'qpkorr/vim-bufkill'
+"Plug 'qpkorr/vim-bufkill'
 " navigation
-Plug 'easymotion/vim-easymotion'
+"Plug 'easymotion/vim-easymotion'
 
 " Initialize plugin system
 call plug#end()
