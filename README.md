@@ -3,17 +3,43 @@
 
 ## Setup
 
-1. Install alacritty.
+1. Install karabiner.
 
-2. Install karabiner.
+2. Install alfred 4.
 
-3. Install neovim.
+3. Install alacritty.
 
-4. Install ohmyzsh.
+4. Install neovim.
 
-5. Clone the repo to ~/dotfiles.
+5. Install ohmyzsh.
 
-6. Run ./setup.sh.
+6. Clone the repo to ~/dotfiles.
+
+7. Run ./setup.sh.
+
+8. Run vim and then :PlugInstall
+
+
+## Karabiner
+
+Most useful settings are: Caps/Enter as Enter when nothing else is pressed and Caps/Enter as Conrol if pressed something else.
+
+I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in all applications.
+
+
+## Alfred workflows
+
+Cmd-1 Firefox
+
+Cmd-2 Alacritty
+
+Cmd-3 WebStorm (for transition period)
+
+Cmd-4 Slack
+
+Cmd-0 Sublime (with opened todo.txt file)
+
+Don't open these apps in fullscreen mode and you will switch between them immediately.
 
 
 ## vi mappings
@@ -32,28 +58,12 @@ C-k next buffer
 
 C-n autocomplete
 
-SPC q q - close window
+C-f grep in files
 
-SPC p f - show files finder
+C-y run tests
 
-SPC p t - show files as a tree view
+C-b git blame in current file
 
-SPC p s - search in files
-
-SPC t n - run tests in file
-
-SPC g b - git blame
-
-### windows & buffers
+C-w w next window
 
 SPC w m - maximize current window
-
-SPC w w - next window
-
-SPC b b - show buffers
-
-SPC b d - delete current buffer
-
-SPC b n - next buffer
-
-SPC b p - previous buffer

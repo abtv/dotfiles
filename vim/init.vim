@@ -79,6 +79,7 @@ nmap <C-o> :NERDTreeToggle<CR>
 nmap <C-f> :Ag<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
+nmap <C-b> :Gblame<CR>
 " testing key bindings
 nmap <C-y> :TestNearest<CR>
 " Refactoring: <C-r><new word> then n and .
