@@ -16,44 +16,6 @@ Plug 'jparise/vim-graphql'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 
-
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" css/less/stylus/scss
-"Plug 'ap/vim-css-color', { 'for': ['css', 'scss', 'sass', 'less', 'stylus'] }
-"Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss', 'sass'] }
-"Plug 'groenewege/vim-less', { 'for': 'less' }
-"Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'scss'] }
-"Plug 'wavded/vim-stylus', { 'for': 'stylus' }
-" jade
-"Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] }
-" javascript
-"Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-"Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
-"Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' }
-"Plug 'othree/yajs.vim', { 'for': 'javascript' }
-"Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
-"Plug 'wizicer/vim-jison', { 'for': 'javascript' }
-"Plug 'posva/vim-vue', { 'for': 'vue' }
-"Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
-" go
-"Plug 'fatih/vim-go', { 'for': 'go' }
-"Plug 'nsf/gocode', { 'for': 'go' }
-" html
-"Plug 'gregsexton/MatchTag', { 'for': ['html', 'javascript'] }
-"Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
-"Plug 'othree/html5.vim', { 'for': ['html', 'javascript'] }
-"Plug 'tpope/vim-haml', { 'for': 'haml'}
-"Plug 'mustache/vim-mustache-handlebars'
-" python
-"Plug 'klen/python-mode', { 'for': 'python' }
-"Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
-" toml
-"Plug 'cespare/vim-toml', { 'for': 'toml' }
-" don't lose window splits when kill a buffer
-"Plug 'qpkorr/vim-bufkill'
-" navigation
-"Plug 'easymotion/vim-easymotion'
-
 " Initialize plugin system
 call plug#end()
 
@@ -93,9 +55,9 @@ endif
 set isk+=-
 
 " always show status line
-set laststatus=2
+"set laststatus=2
 " status line should have file path, row numbers, column number, file type
-set statusline=[%f][%2lR/%2vC][%LR]%y
+set statusline=[%f][%3lR/%3vC][%LR]%y
 
 let g:vim_markdown_folding_disabled = 1
 
@@ -118,7 +80,7 @@ nmap <C-f> :Ag<CR>
 " testing key bindings
 nmap <C-y> :TestNearest<CR>
 " Refactoring: <C-r><new word> then n and .
-map <C-r> *Nciw
+"map <C-r> *Nciw
 " custom keybindings
 "
 let mapleader = "\<Space>"
@@ -154,17 +116,9 @@ vnoremap K 7k
 " turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
 nmap j gj
 nmap k gk
-" center scroll vertically
-"set scrolloff=999
 
 " enable 256 colors
 set t_Co=256
 " choose color scheme
 colorscheme desert
-"colorscheme delek
-" enable syntax highlighting
 syntax enable
-" customize colors
-"hi Comment    term=none  cterm=none    ctermfg=darkgray
-"hi StatusLine ctermbg=248 ctermfg=white
-"hi StatusLineNC ctermbg=248 ctermfg=white
