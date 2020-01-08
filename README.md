@@ -13,11 +13,13 @@
 
 5. Install ohmyzsh.
 
-6. Clone the repo to ~/dotfiles.
+6. Install tig.
 
-7. Run ./setup.sh.
+7. Clone the repo to ~/dotfiles.
 
-8. Run vim and then :PlugInstall
+8. Run ./setup.sh.
+
+9. Run vim and then :PlugInstall
 
 
 ## Karabiner
@@ -42,9 +44,24 @@ Cmd-0 Sublime (with opened todo.txt file)
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
 
-## vi mappings
+## Terminal aliases
 
-### general
+g    git status
+
+glol git log with one line
+
+gl   git pull
+
+gp   git push
+
+gm   git merge
+
+gca  git commit -v -a
+
+gca1 git commit -v -a --amend
+
+
+## Vim mapping
 
 C-q C-q quit
 
