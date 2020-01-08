@@ -35,9 +35,9 @@ Cmd-1 Firefox
 
 Cmd-2 Alacritty
 
-Cmd-3 WebStorm (for transition period)
+Cmd-3 Slack
 
-Cmd-4 Slack
+Cmd-4 Postico
 
 Cmd-0 Sublime (with opened todo.txt file)
 
@@ -47,6 +47,10 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 ## Terminal aliases
 
 g    git status
+
+gd   git diff
+
+gsps git show --pretty=short --show-signature
 
 glol git log with one line
 
