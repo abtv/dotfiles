@@ -28,19 +28,13 @@ if os == 'Darwin' || os == 'Mac'
   set clipboard^=unnamedplus"
 endif
 
-" no need to be compatible with some old stuff
-set nocompatible
-" no bells
-set noeb vb t_vb=
-" no swap file
+set nocompatible  " no need to be compatible with some old stuff
+set noeb vb t_vb= " no bells
 set noswapfile
-" no backups
 set nobackup
 
-" split horizontal window to the right of the current window
-set splitright
-" split vertical window to the bottow of the current window
-set splitbelow
+set splitright " split horizontal window to the right of the current window
+set splitbelow " split vertical window to the bottow of the current window
 
 if has("autocmd")
   filetype on
@@ -54,8 +48,6 @@ endif
 " set dash as a keyword (useful for Clojure)
 set isk+=-
 
-" always show status line
-"set laststatus=2
 " status line should have file path, row numbers, column number, file type
 set statusline=[%f][%3lR/%3vC][%LR]%y
 
@@ -80,16 +72,14 @@ nmap <C-f> :Ag<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
 nmap <C-b> :Gblame<CR>
+let mapleader = "\<Space>"
+nmap <Leader>f :Ag
+nmap <Leader>d :bd<CR>
+
 " testing key bindings
 nmap <C-y> :TestNearest<CR>
-" Refactoring: <C-r><new word> then n and .
-"map <C-r> *Nciw
+
 " custom keybindings
-"
-let mapleader = "\<Space>"
-"nmap <Leader>p :CtrlP<CR>
-nmap <Leader>e :NERDTreeToggle<CR>
-nmap <Leader>f :Ag 
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
@@ -98,30 +88,24 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 nmap <Leader>b :buffers<CR>
-"delete a buffer, but don't lose a window
-nmap <Leader>d :BD<CR>
+
+" delete a buffer, but don't lose a window
 nmap <Leader>k :bnext<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
-nmap <Leader>t :TestNearest<CR>
-" ctrl + movement keys to window switching
-"map <C-k> <C-w><Up>
-"map <C-j> <C-w><Down>
-"map <C-l> <C-w><Right>
-"map <C-h> <C-w><Left>
-"faster line movements
+
+" faster line movements
 nnoremap J 7j
 nnoremap K 7k
 vnoremap J 7j
 vnoremap K 7k
+
 " turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
 nmap j gj
 nmap k gk
 
-" enable 256 colors
-set t_Co=256
-" choose color scheme
+set t_Co=256 " enable 256 colors
 colorscheme desert
 syntax enable

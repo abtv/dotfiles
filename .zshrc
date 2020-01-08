@@ -27,3 +27,5 @@ alias s="cd ~/work/signup"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# this is a shared file so DON'T put secrets here
