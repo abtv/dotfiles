@@ -10,8 +10,10 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias vi="/usr/local/bin/nvim"
-alias h="cd ~"
 alias t="htop"
+alias f="fg"
+alias j="jobs"
+alias h="cd ~"
 alias g="git status"
 alias gca1="git commit -a -v --amend"
 
