@@ -1,5 +1,15 @@
 # My configs
 
+## Key principles
+
+- do as much as possible without a mouse
+
+- switch between applications with hotkeys and don't use window animations
+
+- most used hotkeys must be pressed as a key with a modifier
+
+- development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
+
 
 ## Setup
 
@@ -9,17 +19,19 @@
 
 3. Install alacritty.
 
-4. Install neovim.
+4. Install tmux.
 
-5. Install ohmyzsh.
+5. Install neovim.
 
-6. Install tig.
+6. Install ohmyzsh.
 
-7. Clone the repo to ~/dotfiles.
+7. Install tig.
 
-8. Run ./setup.sh.
+8. Clone the repo to ~/dotfiles.
 
-9. Run vim and then :PlugInstall
+9. Run ./setup.sh.
+
+10. Run vim and then :PlugInstall
 
 
 ## Karabiner
@@ -42,6 +54,19 @@ Cmd-4 Postico
 Cmd-0 Sublime (with opened todo.txt file)
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
+
+
+## Tmux
+
+Cmd-t create a new window
+
+Cmd-w close current window (or you can use C-d)
+
+Cmd-[ go to the left window
+
+Cmd-] go to the right window
+
+Cmd-f enters copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
 
 
 ## Terminal aliases
@@ -85,6 +110,6 @@ C-y run tests
 
 C-b git blame in current file
 
-C-w w next window
+SPC w w next window
 
 SPC w m - maximize current window
