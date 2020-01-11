@@ -18,11 +18,13 @@ alias g="git status"
 alias gca1="git commit -a -v --amend"
 
 # config aliases
-alias a="vi ~/.config/alacritty/alacritty.yml"
-alias v="vi ~/.config/nvim/init.vim"
-alias z="vi ~/.zshrc"
+alias oa="vi ~/.config/alacritty/alacritty.yml"
+alias oz="vi ~/.zshrc"
+alias ot="vi ~/.tmux.conf"
+alias ov="vi ~/.config/nvim/init.vim"
 
 # project aliases
+alias d="cd ~/dotfiles"
 alias b="cd ~/work/backend"
 alias p="cd ~/work/portal"
 alias s="cd ~/work/signup"
