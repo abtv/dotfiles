@@ -32,4 +32,8 @@ alias s="cd ~/work/signup"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 # this is a shared file so DON'T put secrets here
