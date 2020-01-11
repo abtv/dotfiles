@@ -69,6 +69,17 @@ Cmd-] go to the right window
 Cmd-f enters copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
 
 
+## Terminal settings aliases
+
+oa open Alacritty config
+
+oz open zsh config
+
+ot open tmux config
+
+ov open vim config
+
+
 ## Terminal aliases
 
 g    git status
