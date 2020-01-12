@@ -108,3 +108,5 @@ nmap k gk
 set t_Co=256 " enable 256 colors
 colorscheme desert
 syntax enable
+
+set shortmess+=I
