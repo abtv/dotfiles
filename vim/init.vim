@@ -71,6 +71,7 @@ nmap <C-o> :NERDTreeToggle<CR>
 nmap <C-f> :Ag<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
+nmap <C-h> :noh<CR>
 let mapleader = "\<Space>"
 nmap <Leader>f :Ag
 nmap <Leader>d :bd<CR>
