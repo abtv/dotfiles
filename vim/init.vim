@@ -33,8 +33,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " III. General config
-" status line should have file path, row numbers, column number, total rows, file type
-set statusline=[%f][%3lR/%3vC][%LR]%y
+" don't show intro message
+set shortmess+=I
 " no need to be compatible with some old stuff
 set nocompatible
 " no bells
@@ -49,6 +49,12 @@ set isk+=-
 set splitright
 " split vertical window to the bottow of the current window
 set splitbelow
+" status line should have file path, row numbers, column number, total rows, file type
+set statusline=[%f][%3lR/%3vC][%LR]%y
+" enable 256 colors
+set t_Co=256
+colorscheme desert
+syntax enable
 
 if has("autocmd")
   filetype on
@@ -62,46 +68,46 @@ endif
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 " save automatically when text is changed
 set updatetime=200
-au CursorHold * silent! update
+autocmd CursorHold * silent! update
 " End of general config
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " IV. Plugin configs
-
-
-" End of plugin configs
-
 " NERDTree config
 let NERDTreeIgnore = ['node_modules', 'dist']
 let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
 let NERDTreeAutoDeleteBuffer = 1
-autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
-
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
-
+" Markdown config
 let g:vim_markdown_folding_disabled = 1
+" Test config
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
+" End of plugin configs
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" ide key bindings
+" V. Key bindings
+" Faster line movements
+nnoremap J 7j
+nnoremap K 7k
+vnoremap J 7j
+vnoremap K 7k
+" Turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
+nmap j gj
+nmap k gk
+" General key bindings
+let mapleader = "\<Space>"
 nmap <C-q> :q<CR>
 nmap <C-o> :NERDTreeToggle<CR>
 nmap <C-f> :Ag<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
-nmap <C-h> :noh<CR>
-let mapleader = "\<Space>"
-nmap <Leader>f :Ag
 nmap <Leader>d :bd<CR>
-
-" testing key bindings
-nmap <C-y> :TestNearest<CR>
-
-" custom keybindings
+nmap <C-h> :noh<CR>
+nmap <Leader>f :Ag
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
@@ -110,26 +116,13 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 nmap <Leader>b :buffers<CR>
-
-" delete a buffer, but don't lose a window
-nmap <Leader>k :bnext<CR>
+" Git keybindings
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
+" Testing key bindings
+nmap <C-y> :TestNearest<CR>
+" End of key bindings
 
-" faster line movements
-nnoremap J 7j
-nnoremap K 7k
-vnoremap J 7j
-vnoremap K 7k
-
-" turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
-nmap j gj
-nmap k gk
-
-set t_Co=256 " enable 256 colors
-colorscheme desert
-syntax enable
-
-set shortmess+=I " don't show intro message
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
