@@ -78,6 +78,7 @@ autocmd CursorHold * silent! update
 let NERDTreeIgnore = ['node_modules', 'dist']
 let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
 let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
