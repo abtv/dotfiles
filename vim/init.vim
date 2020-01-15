@@ -81,6 +81,8 @@ let NERDTreeAutoDeleteBuffer = 1
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
+" Fix because default CtrlP freezes in $HOME directory
+let g:ctrlp_user_command = '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f'
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
 " Test config
