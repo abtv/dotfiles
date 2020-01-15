@@ -55,15 +55,12 @@ set statusline=[%f][%3lR/%3vC][%LR]%y
 set t_Co=256
 colorscheme desert
 syntax enable
-
-if has("autocmd")
-  filetype on
-  filetype indent on
-  set tabstop=2
-  set shiftwidth=2
-  set expandtab
-  filetype plugin on
-endif
+filetype on
+filetype indent on
+set tabstop=2
+set shiftwidth=2
+set expandtab
+filetype plugin on
 " open JSON files as JavaScript files
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 " save automatically when text is changed
