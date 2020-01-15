@@ -105,6 +105,7 @@ nmap k gk
 let mapleader = "\<Space>"
 nmap <C-q> :q<CR>
 nmap <C-o> :NERDTreeToggle<CR>
+nmap <C-l> :NERDTreeFind<CR>
 nmap <C-f> :Ag<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
