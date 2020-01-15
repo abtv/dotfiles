@@ -1,5 +1,6 @@
-" Init plugins
-call plug#begin('~/.vim/plugged') " Specify a directory for plugins
+" I. Init plugins
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
 " common
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -11,9 +12,14 @@ Plug 'janko-m/vim-test'
 Plug 'jparise/vim-graphql'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-call plug#end() " Initialize plugin system
+" Initialize plugin system
+call plug#end()
 " End of init plugins
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" II. Keyboard config
+" Support for Russian keyboard
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 " http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
 " works only for OS X
@@ -22,14 +28,27 @@ if os == 'Darwin' || os == 'Mac'
   set clipboard^=unnamed
   set clipboard^=unnamedplus"
 endif
+" End of keyboard config
 
-set nocompatible  " no need to be compatible with some old stuff
-set noeb vb t_vb= " no bells
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" III. General config
+" status line should have file path, row numbers, column number, total rows, file type
+set statusline=[%f][%3lR/%3vC][%LR]%y
+" no need to be compatible with some old stuff
+set nocompatible
+" no bells
+set noeb vb t_vb=
+" don't create swap file
 set noswapfile
+" don't create backup file
 set nobackup
-
-set splitright " split horizontal window to the right of the current window
-set splitbelow " split vertical window to the bottow of the current window
+" set dash as a keyword (useful for Clojure)
+set isk+=-
+" split horizontal window to the right of the current window
+set splitright
+" split vertical window to the bottow of the current window
+set splitbelow
 
 if has("autocmd")
   filetype on
@@ -39,12 +58,19 @@ if has("autocmd")
   set expandtab
   filetype plugin on
 endif
+" open JSON files as JavaScript files
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+" save automatically when text is changed
+set updatetime=200
+au CursorHold * silent! update
+" End of general config
 
-" set dash as a keyword (useful for Clojure)
-set isk+=-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" status line should have file path, row numbers, column number, file type
-set statusline=[%f][%3lR/%3vC][%LR]%y
+" IV. Plugin configs
+
+
+" End of plugin configs
 
 " NERDTree config
 let NERDTreeIgnore = ['node_modules', 'dist']
@@ -60,12 +86,6 @@ let g:ctrlp_match_window = 'min:4,max:25'
 let g:vim_markdown_folding_disabled = 1
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
 
-" json files patch
-autocmd BufNewFile,BufRead *.json set filetype=javascript
-
-" save automatically when text is changed
-set updatetime=200
-au CursorHold * silent! update
 
 " ide key bindings
 nmap <C-q> :q<CR>
