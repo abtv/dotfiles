@@ -1,23 +1,18 @@
-" Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
-
+" Init plugins
+call plug#begin('~/.vim/plugged') " Specify a directory for plugins
 " common
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
+Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'rking/ag.vim', { 'on': 'Ag' }
-
 " testing
 Plug 'janko-m/vim-test'
-
 " GraphQL
 Plug 'jparise/vim-graphql'
-
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-
-" Initialize plugin system
-call plug#end()
+call plug#end() " Initialize plugin system
+" End of init plugins
 
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 " http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
@@ -51,11 +46,18 @@ set isk+=-
 " status line should have file path, row numbers, column number, file type
 set statusline=[%f][%3lR/%3vC][%LR]%y
 
-let g:vim_markdown_folding_disabled = 1
+" NERDTree config
+let NERDTreeIgnore = ['node_modules', 'dist']
+let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
+let NERDTreeAutoDeleteBuffer = 1
+autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
 
+" CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
-let NERDTreeIgnore = ['node_modules', 'dist']
+
+let g:vim_markdown_folding_disabled = 1
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
 
 " json files patch
@@ -110,4 +112,4 @@ set t_Co=256 " enable 256 colors
 colorscheme desert
 syntax enable
 
-set shortmess+=I
+set shortmess+=I " don't show intro message
