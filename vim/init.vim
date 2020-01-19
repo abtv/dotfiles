@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
 " testing
 Plug 'janko-m/vim-test'
 " GraphQL
@@ -83,6 +84,12 @@ let g:ctrlp_match_window = 'min:4,max:25'
 let g:vim_markdown_folding_disabled = 1
 " Test config
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
+" Autoformat config
+let g:ale_fixers = {}
+let g:ale_fixers.javascript = ['eslint']
+let g:ale_fix_on_save = 1
+let g:ale_sign_error = '>'
+let g:ale_sign_warning = '!'
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
