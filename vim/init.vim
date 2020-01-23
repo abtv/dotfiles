@@ -53,9 +53,6 @@ set splitright
 set splitbelow
 " status line should have file path, row numbers, column number, total rows, file type
 set statusline=[%f][%3lR/%3vC][%LR]%y
-" enable 256 colors
-set t_Co=256
-colorscheme desert
 syntax enable
 filetype on
 filetype indent on
@@ -63,6 +60,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 filetype plugin on
+" enable 256 colors
+set t_Co=256
+colorscheme desert
+hi Pmenu ctermbg=gray guibg=gray
 " open JSON files as JavaScript files
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 " save automatically when text is changed
