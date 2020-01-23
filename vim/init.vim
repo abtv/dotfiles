@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'w0rp/ale'
 " testing
 Plug 'janko-m/vim-test'
@@ -80,6 +81,8 @@ let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
+" Deoplete config
+let g:deoplete#enable_at_startup = 1
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
 " Test config

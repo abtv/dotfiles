@@ -3,7 +3,7 @@ window:
   decorations: buttonless
 
 font:
-  size: 16.0
+  size: 15.0
   normal:
     family: JetBrains Mono
     style: Regular
