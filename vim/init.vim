@@ -83,6 +83,10 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-stand
 let g:ctrlp_match_window = 'min:4,max:25'
 " Deoplete config
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#max_list = 10
+call deoplete#custom#option('ignore_sources', {'_': ['around', 'buffer']})
+let g:deoplete#disable_auto_complete = 1
+inoremap <expr> <C-n> deoplete#manual_complete()
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
 " Test config
