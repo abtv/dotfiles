@@ -64,6 +64,7 @@ filetype plugin on
 set t_Co=256
 colorscheme desert
 hi Pmenu ctermbg=gray guibg=gray
+hi MatchParen ctermbg=black ctermfg=blue
 " open JSON files as JavaScript files
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 " save automatically when text is changed
