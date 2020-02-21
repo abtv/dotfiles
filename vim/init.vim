@@ -92,6 +92,9 @@ inoremap <expr> <C-n> deoplete#manual_complete()
 let g:vim_markdown_folding_disabled = 1
 " Test config
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
+let test#javascript#jest#options = {
+  \ 'all':   '--forceExit',
+\}
 " Autoformat config
 let g:ale_fixers = {}
 let g:ale_fixers.javascript = ['eslint']
