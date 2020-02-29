@@ -6,8 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " testing
 Plug 'janko-m/vim-test'
 " GraphQL
@@ -83,11 +82,6 @@ let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
-" Deoplete config
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('ignore_sources', {'_': ['around']})
-let g:deoplete#disable_auto_complete = 1
-inoremap <expr> <C-n> deoplete#manual_complete()
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
 " Test config
@@ -95,12 +89,8 @@ let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
 let test#javascript#jest#options = {
   \ 'all':   '--forceExit',
 \}
-" Autoformat config
-let g:ale_fixers = {}
-let g:ale_fixers.javascript = ['eslint']
-let g:ale_fix_on_save = 1
-let g:ale_sign_error = '>'
-let g:ale_sign_warning = '!'
+" COC extensions
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
