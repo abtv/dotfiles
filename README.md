@@ -23,15 +23,17 @@
 
 5. Install neovim.
 
-6. Install ohmyzsh.
+6. Install emacs.
 
-7. Install tig.
+7. Install ohmyzsh.
 
-8. Clone the repo to ~/dotfiles.
+8. Install tig.
 
-9. Run ./setup.sh.
+9. Clone the repo to ~/dotfiles.
 
-10. Run vim and then :PlugInstall
+10. Run ./setup.sh.
+
+11. Run vim and then :PlugInstall
 
 
 ## Karabiner
@@ -69,17 +71,6 @@ Cmd-] go to the right window
 Cmd-f enters copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
 
 
-## Terminal settings aliases
-
-oa open Alacritty config
-
-oz open zsh config
-
-ot open tmux config
-
-ov open vim config
-
-
 ## Terminal aliases
 
 g    git status
@@ -99,6 +90,11 @@ gm   git merge
 gca  git commit -v -a
 
 gca1 git commit -v -a --amend
+
+
+## Emacs mapping
+
+em - starts Emacs in terminal
 
 
 ## Vim mapping
