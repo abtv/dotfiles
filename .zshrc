@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias vi="/usr/local/bin/nvim"
+alias em="emacs -nw"
 alias t="htop"
 alias f="fg"
 alias j="jobs"
