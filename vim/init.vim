@@ -114,7 +114,7 @@ nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
 nmap <Leader>d :bd<CR>
 nmap <C-h> :noh<CR>
-nmap <Leader>f :Ag
+nmap <Leader>f :Ag 
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
