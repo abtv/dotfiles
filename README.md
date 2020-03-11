@@ -23,7 +23,7 @@
 
 5. Install neovim.
 
-6. Install emacs.
+6. Install emacs and doom-emacs configuration.
 
 7. Install ohmyzsh.
 
