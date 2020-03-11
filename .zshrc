@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 # common aliases
 alias em="emacs -nw"
 alias vi="nvim"
+alias ta="tmux attach"
 alias gca1="git commit -a -v --amend"
 
 # project aliases
