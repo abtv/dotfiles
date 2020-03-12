@@ -91,6 +91,8 @@ let test#javascript#jest#options = {
 \}
 " COC extensions
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gi <Plug>(coc-implementation)
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
