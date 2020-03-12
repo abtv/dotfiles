@@ -131,6 +131,8 @@ gd        go to definition
 
 ## Emacs org mode mapping
 
+SPC n a a show agenda
+
 TAB fold/unfold an item
 
 `<s` then TAB will insert snippet with #+BEGIN_SRC (press Enter to execute the snippet)
