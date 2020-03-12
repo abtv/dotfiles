@@ -10,7 +10,7 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias em="emacs -nw"
-alias org="em ~/work/notes/projects.org"
+alias org="em ~/notes/projects.org"
 alias vi="nvim"
 alias ta="tmux attach"
 alias gca1="git commit -a -v --amend"
