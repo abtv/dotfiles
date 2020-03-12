@@ -128,4 +128,8 @@ TAB fold/unfold an item
 
 `<s` then TAB will insert snippet with #+BEGIN_SRC (press Enter to execute the snippet)
 
-SPC m s
+SPC m s org-schedule
+
+SPC m c c org-clock-in
+
+SPC m c r org-clock-report
