@@ -120,3 +120,12 @@ C-b git blame in current file
 SPC w w next window
 
 SPC w m - maximize current window
+
+
+## Emacs org mode mapping
+
+TAB fold/unfold an item
+
+`<s` then TAB will insert snippet with #+BEGIN_SRC (press Enter to execute the snippet)
+
+SPC m s
