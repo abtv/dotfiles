@@ -122,6 +122,13 @@ SPC w w next window
 SPC w m - maximize current window
 
 
+## Emacs mappings
+
+SPC h d h open Doom Emacs documentation
+
+gd        go to definition
+
+
 ## Emacs org mode mapping
 
 TAB fold/unfold an item
