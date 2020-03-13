@@ -10,13 +10,14 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias em="emacs -nw"
-alias org="em ~/notes/projects.org"
+alias org="em ~/org/work.org"
 alias vi="nvim"
 alias ta="tmux attach"
 alias gca1="git commit -a -v --amend"
 
 # project aliases
 alias d="cd ~/dotfiles"
+alias o="cd ~/org"
 alias b="cd ~/work/backend"
 alias p="cd ~/work/portal"
 alias s="cd ~/work/signup"

@@ -14,6 +14,6 @@
    'adwaita
    '(default ((t (:background "#CCCCCC"))))))
 
-(setq org-directory "~/notes/")
+(setq org-directory "~/org/")
 
 (setq display-line-numbers-type nil)
