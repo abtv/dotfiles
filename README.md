@@ -120,6 +120,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `C-k`     next buffer
 
+`C-d`     kill buffer
+
 `C-n`     autocomplete
 
 `C-f`     grep in files
@@ -133,6 +135,13 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `SPC w w` next window
 
 `SPC w m` maximize current window
+
+
+## Emacs introspections
+
+`:describe-bindings` show and search keybindings
+
+`:describe-function` show docs and search functions
 
 
 ## Emacs mappings
