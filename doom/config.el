@@ -18,4 +18,7 @@
    org-agenda-span 7
    org-agenda-start-on-weekday 1))
 
+(map! :leader
+      :desc "Kill this buffer" "d" #'kill-this-buffer)
+
 (setq display-line-numbers-type nil)
