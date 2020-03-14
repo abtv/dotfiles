@@ -28,9 +28,23 @@
       :n "C-j" #'previous-buffer
       :n "C-k" #'next-buffer
       :n "C-p" #'find-file
-      :n "C-o" #'neotree-toggle
-      )
+      :n "C-o" #'neotree-toggle)
 (map! :leader
       :desc "Kill this buffer" "d" #'kill-this-buffer)
 (map! :leader
       :desc "Show current week agenda" "a" #'org-agenda-list)
+
+;; Hide neotree on file open
+(defun neo-open-file-hide (full-path &optional arg)
+  "Open a file node and hides tree."
+  (neo-global--select-mru-window arg)
+  (find-file full-path)
+  (neotree-hide))
+(defun neotree-enter-hide (&optional arg)
+  "Enters file and hides neotree directly"
+  (interactive "P")
+  (neo-buffer--execute arg 'neo-open-file-hide 'neo-open-dir))
+(add-hook
+ 'neotree-mode-hook
+ (lambda ()
+   (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter-hide)))
