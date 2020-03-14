@@ -26,7 +26,10 @@
 ;; Key bindings
 (map! :map general-override-mode-map
       :n "C-j" #'previous-buffer
-      :n "C-k" #'next-buffer)
+      :n "C-k" #'next-buffer
+      :n "C-p" #'find-file
+      :n "C-o" #'neotree-toggle
+      )
 (map! :leader
       :desc "Kill this buffer" "d" #'kill-this-buffer)
 (map! :leader
