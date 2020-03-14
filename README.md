@@ -129,15 +129,24 @@ SPC h d h open Doom Emacs documentation
 gd        go to definition
 
 
-## Emacs org mode mapping
+## Emacs org mode agenda mapping
 
 SPC n a a show agenda
+
+[         switch to the previous week
+
+]         switch to the next week
+
+
+## Emacs org mode mapping
 
 TAB fold/unfold an item
 
 `<s` then TAB will insert snippet with #+BEGIN_SRC (press Enter to execute the snippet)
 
 SPC m s org-schedule
+
+SPC m d org-deadline
 
 SPC m c c org-clock-in
 
