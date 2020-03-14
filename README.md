@@ -153,6 +153,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 ## Emacs org mode agenda mappings
 
+`SPC a`     show agenda
+
 `SPC n a a` show agenda
 
 `[`         switch to the previous week
