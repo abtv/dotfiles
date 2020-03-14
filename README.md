@@ -60,66 +60,79 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 ## Tmux
 
-Cmd-t create a new window
+`Cmd-t` create a new window
 
-Cmd-w close current window (or you can use C-d)
+`Cmd-w` close current window (or you can use C-d)
 
-Cmd-[ go to the left window
+`Cmd-[` go to the left window
 
-Cmd-] go to the right window
+`Cmd-]` go to the right window
 
-Cmd-f enters copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
+`Cmd-f` enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
 
 
 ## Terminal aliases
 
-g    git status
+### General
 
-gd   git diff
+`ta`   attach to a running tmux session
 
-gsps git show --pretty=short --show-signature
+`d`    switch to `dotfiles` folder
 
-glol git log with one line
+`o`    switch to `org` folder
 
-gl   git pull
+### Editors
 
-gp   git push
+`em`   starts Emacs
 
-gm   git merge
+`vi`   starts NeoVim
 
-gca  git commit -v -a
+### Git
 
-gca1 git commit -v -a --amend
+`gst`  git status
+
+`gd`   git diff
+
+`gsps` git show --pretty=short --show-signature
+
+`glol` git log with one line
+
+`gl`   git pull
+
+`gp`   git push
+
+`gm`   git merge
+
+`gca`  git commit -v -a
+
+`gca1` git commit -v -a --amend
 
 
-## Emacs mapping
+## Vim mappings
 
-em - starts Emacs in terminal
+`SPC q q` quit
 
+`C-o`     toggle NerdTree
 
-## Vim mapping
+`C-p`     search in files
 
-C-q C-q quit
+`C-j`     previous buffer
 
-C-o toggle NerdTree
+`C-k`     next buffer
 
-C-p search in files
+`C-n`     autocomplete
 
-C-j previous buffer
+`C-f`     grep in files
 
-C-k next buffer
+`SPC f`   prefills :Ag
 
-C-n autocomplete
+`C-y`     run tests
 
-C-f grep in files
+`SPC g b` git blame in current file
 
-C-y run tests
+`SPC w w` next window
 
-C-b git blame in current file
-
-SPC w w next window
-
-SPC w m - maximize current window
+`SPC w m` maximize current window
 
 
 ## Emacs mappings
@@ -129,7 +142,7 @@ SPC w m - maximize current window
 `gd`        go to definition
 
 
-## Emacs org mode agenda mapping
+## Emacs org mode agenda mappings
 
 `SPC n a a` show agenda
 
@@ -138,7 +151,7 @@ SPC w m - maximize current window
 `]`         switch to the next week
 
 
-## Emacs org mode mapping
+## Emacs org mode mappings
 
 `TAB`       fold/unfold an item
 
