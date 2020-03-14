@@ -18,6 +18,10 @@
    org-agenda-span 7
    org-agenda-start-on-weekday 1))
 
+(map! :map general-override-mode-map
+      :n "C-j" #'previous-buffer
+      :n "C-k" #'next-buffer)
+
 (map! :leader
       :desc "Kill this buffer" "d" #'kill-this-buffer)
 
