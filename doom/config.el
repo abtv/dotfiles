@@ -17,7 +17,7 @@
    '(default ((t (:background "#CCCCCC"))))))
 
 ;; Org mode
-(setq org-directory "~/org/")
+(setq org-directory "~/Dropbox/")
 (with-eval-after-load 'org
  (setq
    org-agenda-span 7
