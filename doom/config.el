@@ -8,6 +8,8 @@
       user-mail-address "")
 (setq display-line-numbers-type nil)
 (setq confirm-kill-emacs nil)
+(auto-save-visited-mode +1)
+(setq auto-save-visited-interval 1)
 
 ;; Color theme
 (setq doom-theme 'adwaita)
