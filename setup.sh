@@ -10,6 +10,5 @@ ln -s /Users/andrew/dotfiles/vim/coc-settings.json /Users/andrew/.config/nvim/co
 # emacs doom
 ln -s /Users/andrew/dotfiles/doom /Users/andrew/.config/doom
 # copy emacs bin to short name in tmux panel
-rm /Applications/Emacs.app/Contents/MacOS/emacs
-cp /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_14 /Applications/Emacs.app/Contents/MacOS/emacs
+cp /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_14 /Applications/Emacs.app/Contents/MacOS/em
 rm ~/dotfiles/doom/doom
