@@ -9,7 +9,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # common aliases
-alias em="emacs -nw"
+alias em="/Applications/Emacs.app/Contents/MacOS/emacs -nw"
 alias org="em --eval='(org-agenda-list)'"
 alias vi="nvim"
 alias ta="tmux attach"
