@@ -157,6 +157,10 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC n a a` show agenda
 
+`SPC n a t` show all todos
+
+`SPC n a s` text search in agenda
+
 `[`         switch to the previous week
 
 `]`         switch to the next week
