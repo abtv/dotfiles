@@ -22,6 +22,7 @@
 (setq org-directory "~/Dropbox/")
 (with-eval-after-load 'org
  (setq
+   org-agenda-start-day nil
    org-agenda-span 7
    org-agenda-start-on-weekday 1))
 

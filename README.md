@@ -143,6 +143,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `:describe-function` show docs and search functions
 
+`:describe-key`      show what is called on a key press
+
 
 ## Emacs mappings
 
