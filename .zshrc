@@ -17,10 +17,12 @@ alias gca1="git commit -a -v --amend"
 
 # project aliases
 alias d="cd ~/dotfiles"
-alias o="cd ~/Dropbox"
+alias or="cd ~/Dropbox"
 alias b="cd ~/work/backend"
 alias p="cd ~/work/portal"
-alias s="cd ~/work/signup"
+alias si="cd ~/work/signup"
+alias of="cd ~/work/office"
+alias sc="cd ~/work/scraper"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
