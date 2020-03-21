@@ -148,6 +148,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 ## Emacs mappings
 
+`SPC w m`   maximize current window
+
 `SPC h d h` open Doom Emacs documentation
 
 `gd`        go to definition

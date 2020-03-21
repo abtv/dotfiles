@@ -37,6 +37,8 @@
       :desc "Kill this buffer" "d" #'kill-this-buffer)
 (map! :leader
       :desc "Show current week agenda" "a" #'org-agenda-list)
+(map! :leader
+      :desc "Maximize current window" "w m" #'doom/window-maximize-buffer)
 
 ;; Hide neotree on file open
 (defun neo-open-file-hide (full-path &optional arg)
