@@ -20,6 +20,7 @@
 
 ;; Org mode
 (setq org-directory "~/Dropbox/")
+(setq calendar-week-start-day 1)
 (with-eval-after-load 'org
  (setq
    org-agenda-start-day nil
