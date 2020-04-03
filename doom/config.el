@@ -3,6 +3,10 @@
 ;; Place your private configuration here!
 ;; Remember, you do NOT need to run 'doom sync' after modifying this file!
 
+;; Font
+(setq doom-font (font-spec :family "JetBrains Mono" :size 17 :weight 'semi-light))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; General
 (setq user-full-name "abtv"
       user-mail-address "")
@@ -10,6 +14,7 @@
 (setq confirm-kill-emacs nil)
 (auto-save-visited-mode +1)
 (setq auto-save-visited-interval 1)
+(setq default-directory "~/Dropbox/")
 
 ;; Color theme
 (setq doom-theme 'adwaita)
@@ -26,6 +31,7 @@
    org-agenda-start-day nil
    org-agenda-span 7
    org-agenda-start-on-weekday 1))
+(setq org-startup-with-inline-images 1)
 
 ;; Key bindings
 (map! :map general-override-mode-map
