@@ -24,3 +24,4 @@ alias of="cd ~/work/office"
 alias sc="cd ~/work/scraper"
 
 # this is a shared file so DON'T put secrets here
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
