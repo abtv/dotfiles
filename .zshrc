@@ -17,15 +17,10 @@ alias gca1="git commit -a -v --amend"
 
 # project aliases
 alias d="cd ~/dotfiles"
-alias or="cd ~/Dropbox"
 alias b="cd ~/work/backend"
 alias p="cd ~/work/portal"
 alias si="cd ~/work/signup"
 alias of="cd ~/work/office"
 alias sc="cd ~/work/scraper"
-
-# go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
 
 # this is a shared file so DON'T put secrets here
