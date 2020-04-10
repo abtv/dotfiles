@@ -1,4 +1,17 @@
 git config --global core.editor /usr/local/bin/nvim
+# install
+brew install tmux
+brew install tig
+brew install nvim
+brew install htop
+brew cask install alacritty
+brew cask install karabiner-elements
+brew cask install slack
+brew cask install postico
+brew cask install notion
+brew cask install skype
+brew cask install microsoft-teams
+brew cask install telegram
 # general
 ln -s /Users/andrew/dotfiles/alacritty/alacritty.yml /Users/andrew/.config/alacritty/alacritty.yml
 ln -s /Users/andrew/dotfiles/.zshrc /Users/andrew/.zshrc

@@ -1,0 +1,13 @@
+brew install tmux
+brew install nvim
+brew install tig
+brew install htop
+brew cask install karabiner-elements
+brew cask install alacritty
+brew cask install slack
+brew cask install postico
+brew cask install sublime-text
+brew cask install notion
+brew cask install telegram
+brew cask install skype
+brew cask install microsoft-teams
