@@ -1,6 +1,7 @@
 # defaults
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # init oh my zsh aliases first and then being able to override them
 export ZSH=/Users/andrew/.oh-my-zsh
@@ -24,4 +25,3 @@ alias of="cd ~/work/office"
 alias sc="cd ~/work/scraper"
 
 # this is a shared file so DON'T put secrets here
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
