@@ -21,9 +21,7 @@
 
 4. Run `install.sh`
 
-5. Run `setup.sh`
-
-6. Run vim and then :PlugInstall
+5. Run vim and then :PlugInstall
 
 
 ## Karabiner
