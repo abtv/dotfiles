@@ -1,6 +1,0 @@
-set isk+=-
-set clipboard+=unnamed
-nnoremap J 7j
-nnoremap K 7k
-vnoremap J 7j
-vnoremap K 7k

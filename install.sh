@@ -2,6 +2,7 @@ brew install tmux
 brew install nvim
 brew install tig
 brew install htop
+brew install tree
 brew install postgresql@9.6
 brew install flyway
 brew cask install karabiner-elements

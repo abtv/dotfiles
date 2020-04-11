@@ -13,8 +13,6 @@ Plug 'janko-m/vim-test'
 Plug 'jparise/vim-graphql'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-" org mode
-Plug 'jceb/vim-orgmode'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
