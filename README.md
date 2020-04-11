@@ -13,27 +13,17 @@
 
 ## Setup
 
-1. Install karabiner.
+1. Install `brew`
 
-2. Install alfred 4.
+2. Install oh-my-zsh
 
-3. Install alacritty.
+3. Clone the repo to ~/dotfiles.
 
-4. Install tmux.
+4. Run `install.sh`
 
-5. Install neovim.
+5. Run `setup.sh`
 
-6. Install emacs and doom-emacs configuration.
-
-7. Install ohmyzsh.
-
-8. Install tig.
-
-9. Clone the repo to ~/dotfiles.
-
-10. Run ./setup.sh.
-
-11. Run vim and then :PlugInstall
+6. Run vim and then :PlugInstall
 
 
 ## Karabiner
@@ -43,7 +33,7 @@ Most useful settings are: Caps/Enter as Enter when nothing else is pressed and C
 I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in all applications.
 
 
-## Alfred workflows
+## My workflows
 
 Cmd-1 Firefox
 
@@ -53,7 +43,9 @@ Cmd-3 Slack
 
 Cmd-4 Postico
 
-Cmd-0 Sublime (with opened todo.txt file)
+Cmd-9 Sublime (for quick notes)
+
+Cmd-0 Notion (for task lists, agenda, etc)
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
@@ -82,8 +74,6 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `o`    switch to `org` folder
 
 ### Editors
-
-`em`   starts Emacs
 
 `vi`   starts NeoVim
 
@@ -135,51 +125,3 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `SPC w w` next window
 
 `SPC w m` maximize current window
-
-
-## Emacs introspections
-
-`:describe-bindings` show and search keybindings
-
-`:describe-function` show docs and search functions
-
-`:describe-key`      show what is called on a key press
-
-
-## Emacs mappings
-
-`SPC w m`   maximize current window
-
-`SPC h d h` open Doom Emacs documentation
-
-`gd`        go to definition
-
-
-## Emacs org mode agenda mappings
-
-`SPC a`     show agenda
-
-`SPC n a a` show agenda
-
-`SPC n a t` show all todos
-
-`SPC n a s` text search in agenda
-
-`[`         switch to the previous week
-
-`]`         switch to the next week
-
-
-## Emacs org mode mappings
-
-`TAB`       fold/unfold an item
-
-`<s`        then TAB will insert snippet with #+BEGIN_SRC (press Enter to execute the snippet)
-
-`SPC m s`   org-schedule
-
-`SPC m d`   org-deadline
-
-`SPC m c c` org-clock-in
-
-`SPC m c r` org-clock-report
