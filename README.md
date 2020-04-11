@@ -15,7 +15,7 @@
 
 1. Install `brew`
 
-2. Install oh-my-zsh
+2. Install `oh-my-zsh`
 
 3. Clone the repo to ~/dotfiles.
 
@@ -32,8 +32,7 @@ Most useful settings are: Caps/Enter as Enter when nothing else is pressed and C
 
 I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in all applications.
 
-
-## My workflows
+Keybindings:
 
 Cmd-1 Firefox
 
@@ -71,13 +70,15 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `d`    switch to `dotfiles` folder
 
-`o`    switch to `org` folder
 
 ### Editors
 
 `vi`   starts NeoVim
 
+
 ### Git
+
+`tig`  git interface
 
 `gst`  git status
 
@@ -110,7 +111,7 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `C-k`     next buffer
 
-`C-d`     kill buffer
+`SPC d`   kill buffer
 
 `C-n`     autocomplete
 
