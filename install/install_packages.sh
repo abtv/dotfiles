@@ -17,3 +17,4 @@ brew cask install skype
 brew cask install microsoft-teams
 brew cask install docker
 brew cask install turbo-boost-switcher
+brew cask install 1password
