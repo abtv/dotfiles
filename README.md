@@ -40,6 +40,8 @@ Cmd-3 Slack
 
 Cmd-4 Postico
 
+Cmd-8 Telegram
+
 Cmd-9 Sublime (for quick notes)
 
 Cmd-0 Notion (for task lists, agenda, etc)
