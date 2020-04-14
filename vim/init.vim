@@ -13,6 +13,8 @@ Plug 'janko-m/vim-test'
 Plug 'jparise/vim-graphql'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Initialize plugin system
 call plug#end()
 " End of init plugins
