@@ -1,2 +1,2 @@
-./install/install_packages.sh
-./install/install_configs.sh
+./scripts/install_packages.sh
+./scripts/install_configs.sh
