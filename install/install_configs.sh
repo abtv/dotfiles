@@ -1,9 +1,21 @@
+# Alacritty
+mkdir -p ~/.config/alacritty
+ln -sf ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+# ZSH
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+
+# Karabiner
+mkdir -p ~/.config/karabiner
+cp ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+
+# Editor config
+ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
+
+# Vim
+mkdir -p ~/.config/nvim
+ln -sf ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
+
+# Vim as a Git editor
 git config --global core.editor /usr/local/bin/nvim
-# general
-ln -s /Users/andrew/dotfiles/alacritty/alacritty.yml /Users/andrew/.config/alacritty/alacritty.yml
-ln -s /Users/andrew/dotfiles/.zshrc /Users/andrew/.zshrc
-ln -s /Users/andrew/dotfiles/.editorconfig /Users/andrew/.editorconfig
-cp /Users/andrew/dotfiles/karabiner/karabiner.json /Users/andrew/.config/karabiner/karabiner.json
-# vim
-ln -s /Users/andrew/dotfiles/vim/init.vim /Users/andrew/.config/nvim/init.vim
-ln -s /Users/andrew/dotfiles/vim/coc-settings.json /Users/andrew/.config/nvim/coc-settings.json
