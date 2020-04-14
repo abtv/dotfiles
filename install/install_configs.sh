@@ -7,7 +7,7 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 # Karabiner
 mkdir -p ~/.config/karabiner
-cp ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+ln -sf ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 
 # Editor config
 ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
