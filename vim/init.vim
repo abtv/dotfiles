@@ -83,6 +83,7 @@ let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 let g:NERDTreeWinSize=45
 " Airline config
+let g:airline_extensions = ['tabline']
 let g:airline#extensions#tabline#enabled = 1
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
