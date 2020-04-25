@@ -26,3 +26,4 @@ alias of="cd ~/work/office"
 alias sc="cd ~/work/scraper"
 
 # this is a shared file so DON'T put secrets here
+export PATH="/usr/local/opt/node@12/bin:$PATH"
