@@ -119,6 +119,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC f`   prefills :Ag
 
+`SPC c`   comment/uncomment toggle
+
 `C-y`     run tests
 
 `SPC g b` git blame in current file

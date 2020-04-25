@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 " common
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -87,6 +88,8 @@ let g:NERDTreeWinSize=45
 let g:airline_extensions = ['tabline']
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='silver'
+" Nerdcommenteer config
+
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
@@ -114,6 +117,7 @@ vnoremap K 7k
 " Turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
 nmap j gj
 nmap k gk
+
 " General key bindings
 let mapleader = "\<Space>"
 nmap <C-q> :q<CR>
@@ -133,6 +137,11 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 nmap <Leader>b :buffers<CR>
+
+" NerdCommenter key bindings
+let g:NERDCreateDefaultMappings = 0
+vmap <Leader>c :call NERDComment(0,"toggle")<CR>
+
 " Git keybindings
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
