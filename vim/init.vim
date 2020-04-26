@@ -87,6 +87,7 @@ let g:NERDTreeWinSize=45
 " Airline config
 let g:airline_extensions = ['tabline']
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme='silver'
 " Nerdcommenteer config
 
