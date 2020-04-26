@@ -145,6 +145,7 @@ vmap <Leader>c :call NERDComment(0,"toggle")<CR>
 " Git keybindings
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gm :Gmove 
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
 " Testing key bindings
