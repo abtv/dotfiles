@@ -102,7 +102,7 @@ let test#javascript#jest#options = {
   \ 'all':   '--forceExit',
 \}
 " COC extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-omnisharp']
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 " End of plugin configs
