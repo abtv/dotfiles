@@ -11,6 +11,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'editorconfig/editorconfig-vim'
 " testing
 Plug 'janko-m/vim-test'
 " GraphQL
