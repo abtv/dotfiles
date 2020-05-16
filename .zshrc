@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias ta="tmux attach"
 alias gca1="git commit -a -v --amend"
+alias dn="dotnet"
 
 # project aliases
 alias d="cd ~/dotfiles"
