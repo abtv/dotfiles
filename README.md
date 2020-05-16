@@ -42,7 +42,7 @@ Cmd-4 Postico
 
 Cmd-8 Telegram
 
-Cmd-9 Sublime (for quick notes)
+Cmd-9 IntelliJ Rider
 
 Cmd-0 Notion (for task lists, agenda, etc)
 
