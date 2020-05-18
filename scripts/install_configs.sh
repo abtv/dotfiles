@@ -1,4 +1,5 @@
-# global gitignore file
+# Git
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
 # Alacritty
