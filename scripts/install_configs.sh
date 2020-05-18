@@ -1,3 +1,6 @@
+# global gitignore file
+ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
+
 # Alacritty
 mkdir -p ~/.config/alacritty
 ln -sf ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
