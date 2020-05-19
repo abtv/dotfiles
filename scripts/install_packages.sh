@@ -24,3 +24,4 @@ brew cask install docker
 brew cask install turbo-boost-switcher
 brew cask install 1password
 brew cask install postman
+brew cask install sfdx
