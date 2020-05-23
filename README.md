@@ -23,6 +23,8 @@
 
 5. Run vim and then :PlugInstall
 
+6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
+
 
 ## Karabiner
 
