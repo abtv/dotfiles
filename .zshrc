@@ -29,4 +29,5 @@ alias sc="cd ~/work/scraper"
 
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="$PATH:/Users/andrew/.dotnet/tools"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 # this is a shared file so DON'T put secrets here

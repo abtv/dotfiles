@@ -7,6 +7,7 @@ brew install htop
 brew install tree
 brew install node@12
 brew install postgresql@9.6
+brew install openjdk@11
 brew install flyway
 brew install go
 brew cask install karabiner-elements
