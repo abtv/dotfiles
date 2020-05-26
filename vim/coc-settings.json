@@ -1,3 +1,18 @@
 {
-  "javascript.suggestionActions.enabled": false
+  "javascript.suggestionActions.enabled": false,
+  "languageserver": {
+    "apexcode": {
+      "command": "/usr/local/opt/openjdk@11/bin/java",
+      "args": [
+        "-cp",
+        "~/apex-jorje-lsp.jar",
+        "-Ddebug.internal.errors=true",
+        "apex.jorje.lsp.ApexLanguageServerLauncher"
+      ],
+      "filetypes":[
+        "apexcode",
+        "cls"
+      ]
+    }
+  }
 }

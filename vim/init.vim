@@ -106,6 +106,14 @@ let test#javascript#jest#options = {
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-omnisharp']
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
+
+" apexcode FileType Auto commands{{{
+augroup filetype_apexcode
+  :autocmd!
+  :autocmd FileType apexcode* :setlocal shiftwidth=4 tabstop=4 foldmethod=indent foldlevel=0 foldlevelstart=0
+augroup END
+" End apex FileType Auto commands}}}
+"
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
