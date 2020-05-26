@@ -4,6 +4,7 @@ export TERM=xterm-256color
 
 # programs
 export PATH=~/.npm-global/bin:$PATH
+export PATH=~/bin:$PATH
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="$PATH:/Users/andrew/.dotnet/tools"
