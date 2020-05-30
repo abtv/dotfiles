@@ -98,17 +98,25 @@ let g:airline_theme='silver'
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
+
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
+
 " Test config
 let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
 let test#javascript#jest#options = {
   \ 'all':   '--forceExit',
 \}
+
 " COC extensions
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-omnisharp']
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
+
+" Prettier config
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat_config_present = 1
 
 " apexcode FileType Auto commands{{{
 augroup filetype_apexcode
