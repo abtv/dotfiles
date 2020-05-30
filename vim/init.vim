@@ -77,6 +77,9 @@ hi MatchParen ctermbg=black ctermfg=blue
 " save automatically when text is changed
 set updatetime=200
 autocmd CursorHold * silent! update
+
+set autoread
+autocmd CursorHold * checktime
 " End of general config
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
