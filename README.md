@@ -130,3 +130,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `SPC w w` next window
 
 `SPC w m` maximize current window
+
+
+## Useful Vim commands
+
+`:%s/\r/` replace all carriage return symbols in the current file
