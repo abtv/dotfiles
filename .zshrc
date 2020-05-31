@@ -1,6 +1,7 @@
 # defaults
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
+export JAVA_HOME=/usr/local/opt/openjdk@11
 
 # programs
 export PATH=~/.npm-global/bin:$PATH
