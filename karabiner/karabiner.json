@@ -306,7 +306,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Rider.app/Contents/MacOS/rider'"
+                                        "shell_command": "open -a '/Applications/Visual Studio Code.app/Contents/MacOS/Electron'"
                                     }
                                 ],
                                 "type": "basic"

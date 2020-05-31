@@ -44,7 +44,7 @@ Cmd-4 Postico
 
 Cmd-8 Telegram
 
-Cmd-9 IntelliJ Rider
+Cmd-9 VSCode
 
 Cmd-0 Notion (for task lists, agenda, etc)
 
