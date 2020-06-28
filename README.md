@@ -135,3 +135,23 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 ## Useful Vim commands
 
 `:%s/\r/` replace all carriage return symbols in the current file
+
+## VSCode mappings
+
+Cmd-e     open Explorer view
+
+Cmd-Enter rename file in Explorer view
+
+Cmd-d     toggle Side bar
+
+Cmd-n     create new file
+
+Cmd-f     search text in folder
+
+Cmd-p     search file by name
+
+Cmd-p     >search action by name (you need to type '>' symbol)
+
+Cmd-y     run Jest tests
+
+Cmd-t     toggle Terminal (useful when need to hide Jest output). Usually I use Cmd-2 to open Alacritty.
