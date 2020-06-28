@@ -138,20 +138,20 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 ## VSCode mappings
 
-Cmd-e     open Explorer view
+`Cmd-e`     open Explorer view
 
-Cmd-Enter rename file in Explorer view
+`Cmd-Enter` rename file in Explorer view
 
-Cmd-d     toggle Side bar
+`Cmd-d`     toggle Side bar
 
-Cmd-n     create new file
+`Cmd-n`     create new file
 
-Cmd-f     search text in folder
+`Cmd-f`     search text in folder
 
-Cmd-p     search file by name
+`Cmd-p`     search file by name
 
-Cmd-p     >search action by name (you need to type '>' symbol)
+`Cmd-p`     >search action by name (you need to type '>' symbol)
 
-Cmd-y     run Jest tests
+`Cmd-y`     run Jest tests
 
-Cmd-t     toggle Terminal (useful when need to hide Jest output). Usually I use Cmd-2 to open Alacritty.
+`Cmd-t`     toggle Terminal (useful when need to hide Jest output). Usually I use Cmd-2 to open Alacritty.
