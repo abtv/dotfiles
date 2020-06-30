@@ -52,5 +52,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.lineNumbers": "on"
+  "editor.lineNumbers": "on",
+  "editor.fontSize": 14,
+  "jestrunner.jestCommand": "node_modules/jest/bin/jest.js --forceExit",
+  "terminal.integrated.fontSize": 14
 }
