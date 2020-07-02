@@ -12,6 +12,7 @@ brew install flyway
 brew install go
 brew cask install karabiner-elements
 brew cask install alacritty
+brew cask install visual-studio-code
 brew cask install firefox
 brew cask install google-chrome
 brew cask install slack
