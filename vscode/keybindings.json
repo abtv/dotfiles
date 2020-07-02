@@ -1,7 +1,13 @@
 [
   {
     "key": "cmd+e",
-    "command": "workbench.view.explorer"
+    "command": "workbench.view.explorer",
+    "when": "!explorerViewletVisible"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletVisible"
   },
   {
     "key": "cmd+r",
