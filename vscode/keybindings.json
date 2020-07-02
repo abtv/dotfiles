@@ -1,52 +1,31 @@
 [
   {
-    "key": "cmd+e ctrl",
+    "key": "cmd+e",
     "command": "workbench.view.explorer"
   },
   {
-    "key": "shift+cmd+e",
-    "command": "-workbench.view.explorer"
-  },
-  {
-    "key": "cmd+r ctrl",
+    "key": "cmd+r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "f2",
-    "command": "-editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+d ctrl",
+    "key": "cmd+d",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+b",
-    "command": "-workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "cmd+f ctrl",
+    "key": "cmd+f",
     "command": "workbench.action.findInFiles"
   },
   {
-    "key": "shift+cmd+f",
-    "command": "-workbench.action.findInFiles"
-  },
-  {
-    "key": "ctrl+y ctrl",
+    "key": "ctrl+y",
     "command": "extension.runJest"
   },
   {
-    "key": "ctrl+t ctrl",
+    "key": "ctrl+t",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "cmd+n ctrl",
+    "key": "cmd+n",
     "command": "explorer.newFile"
   },
   {
