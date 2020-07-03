@@ -46,7 +46,7 @@ Cmd-8 Telegram
 
 Cmd-9 VSCode
 
-Cmd-0 Notion (for task lists, agenda, etc)
+Cmd-0 Workflowy (for task lists, agenda, etc)
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 

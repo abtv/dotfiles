@@ -18,6 +18,7 @@ brew cask install google-chrome
 brew cask install slack
 brew cask install postico
 brew cask install sublime-text
+brew cask install workflowy
 brew cask install notion
 brew cask install telegram
 brew cask install skype

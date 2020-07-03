@@ -321,7 +321,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Notion.app/Contents/MacOS/Notion'"
+                                        "shell_command": "open -a '/Applications/WorkFlowy.app/Contents/MacOS/WorkFlowy'"
                                     }
                                 ],
                                 "type": "basic"
