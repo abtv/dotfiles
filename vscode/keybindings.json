@@ -23,7 +23,7 @@
     "command": "workbench.action.findInFiles"
   },
   {
-    "key": "ctrl+y",
+    "key": "cmd+y",
     "command": "extension.runJest"
   },
   {
@@ -48,5 +48,9 @@
     "key": "enter",
     "command": "list.select",
     "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.closePanel"
   }
 ]

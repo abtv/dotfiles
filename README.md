@@ -154,4 +154,4 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `Cmd-y`     run Jest tests
 
-`Cmd-t`     toggle Terminal (useful when need to hide Jest output). Usually I use Cmd-2 to open Alacritty.
+`Cmd-;`     close panel (useful when need to hide Jest output). Usually I use Cmd-2 to open Alacritty.
