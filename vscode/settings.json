@@ -42,6 +42,9 @@
   "vim.useSystemClipboard": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
