@@ -10,6 +10,7 @@ brew install postgresql@9.6
 brew install openjdk@11
 brew install flyway
 brew install go
+brew install xmlstarlet
 brew cask install karabiner-elements
 brew cask install alacritty
 brew cask install visual-studio-code
