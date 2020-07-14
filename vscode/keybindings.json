@@ -31,8 +31,12 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "cmd+n",
+    "key": "cmd+n cmd+n",
     "command": "explorer.newFile"
+  },
+  {
+    "key": "cmd+n cmd+d",
+    "command": "explorer.newFolder"
   },
   {
     "key": "cmd+enter",
