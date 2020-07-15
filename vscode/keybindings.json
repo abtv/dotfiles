@@ -56,5 +56,13 @@
   {
     "key": "cmd+;",
     "command": "workbench.action.closePanel"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
   }
 ]
