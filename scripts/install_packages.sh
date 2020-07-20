@@ -11,6 +11,7 @@ brew install openjdk@11
 brew install flyway
 brew install go
 brew install xmlstarlet
+brew install awscli
 brew cask install karabiner-elements
 brew cask install alacritty
 brew cask install visual-studio-code
