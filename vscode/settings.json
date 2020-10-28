@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "workbench.colorTheme": "Visual Studio Light",
   "editor.minimap.enabled": false,
   "workbench.statusBar.visible": true,
@@ -68,5 +68,6 @@
   "githubPullRequests.telemetry.enabled": false,
   "gitlens.advanced.telemetry.enabled": false,
   "salesforcedx-vscode-core.telemetry.enabled": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "extensions.ignoreRecommendations": false
 }
