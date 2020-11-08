@@ -5,3 +5,4 @@
 (projectile-add-known-project "~/work/office")
 (projectile-add-known-project "~/work/scraper")
 
+(load-theme 'adwaita t)
