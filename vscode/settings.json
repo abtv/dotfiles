@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "workbench.colorTheme": "Visual Studio Light",
   "editor.minimap.enabled": false,
   "workbench.statusBar.visible": true,
@@ -72,4 +72,5 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
+  "extensions.ignoreRecommendations": false
 }
