@@ -22,6 +22,7 @@ source $ZSH/oh-my-zsh.sh
 # common aliases
 alias vi="nvim"
 alias em="emacs"
+alias doom="~/.emacs.d/bin/doom"
 alias ta="tmux attach"
 alias gca1="git commit -a -v --amend"
 alias dn="dotnet"
