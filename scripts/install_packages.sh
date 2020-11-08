@@ -1,5 +1,6 @@
 brew install tmux
 brew install nvim
+brew install emacs
 brew install visual-studio-code
 brew install ag
 brew install tig
