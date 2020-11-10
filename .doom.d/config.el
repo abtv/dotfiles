@@ -52,6 +52,8 @@
    'adwaita
    '(default ((t (:background "#CCCCCC"))))))
 
+(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
