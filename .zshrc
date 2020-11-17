@@ -4,6 +4,7 @@ export TERM=xterm-256color
 export JAVA_HOME=/usr/local/opt/openjdk@12
 
 # programs
+export PATH=/usr/local/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
