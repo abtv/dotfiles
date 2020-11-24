@@ -29,6 +29,9 @@
 ; where to put org files
 (setq org-directory "~/org/")
 
+(setq auth-sources
+    '((:source "~/.credentials/github.token")))
+
 ; key bindings
 (map! :leader
       :desc "Run Jest test under cursor." "m t" #'jest-function)
