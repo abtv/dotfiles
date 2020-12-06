@@ -44,3 +44,7 @@
 (projectile-add-known-project "~/work/salesforce")
 (projectile-add-known-project "~/work/office")
 (projectile-add-known-project "~/work/scraper")
+
+
+; Vue mode
+(add-hook 'vue-mode-hook #'lsp!)
