@@ -33,3 +33,4 @@ brew cask install 1password
 brew cask install postman
 brew cask install sfdx
 brew cask install vlc
+brew cask install intel-power-gadget
