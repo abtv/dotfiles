@@ -26,7 +26,8 @@ alias em="emacs"
 alias doom="~/.emacs.d/bin/doom"
 alias ta="tmux attach"
 alias gca1="git commit -a -v --amend"
-alias dn="dotnet"
+alias glol="tig"
+alias tst="tig status"
 
 # project aliases
 alias d="cd ~/dotfiles"
