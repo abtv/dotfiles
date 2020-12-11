@@ -25,9 +25,12 @@ alias vi="nvim"
 alias em="emacs"
 alias doom="~/.emacs.d/bin/doom"
 alias ta="tmux attach"
+
+# Git aliases
 alias gca1="git commit -a -v --amend"
+alias gst="tig status"
 alias glol="tig"
-alias tst="tig status"
+alias g="tig"
 
 # project aliases
 alias d="cd ~/dotfiles"
