@@ -21,16 +21,19 @@ ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # common aliases
+alias ta="tmux attach"
 alias vi="nvim"
 alias em="emacs"
 alias doom="~/.emacs.d/bin/doom"
-alias ta="tmux attach"
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
+alias gp="git push origin HEAD"
+
+# Tig aliases
+alias g="tig"
 alias gst="tig status"
 alias glol="tig"
-alias g="tig"
 
 # project aliases
 alias d="cd ~/dotfiles"
