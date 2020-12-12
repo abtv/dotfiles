@@ -32,7 +32,11 @@
 (setq auth-sources
     '((:source "~/.credentials/github.token")))
 
-; key bindings
+; key bindings (faster to type)
+(global-set-key (kbd "C-k") #'switch-to-next-buffer)
+(global-set-key (kbd "C-j") #'switch-to-prev-buffer)
+
+; key bindings (slower to type)
 (map! :leader
       :desc "Run Jest test under cursor." "m t" #'jest-function)
 
