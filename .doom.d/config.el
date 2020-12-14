@@ -1,5 +1,8 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
+; Don't ask for quit confirmation
+(setq confirm-kill-emacs nil)
+
 ; Clock format
 (setq display-time-format "%H:%M")
 ; Show clock
