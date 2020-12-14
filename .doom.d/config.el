@@ -12,7 +12,14 @@
 (with-eval-after-load "adwaita-theme"
   (custom-theme-set-faces
    'adwaita
-   '(default ((t (:background "#CCCCCC"))))))
+   '(default ((t (:background "#cccccc"))))))
+
+; Set Magit colors
+(custom-set-faces
+ '(magit-section-highlight ((t (:foreground "#fafafa" :background "#5f87d7" :inherit nil)))))
+(custom-set-faces
+ '(magit-log-author ((t (:foreground "#00ff00" :background nil :inherit nil)))))
+
 ; Make it fullscreen
 (toggle-frame-maximized)
 
