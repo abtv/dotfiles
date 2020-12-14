@@ -17,11 +17,15 @@
    'adwaita
    '(default ((t (:background "#cccccc"))))))
 
+
 ; Set Magit colors
 (custom-set-faces
  '(magit-section-highlight ((t (:foreground "#fafafa" :background "#5f87d7" :inherit nil)))))
 (custom-set-faces
  '(magit-log-author ((t (:foreground "#00ff00" :background nil :inherit nil)))))
+(custom-set-faces
+ '(magit-header-line ((t (:foreground "#875f00" :background "#cccccc" :inherit nil)))))
+
 
 ; Make it fullscreen
 (toggle-frame-maximized)
