@@ -27,7 +27,7 @@
  '(magit-header-line ((t (:foreground "#875f00" :background "#cccccc" :inherit nil)))))
 
 ; Customize Git & Magit
-(setq doom-modeline-vcs-max-length 24)
+(setq doom-modeline-vcs-max-length 32)
 (require 'magit)
 (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
 
