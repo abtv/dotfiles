@@ -68,12 +68,7 @@
 (projectile-add-known-project "~/work/office")
 (projectile-add-known-project "~/work/scraper")
 
-; Enable multiple major modes
-(require 'mmm-auto)
-(setq mmm-global-mode t)
-(setq mmm-submode-decoration-level 0)                           ; Turn off background highlight
 
 ; Vue mode
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . javascript-mode)) ; Enable JS mode for vue files
-(add-to-list 'auto-mode-alist '("\\.vue\\'" . css-mode))        ; Enable CSS mode for vue files
 (add-hook 'vue-mode-hook #'lsp!)
