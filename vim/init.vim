@@ -33,6 +33,7 @@ call plug#end()
 " Support for Russian keyboard
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 " http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
+"
 " works only for OS X
 let os=substitute(system('uname'), '\n', '', '')
 if os == 'Darwin' || os == 'Mac'
@@ -143,24 +144,30 @@ nmap j gj
 nmap k gk
 
 " General key bindings
-let mapleader = "\<Space>"
 nmap <C-q> :q<CR>
-nmap <C-o> :NERDTreeToggle<CR>
-nmap <C-l> :NERDTreeFind<CR>
-nmap <C-f> :Ag<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
-nmap <Leader>d :bd<CR>
 nmap <C-h> :noh<CR>
-nmap <Leader>f :Ag 
+
+let mapleader = "\<Space>"
+nmap <Leader>fs :w<CR>
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
+
+nmap <Leader>op :NERDTreeToggle<CR>
+" there is a deliberate space after :Ag below:
+nmap <Leader>sp :Ag 
+let g:ctrlp_map = '<Leader><Leader>'
+
+nmap <Leader>bd :bd<CR>
+nmap <Leader>bb :buffers<CR>
+nmap <Leader>, :buffers<CR>
+
 nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
-nmap <Leader>b :buffers<CR>
 
 " NerdCommenter key bindings
 let g:NERDCreateDefaultMappings = 0
