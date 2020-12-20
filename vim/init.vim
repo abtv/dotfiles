@@ -181,6 +181,7 @@ nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
 " Testing key bindings
 nmap <C-y> :TestNearest<CR>
+nmap <Leader>mt :TestNearest<CR>
 " End of key bindings
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
