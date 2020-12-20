@@ -174,7 +174,7 @@ let g:NERDCreateDefaultMappings = 0
 vmap <Leader>c :call NERDComment(0,"toggle")<CR>
 
 " Git keybindings
-nmap <Leader>gb :Gblame<CR>
+nmap <Leader>gB :Gblame<CR>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gm :Gmove 
 nmap <Leader>gp :Gpush<CR>
