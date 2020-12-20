@@ -162,6 +162,7 @@ nmap <Leader>bd :bd<CR>
 nmap <Leader>bb :buffers<CR>
 nmap <Leader>, :buffers<CR>
 
+nmap <Leader>wc :close<CR>
 nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
