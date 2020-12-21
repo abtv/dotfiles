@@ -168,6 +168,8 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 
+nmap <Leader>tl :set invnumber<CR>
+
 " NerdCommenter key bindings
 let g:NERDCreateDefaultMappings = 0
 vmap <Leader>c :call NERDComment(0,"toggle")<CR>
