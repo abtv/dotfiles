@@ -21,7 +21,7 @@
 
 4. Run `install.sh`
 
-5. Run vim and then :PlugInstall
+5. Run vim and then :PlugInstall, then ":CocInstall coc-json coc-tsserver".
 
 6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
