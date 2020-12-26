@@ -66,7 +66,7 @@
 ; Windows
 (map! :leader "w m" #'doom/window-maximize-buffer)
 ; Magit
-(map! :leader "g l" #'magit-log-head-maximized)
+(map! :leader "g l" #'magit-log-all-maximized)
 (map! :leader "g L" #'magit-log-buffer-file-maximized)
 (map! :leader "g f" #'magit-fetch-all)
 (map! :leader "g p" #'magit-push-current)
@@ -93,10 +93,10 @@
 
 
 ; Functions for customizations
-(defun magit-log-head-maximized ()
+(defun magit-log-all-maximized ()
   ""
   (interactive)
-  (magit-log-head)
+  (magit-log-all '("-n100" "--graph" "--decorate"))
   (doom/window-maximize-buffer))
 
 (defun magit-log-buffer-file-maximized ()
