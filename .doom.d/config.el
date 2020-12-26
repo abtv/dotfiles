@@ -51,13 +51,18 @@
 (setq auth-sources
     '((:source "~/.credentials/github.token")))
 
-; key bindings (faster to type)
+; Key bindings (faster to type)
 (global-set-key (kbd "C-k") #'switch-to-next-buffer)
 (global-set-key (kbd "C-j") #'switch-to-prev-buffer)
 
-; key bindings (slower to type)
-(map! :leader
-      :desc "Run Jest test under cursor." "m t" #'jest-function)
+; Key bindings (slower to type)
+; Windows
+(map! :leader "w m" #'doom/window-maximize-buffer)
+; Magit
+(map! :leader "g l" #'magit-log-head)
+(map! :leader "g L" #'magit-log-buffer-file)
+; Jest
+(map! :leader "m t" #'jest-function)
 
 
 ; abtv's settings
