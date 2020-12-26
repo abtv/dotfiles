@@ -61,7 +61,9 @@
 
 ; Key bindings (slower to type)
 ; Config
-(map! :leader :desc "Open config.el" "f p" #'doom/goto-private-config-file)
+(map! :leader :desc "Open init.el" "a i" #'doom/goto-private-init-file)
+(map! :leader :desc "Open config.el" "a c" #'doom/goto-private-config-file)
+(map! :leader :desc "Open package.el" "a p" #'doom/goto-private-packages-file)
 ; Windows
 (map! :leader "w m" #'doom/window-maximize-buffer)
 ; Magit
