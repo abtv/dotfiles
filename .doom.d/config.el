@@ -72,6 +72,8 @@
 (map! :leader "g p" #'magit-push-current)
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
+; Terminal
+(map! :leader "o t" #'+vterm/here)
 ; Toggles
 (map! :leader "t l" #'toggle-line-numbers)
 ; Jest
