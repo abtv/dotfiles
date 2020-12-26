@@ -70,6 +70,8 @@
 (map! :leader "g L" #'magit-log-buffer-file-maximized)
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
+; Toggles
+(map! :leader "t l" #'toggle-line-numbers)
 ; Jest
 (map! :leader "m t" #'jest-function)
 
@@ -106,3 +108,21 @@
   (interactive)
   (magit-kill-this-buffer)
   (delete-window))
+
+(defun toggle-line-numbers ()
+  "As doom/toggle-line-numbers but whithout relative line numbers."
+  (interactive)
+  (defvar doom--line-number-style display-line-numbers-type)
+  (let* ((styles `(t ,(if visual-line-mode 'visual) nil))
+         (order (cons display-line-numbers-type (remq display-line-numbers-type styles)))
+         (queue (memq doom--line-number-style order))
+         (next (if (= (length queue) 1)
+                   (car order)
+                 (car (cdr queue)))))
+    (setq doom--line-number-style next)
+    (setq display-line-numbers next)
+    (message "Switched to %s line numbers"
+             (pcase next
+               (`t "normal")
+               (`nil "disabled")
+               (_ (symbol-name next))))))
