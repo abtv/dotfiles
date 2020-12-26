@@ -54,6 +54,8 @@
 ; Key bindings (faster to type)
 (global-set-key (kbd "C-k") #'switch-to-next-buffer)
 (global-set-key (kbd "C-j") #'switch-to-prev-buffer)
+(map! "C-k" #'switch-to-next-buffer)
+(map! "C-j" #'switch-to-prev-buffer)
 
 ; Key bindings (slower to type)
 ; Config
