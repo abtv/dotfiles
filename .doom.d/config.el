@@ -56,6 +56,8 @@
 (global-set-key (kbd "C-j") #'switch-to-prev-buffer)
 (map! "C-k" #'switch-to-next-buffer)
 (map! "C-j" #'switch-to-prev-buffer)
+(map! :map magit-mode-map :n "C-k" #'switch-to-next-buffer)
+(map! :map magit-mode-map :n "C-j" #'switch-to-prev-buffer)
 
 ; Key bindings (slower to type)
 ; Config
