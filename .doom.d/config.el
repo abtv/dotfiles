@@ -52,12 +52,11 @@
     '((:source "~/.credentials/github.token")))
 
 ; Key bindings (faster to type)
-(global-set-key (kbd "C-k") #'switch-to-next-buffer)
-(global-set-key (kbd "C-j") #'switch-to-prev-buffer)
 (map! "C-k" #'switch-to-next-buffer)
 (map! "C-j" #'switch-to-prev-buffer)
 (map! :map magit-mode-map :n "C-k" #'switch-to-next-buffer)
 (map! :map magit-mode-map :n "C-j" #'switch-to-prev-buffer)
+
 
 ; Key bindings (slower to type)
 ; Config
@@ -67,8 +66,10 @@
 ; Windows
 (map! :leader "w m" #'doom/window-maximize-buffer)
 ; Magit
-(map! :leader "g l" #'magit-log-head)
-(map! :leader "g L" #'magit-log-buffer-file)
+(map! :leader "g l" #'magit-log-head-maximized)
+(map! :leader "g L" #'magit-log-buffer-file-maximized)
+(map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
+(map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
 ; Jest
 (map! :leader "m t" #'jest-function)
 
@@ -85,3 +86,23 @@
 ; Vue mode
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . javascript-mode)) ; Enable JS mode for vue files
 (add-hook 'vue-mode-hook #'lsp!)
+
+
+; Functions for customizations
+(defun magit-log-head-maximized ()
+  ""
+  (interactive)
+  (magit-log-head)
+  (doom/window-maximize-buffer))
+
+(defun magit-log-buffer-file-maximized ()
+  ""
+  (interactive)
+  (magit-log-buffer-file)
+  (doom/window-maximize-buffer))
+
+(defun magit-kill-this-buffer-and-window ()
+  ""
+  (interactive)
+  (magit-kill-this-buffer)
+  (delete-window))
