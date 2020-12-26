@@ -56,6 +56,8 @@
 (global-set-key (kbd "C-j") #'switch-to-prev-buffer)
 
 ; Key bindings (slower to type)
+; Config
+(map! :leader :desc "Open config.el" "f p" #'doom/goto-private-config-file)
 ; Windows
 (map! :leader "w m" #'doom/window-maximize-buffer)
 ; Magit
