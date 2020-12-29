@@ -72,6 +72,7 @@
 (map! :leader "g L" #'magit-log-buffer-file-maximized)
 (map! :leader "g f" #'magit-fetch-all)
 (map! :leader "g p" #'magit-push-current)
+(map! :leader "g m" #'magit-merge)
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
 ; Terminal
