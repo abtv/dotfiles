@@ -68,11 +68,12 @@
 ; Windows
 (map! :leader "w m" #'doom/window-maximize-buffer)
 ; Magit
-(map! :leader "g l" #'magit-log-all-maximized)
-(map! :leader "g L" #'magit-log-buffer-file-maximized)
-(map! :leader "g f" #'magit-fetch-all)
-(map! :leader "g p" #'magit-push-current-to-pushremote)
-(map! :leader "g m" #'magit-merge)
+(map! :leader :desc "Git status" "g s" #'magit-status-here)
+(map! :leader :desc "Git log all" "g h" #'magit-log-all-maximized)
+(map! :leader :desc "Git log current file" "g H" #'magit-log-buffer-file-maximized)
+(map! :leader :desc "Pull from upstream" "g l" #'magit-pull-from-upstream)
+(map! :leader :desc "Push to upstream" "g p" #'magit-push-current-to-upstream)
+(map! :leader :desc "Git merge" "g m" #'magit-merge)
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
 ; Terminal
