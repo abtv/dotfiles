@@ -70,6 +70,7 @@
 ; Magit
 (map! :leader :desc "Git status" "g s" #'magit-status-here)
 (map! :leader :desc "Git log all" "g h" #'magit-log-all-maximized)
+(map! :leader :desc "Git log all" "g h" #'magit-log-current-maximized)
 (map! :leader :desc "Git log current file" "g H" #'magit-log-buffer-file-maximized)
 (map! :leader :desc "Pull from upstream" "g l" #'magit-pull-from-upstream)
 (map! :leader :desc "Push to upstream" "g p" #'magit-push-current-to-upstream)
@@ -100,9 +101,11 @@
 
 ; Functions for customizations
 (defun magit-log-all-maximized ()
+(defun magit-log-current-maximized ()
   ""
   (interactive)
   (magit-log-all '("-n100" "--graph" "--decorate"))
+  (magit-log-current)
   (doom/window-maximize-buffer))
 
 (defun magit-log-buffer-file-maximized ()
