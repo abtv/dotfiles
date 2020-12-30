@@ -75,8 +75,7 @@
 (map! :leader :desc "Git status" "g g" nil) ; use SPC g s instead of the standard keybinding
 (map! :leader :desc "Git status" "g L" nil) ; use SPC g H instead of the standard keybinding
 (map! :leader :desc "Git status" "g s" #'magit-status-here)
-(map! :leader :desc "Git log all" "g h" #'magit-log-all-maximized)
-(map! :leader :desc "Git log all" "g h" #'magit-log-current-maximized)
+(map! :leader :desc "Git log all" "g h" #'magit-log-head-maximized)
 (map! :leader :desc "Git log current file" "g H" #'magit-log-buffer-file-maximized)
 (map! :leader :desc "Pull from pushremote" "g l" #'magit-pull-from-pushremote)
 (map! :leader :desc "Push to pushremote" "g p" #'magit-push-current-to-pushremote)
@@ -106,12 +105,10 @@
 
 
 ; Functions for customizations
-(defun magit-log-all-maximized ()
-(defun magit-log-current-maximized ()
+(defun magit-log-head-maximized ()
   ""
   (interactive)
-  (magit-log-all '("-n100" "--graph" "--decorate"))
-  (magit-log-current)
+  (magit-log-head '("-n100" "--graph" "--decorate"))
   (doom/window-maximize-buffer))
 
 (defun magit-log-buffer-file-maximized ()
