@@ -66,7 +66,7 @@
 (map! :leader :desc "Open config.el" "a c" #'doom/goto-private-config-file)
 (map! :leader :desc "Open package.el" "a p" #'doom/goto-private-packages-file)
 ; Windows
-(map! :leader "w m" #'doom/window-maximize-buffer)
+(map! :leader :desc "Maximize current buffer window" "w m" #'doom/window-maximize-buffer)
 ; Magit
 (map! :leader :desc "Git status" "g s" #'magit-status-here)
 (map! :leader :desc "Git log all" "g h" #'magit-log-all-maximized)
@@ -78,11 +78,11 @@
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
 ; Terminal
-(map! :leader "o t" #'+vterm/here)
+(map! :leader :desc "Open terminal fullscreen" "o t" #'+vterm/here)
 ; Toggles
-(map! :leader "t l" #'toggle-line-numbers)
+(map! :leader :desc "Toggle line numbers" "t l" #'toggle-line-numbers)
 ; Jest
-(map! :leader "m t" #'jest-function)
+(map! :leader :desc "Run Jest test" "m t" #'jest-function)
 
 
 ; abtv's settings
