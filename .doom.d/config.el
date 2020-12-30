@@ -70,6 +70,7 @@
 ; Magit
 (map! :leader :desc "Git status" "g s" #'magit-status-here)
 (map! :leader :desc "Git status" "g g" nil) ; use SPC g s instead of the standard keybinding
+(map! :leader :desc "Git status" "g L" nil) ; use SPC g H instead of the standard keybinding
 (map! :leader :desc "Git log all" "g h" #'magit-log-all-maximized)
 (map! :leader :desc "Git log all" "g h" #'magit-log-current-maximized)
 (map! :leader :desc "Git log current file" "g H" #'magit-log-buffer-file-maximized)
