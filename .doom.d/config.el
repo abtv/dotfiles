@@ -13,6 +13,9 @@
 (load-theme 'adwaita t)
 ; Make the default background not so bright
 (with-eval-after-load "adwaita-theme"
+  ; this needed for Emacs with UI
+  (set-background-color "#d0d0d0")
+  ; this needed for Emacs in terminal
   (custom-theme-set-faces
    'adwaita
    '(default ((t (:background "#cccccc"))))))
@@ -37,7 +40,7 @@
 
 
 ; set font
-(setq doom-font (font-spec :family "JetBrains Mono" :size 16 :weight 'semi-bold))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 15 :weight 'bold))
 ; disable line numbers
 (setq display-line-numbers-type nil)
 
@@ -55,9 +58,10 @@
 (map! "C-k" #'switch-to-next-buffer)
 (map! :map magit-mode-map :n "C-k" #'switch-to-next-buffer)
 (map! :map vterm-mode-map :n "C-k" #'switch-to-next-buffer)
+(map! :map org-mode-map :n "C-k" #'switch-to-next-buffer)
 (map! "C-j" #'switch-to-prev-buffer)
 (map! :map magit-mode-map :n "C-j" #'switch-to-prev-buffer)
-(map! :map vterm-mode-map :n "C-j" #'switch-to-prev-buffer)
+(map! :map org-mode-map :n "C-j" #'switch-to-prev-buffer)
 
 
 ; Key bindings (slower to type)
