@@ -44,7 +44,7 @@ Cmd-4 Postico
 
 Cmd-8 Telegram
 
-Cmd-9 VSCode
+Cmd-9 Emacs
 
 Cmd-0 Workflowy (for task lists, agenda, etc)
 
