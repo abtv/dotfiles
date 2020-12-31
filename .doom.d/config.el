@@ -90,13 +90,10 @@
 (map! :leader :desc "Run Jest test" "m t" #'jest-function)
 
 
-; abtv's settings
-(projectile-add-known-project "~/work/backend")
-(projectile-add-known-project "~/work/portal-spa")
-(projectile-add-known-project "~/work/signup")
-(projectile-add-known-project "~/work/salesforce")
-(projectile-add-known-project "~/work/office")
-(projectile-add-known-project "~/work/scraper")
+; Projectile settings
+(setq projectile-auto-discover nil)
+(setq projectile-project-search-path '("~/sandbox/" "~/work/"))
+(projectile-discover-projects-in-search-path)
 
 
 ; Vue mode
