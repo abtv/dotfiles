@@ -77,9 +77,9 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC k`   kill current buffer
 
-`SPC g s` git status
+`SPC g g` git status
 
-`SPC g b` git branch
+`SPC b`   git branch
 
 `SPC g l` git pull
 
@@ -89,9 +89,9 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC g B` git blame
 
-`SPC g h` git log current branch
+`SPC j`   git log current branch
 
-`SPC g H` git log current file
+`SPC i`   git log current file
 
 
 ## Tmux

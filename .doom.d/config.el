@@ -78,11 +78,11 @@
 ; Search
 (map! :leader :desc "Search in current project" "f" #'+default/search-project)
 ; Magit
-(map! :leader :desc "Git status" "g g" nil) ; use SPC g s instead of the standard keybinding
 (map! :leader :desc "Git status" "g L" nil) ; use SPC g H instead of the standard keybinding
-(map! :leader :desc "Git status" "g s" #'magit-status-here)
-(map! :leader :desc "Git log all" "g h" #'magit-log-head-maximized)
-(map! :leader :desc "Git log current file" "g H" #'magit-log-buffer-file-maximized)
+(map! :leader :desc "Git switch branch" "b" #'magit-branch-checkout)
+(map! :leader :desc "Git status" "g g" #'magit-status-here)
+(map! :leader :desc "Git log all" "j" #'magit-log-head-maximized)
+(map! :leader :desc "Git log current file" "i" #'magit-log-buffer-file-maximized)
 (map! :leader :desc "Pull from pushremote" "g l" #'magit-pull-from-pushremote)
 (map! :leader :desc "Push to pushremote" "g p" #'magit-push-current-to-pushremote)
 (map! :leader :desc "Git merge" "g m" #'magit-merge)
