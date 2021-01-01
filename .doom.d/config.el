@@ -61,6 +61,7 @@
 (map! :map org-mode-map :n "C-k" #'switch-to-next-buffer)
 (map! "C-j" #'switch-to-prev-buffer)
 (map! :map magit-mode-map :n "C-j" #'switch-to-prev-buffer)
+(map! :map vterm-mode-map :n "C-j" #'switch-to-prev-buffer)
 (map! :map org-mode-map :n "C-j" #'switch-to-prev-buffer)
 
 
@@ -78,7 +79,7 @@
 ; Search
 (map! :leader :desc "Search in current project" "f" #'+default/search-project)
 ; Magit
-(map! :leader :desc "Git status" "g L" nil) ; use SPC g H instead of the standard keybinding
+(map! :leader :desc "Git status" "g L" nil) ; use SPC i instead of the standard keybinding
 (map! :leader :desc "Git switch branch" "b" #'magit-branch-checkout)
 (map! :leader :desc "Git status" "g g" #'magit-status-here)
 (map! :leader :desc "Git log all" "j" #'magit-log-head-maximized)
