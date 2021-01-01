@@ -21,7 +21,7 @@
 
 4. Run `install.sh`
 
-5. Run vim and then :PlugInstall, then ":CocInstall coc-json coc-tsserver".
+5. Clone Doom Emacs and run `doom sync`
 
 6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
@@ -51,7 +51,52 @@ Cmd-0 Workflowy (for task lists, agenda, etc)
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
 
+## Emacs mappings
+
+`SPC ,`   switch to workspace buffer
+
+`SPC .`   find file
+
+`SPC :`   run function from a list
+
+`SPC ;`   eval
+
+`SPC SPC` find file in the project
+
+`SPC o`   open another project
+
+`SPC p`   toggle Treemacs
+
+`SPC s`   save current buffer
+
+`SPC f`   search in current project
+
+`SPC l`   toggle line numbers
+
+`SPC t`   start terminal fullscreen
+
+`SPC k`   kill current buffer
+
+`SPC g s` git status
+
+`SPC g b` git branch
+
+`SPC g l` git pull
+
+`SPC g p` git push
+
+`SPC g m` git merge
+
+`SPC g B` git blame
+
+`SPC g h` git log current branch
+
+`SPC g H` git log current file
+
+
 ## Tmux
+
+`ta`    run it in your terminal to attach to a running tmux session
 
 `Cmd-t` create a new window
 
@@ -64,31 +109,15 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `Cmd-f` enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
 
 
-## Terminal aliases
+## Git
 
-### General
-
-`ta`   attach to a running tmux session
-
-`d`    switch to `dotfiles` folder
-
-
-### Editors
-
-`vi`   starts NeoVim
-
-
-### Git
-
-`tig`  git interface
+`g`    git log
 
 `gst`  git status
 
 `gd`   git diff
 
-`gsps` git show --pretty=short --show-signature
-
-`glol` git log with one line
+`gsps` git recent commit
 
 `gl`   git pull
 
@@ -99,63 +128,3 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `gca`  git commit -v -a
 
 `gca1` git commit -v -a --amend
-
-
-## Vim mappings
-
-`SPC q q` quit
-
-`C-o`     toggle NerdTree
-
-`C-p`     search in files
-
-`C-j`     previous buffer
-
-`C-k`     next buffer
-
-`SPC d`   kill buffer
-
-`C-n`     autocomplete
-
-`C-f`     grep in files
-
-`SPC f`   prefills :Ag
-
-`SPC c`   comment/uncomment toggle
-
-`C-y`     run tests
-
-`SPC g b` git blame in current file
-
-`SPC w w` next window
-
-`SPC w m` maximize current window
-
-
-## Useful Vim commands
-
-`:%s/\r/` replace all carriage return symbols in the current file
-
-## VSCode mappings
-
-`Cmd-o`        open recent project
-
-`Cmd-e`        open Explorer view
-
-`Cmd-Enter`    rename file in Explorer view
-
-`Cmd-d`        toggle Side bar
-
-`Cmd-n Cmd-n`  create new file
-
-`Cmd-n Cmd-d`  create new folder
-
-`Cmd-f`        search text in folder
-
-`Cmd-p`        search file by name
-
-`Cmd-p`        >search action by name (you need to type '>' symbol)
-
-`Cmd-y`        run Jest tests
-
-`Cmd-;`        close panel (useful when need to hide Jest output). Usually I use Cmd-2 to open Alacritty.

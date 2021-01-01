@@ -1,4 +1,4 @@
-" I. Init plugins
+"I. Init plugins
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 " common
