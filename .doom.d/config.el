@@ -86,6 +86,8 @@
 (map! :leader :desc "Open terminal fullscreen" "o t" #'+vterm/here)
 ; Toggles
 (map! :leader :desc "Toggle line numbers" "t l" #'toggle-line-numbers)
+(map! :leader :desc "Project sidebar" "o p" nil) ; use C-p instead of the standard keybinding
+(evil-define-key '(normal motion) 'global (kbd "C-p") #'+treemacs/toggle)
 ; Jest
 (map! :leader :desc "Run Jest test" "m t" #'jest-function)
 
