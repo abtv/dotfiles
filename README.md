@@ -79,15 +79,15 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC g g` git status
 
-`SPC b`   git branch
-
 `SPC g l` git pull
 
 `SPC g p` git push
 
 `SPC g m` git merge
 
-`SPC g B` git blame
+`SPC b`   git branch
+
+`SPC B`   git blame
 
 `SPC j`   git log current branch
 
