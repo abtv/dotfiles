@@ -93,6 +93,12 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC k`   git log current file
 
+`SPC a c` open config.el file
+
+`SPC a i` open init.el file
+
+`SPC a p` open package.el file
+
 
 ## Tmux
 

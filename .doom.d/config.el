@@ -80,7 +80,10 @@
 (map! :leader :desc "Search in current project" "f" #'+default/search-project)
 ; Magit
 (map! :leader :desc "Git status" "g L" nil) ; use SPC i instead of the standard keybinding
+(map! :leader :desc "Git switch branch" "g b" nil) ; use SPC b instead of the standard keybinding
+(map! :leader :desc "Git switch branch" "g B" nil) ; use SPC B instead of the standard keybinding
 (map! :leader :desc "Git switch branch" "b" #'magit-branch-checkout)
+(map! :leader :desc "Git blame" "B" #'magit-blame-addition)
 (map! :leader :desc "Git status" "g g" #'magit-status-here)
 (map! :leader :desc "Git log all" "j" #'magit-log-head-maximized)
 (map! :leader :desc "Git log current file" "k" #'magit-log-buffer-file-maximized)
