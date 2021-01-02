@@ -117,6 +117,10 @@
 (add-hook 'vue-mode-hook #'lsp!)
 
 
+; Salesforce mode
+(add-to-list 'auto-mode-alist '("\\.cls\\'" . java-mode)) ; Enable Java mode for cls files
+
+
 ; Functions for customizations
 (defun magit-log-head-maximized ()
   ""
