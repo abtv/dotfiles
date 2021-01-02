@@ -75,7 +75,7 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC t`   start terminal fullscreen
 
-`SPC k`   kill current buffer
+`SPC d`   delete current buffer
 
 `SPC g g` git status
 
@@ -91,7 +91,7 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC j`   git log current branch
 
-`SPC i`   git log current file
+`SPC k`   git log current file
 
 
 ## Tmux
