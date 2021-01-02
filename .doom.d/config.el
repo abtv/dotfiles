@@ -70,6 +70,8 @@
 (map! :leader :desc "Open init.el" "a i" #'doom/goto-private-init-file)
 (map! :leader :desc "Open config.el" "a c" #'doom/goto-private-config-file)
 (map! :leader :desc "Open package.el" "a p" #'doom/goto-private-packages-file)
+; Workspaces
+(map! :leader :desc "Switch to another workspace" "i" #'+workspace/switch-to)
 ; Windows
 (map! :leader :desc "Maximize current buffer window" "w m" #'doom/window-maximize-buffer)
 ; Buffers

@@ -65,6 +65,8 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC o`   open another project
 
+`SPC i`   switch to opened project
+
 `SPC p`   toggle Treemacs
 
 `SPC s`   save current buffer
