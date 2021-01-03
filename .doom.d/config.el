@@ -101,7 +101,7 @@
 ; Terminal
 (map! :leader :desc "Open terminal fullscreen" "t" #'+vterm/here)
 ; Line numbers toggle
-(map! :leader :desc "Toggle line numbers" "l" #'toggle-line-numbers)
+(map! :leader :desc "Toggle line numbers" "l" #'toggle-absolute-line-numbers)
 ; Jest
 (map! :leader :desc "Run Jest test" "y" #'jest-function)
 
@@ -140,11 +140,11 @@
   (magit-kill-this-buffer)
   (delete-window))
 
-(defun toggle-line-numbers ()
-  "As doom/toggle-line-numbers but whithout relative line numbers."
+(defun toggle-absolute-line-numbers ()
+  ""
   (interactive)
   (defvar doom--line-number-style display-line-numbers-type)
-  (let* ((styles `(t ,(if visual-line-mode 'visual) nil))
+  (let* ((styles `(t  nil))
          (order (cons display-line-numbers-type (remq display-line-numbers-type styles)))
          (queue (memq doom--line-number-style order))
          (next (if (= (length queue) 1)
@@ -155,5 +155,4 @@
     (message "Switched to %s line numbers"
              (pcase next
                (`t "normal")
-               (`nil "disabled")
-               (_ (symbol-name next))))))
+               (`nil "disabled")))))
