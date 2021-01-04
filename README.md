@@ -63,9 +63,11 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 
 `SPC SPC` find file in the project
 
-`SPC o`   open another project
+`SPC o`   open another workspace
 
-`SPC i`   switch to opened project
+`SPC i`   switch to opened workspace
+
+`SPC e e` delete (close) current workspace
 
 `SPC p`   toggle Treemacs
 

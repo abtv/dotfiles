@@ -73,6 +73,8 @@
 
 ; Workspaces
 (map! :leader :desc "Switch to another workspace" "i" #'+workspace/switch-to)
+(map! :leader :desc "Delete current workspace" "e e" #'+workspace/delete)
+
 
 ; Windows
 (map! :leader :desc "Maximize current buffer window" "w m" #'doom/window-maximize-buffer)
