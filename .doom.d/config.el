@@ -130,7 +130,8 @@
 
 
 ; Salesforce mode
-(add-to-list 'auto-mode-alist '("\\.cls\\'" . java-mode)) ; Enable Java mode for cls files
+(add-to-list 'auto-mode-alist '("\\.cls\\'" . java-mode))     ; Enable Java mode for cls files
+(add-to-list 'auto-mode-alist '("\\.trigger\\'" . java-mode)) ; Enable Java mode for trigger files
 
 
 ; Functions for customizations
