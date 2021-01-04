@@ -70,16 +70,21 @@
 (map! :leader :desc "Open init.el" "a i" #'doom/goto-private-init-file)
 (map! :leader :desc "Open config.el" "a c" #'doom/goto-private-config-file)
 (map! :leader :desc "Open package.el" "a p" #'doom/goto-private-packages-file)
+
 ; Workspaces
 (map! :leader :desc "Switch to another workspace" "i" #'+workspace/switch-to)
+
 ; Windows
 (map! :leader :desc "Maximize current buffer window" "w m" #'doom/window-maximize-buffer)
+
 ; Buffers
 (map! :leader :desc "" "b d" nil) ; use SPC k instead
 (map! :leader :desc "Save current buffer if modified" "s" #'save-buffer)
 (map! :leader :desc "Kill current buffer if modified" "d" #'kill-current-buffer)
+
 ; Search
 (map! :leader :desc "Search in current project" "f" #'+default/search-project)
+
 ; Magit
 (map! :leader :desc "Git status" "g L" nil) ; use SPC i instead of the standard keybinding
 (map! :leader :desc "Git switch branch" "g b" nil) ; use SPC b instead of the standard keybinding
@@ -94,14 +99,19 @@
 (map! :leader :desc "Git merge" "g m" #'magit-merge)
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
+
 ; Projectile
 (map! :leader :desc "Switch project" "o" #'counsel-projectile-switch-project)
+
 ; Treeemacs
 (map! :leader :desc "Project sidebar" "p" #'+treemacs/toggle)
+
 ; Terminal
 (map! :leader :desc "Open terminal fullscreen" "t" #'+vterm/here)
+
 ; Line numbers toggle
 (map! :leader :desc "Toggle line numbers" "l" #'toggle-absolute-line-numbers)
+
 ; Jest
 (map! :leader :desc "Run Jest test" "y" #'jest-function)
 
