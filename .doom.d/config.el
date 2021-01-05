@@ -100,6 +100,7 @@
 
 ; Search
 (map! :leader :desc "Search in current project" "f" #'+default/search-project)
+(map! :leader :desc "Show recent files" "r" #'counsel-recentf)
 
 ; Magit
 (map! :leader :desc "Git status" "g L" nil) ; use SPC i instead of the standard keybinding
