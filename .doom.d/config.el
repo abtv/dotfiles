@@ -29,6 +29,20 @@
 (custom-set-faces
  '(magit-header-line ((t (:foreground "#875f00" :background "#cccccc" :inherit nil)))))
 
+
+; Set vterm colors
+(custom-set-faces
+ '(vterm-color-cyan ((t (:foreground "#0997b3" :background "#cccccc" :inherit nil)))))
+(custom-set-faces
+ '(vterm-color-yellow ((t (:foreground "#c18401" :background "#cccccc" :inherit nil)))))
+(custom-set-faces
+ '(vterm-color-green ((t (:foreground "#50a14f" :background "#cccccc" :inherit nil)))))
+(custom-set-faces
+ '(vterm-color-blue ((t (:foreground "#0184bc" :background "#cccccc" :inherit nil)))))
+(custom-set-faces
+ '(vterm-color-magenta ((t (:foreground "#a626a4" :background "#cccccc" :inherit nil)))))
+
+
 ; Customize Git & Magit
 (setq doom-modeline-vcs-max-length 32)
 (require 'magit)
