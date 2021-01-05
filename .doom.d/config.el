@@ -116,6 +116,7 @@
 (map! :leader :desc "Git merge" "g m" #'magit-merge)
 (map! :map magit-mode-map :nv "q" #'magit-kill-this-buffer)
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
+(setq magit-post-display-buffer-hook #'magit-on-display-buffer)
 
 ; Projectile
 (map! :leader :desc "Switch project" "o" #'counsel-projectile-switch-project)
@@ -150,6 +151,12 @@
 
 
 ; Functions for customizations
+
+(defun magit-on-display-buffer ()
+  ""
+  (delete-other-windows)
+  (doom/window-maximize-buffer))
+
 (defun magit-log-head-maximized ()
   ""
   (interactive)
