@@ -44,9 +44,9 @@
 
 
 ; Customize Git & Magit
+(require 'magit)
 (setq doom-modeline-vcs-max-length 32)
 (setq git-commit-summary-max-length 64)
-(require 'magit)
 (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
 
 
