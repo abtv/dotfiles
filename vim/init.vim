@@ -155,7 +155,7 @@ nmap <Leader>q1 :q!<CR>
 
 nmap <Leader>p :NERDTreeToggle<CR>
 " there is a deliberate space after :Ag below:
-nmap <Leader>f :Ag
+nmap <Leader>f :Ag 
 let g:ctrlp_map = '<Leader><Leader>'
 
 nmap <Leader>d :bd<CR>
