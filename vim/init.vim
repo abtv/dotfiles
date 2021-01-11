@@ -148,17 +148,17 @@ nmap <C-k> :bnext<CR>
 nmap <C-h> :noh<CR>
 
 let mapleader = "\<Space>"
-nmap <Leader>fs :w<CR>
+nmap <Leader>s :w<CR>
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
 
-nmap <Leader>op :NERDTreeToggle<CR>
+nmap <Leader>p :NERDTreeToggle<CR>
 " there is a deliberate space after :Ag below:
-nmap <Leader>sp :Ag 
+nmap <Leader>f :Ag
 let g:ctrlp_map = '<Leader><Leader>'
 
-nmap <Leader>bd :bd<CR>
+nmap <Leader>d :bd<CR>
 nmap <Leader>bb :buffers<CR>
 nmap <Leader>, :buffers<CR>
 
@@ -168,7 +168,7 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 
-nmap <Leader>tl :set invnumber<CR>
+nmap <Leader>l :set invnumber<CR>
 
 " NerdCommenter key bindings
 let g:NERDCreateDefaultMappings = 0
@@ -181,8 +181,7 @@ nmap <Leader>gm :Gmove
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gl :Gpull<CR>
 " Testing key bindings
-nmap <C-y> :TestNearest<CR>
-nmap <Leader>mt :TestNearest<CR>
+nmap <Leader>y :TestNearest<CR>
 " End of key bindings
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
