@@ -32,7 +32,6 @@ alias gp="git push origin HEAD"
 
 # Tig aliases
 alias g="tig"
-alias gst="tig status"
 alias glol="tig"
 
 # project aliases
