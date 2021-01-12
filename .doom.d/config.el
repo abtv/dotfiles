@@ -43,24 +43,6 @@
  '(vterm-color-magenta ((t (:foreground "#a626a4" :background "#cccccc" :inherit nil)))))
 
 
-; Set centaur-tabs UI
-(custom-set-faces
- '(centaur-tabs-selected  ((t (:background "#dddddd" :inherit nil)))))
-(custom-set-faces
- '(centaur-tabs-selected-modified ((t (:background "#dddddd" :inherit nil)))))
-(custom-set-faces
- '(centaur-tabs-unselected ((t (:background "#cccccc" :inherit nil)))))
-(custom-set-faces
- '(centaur-tabs-unselected-modified ((t (:background "#cccccc" :inherit nil)))))
-(custom-set-faces
- '(centaur-tabs-active-bar-face ((t (:foreground "#cccccc" :background "#cccccc" :inherit nil)))))
-(setq centaur-tabs-set-bar 'under)
-(setq centaur-tabs-set-icons nil)
-(setq centaur-tabs-set-close-button nil)
-(setq centaur-tabs-adjust-buffer-order 'right)
-(add-hook 'centaur-tabs-init-hook #'centaur-tabs-change-fonts-after-init)
-
-
 ; Customize Git & Magit
 (require 'magit)
 (setq doom-modeline-vcs-max-length 32)
@@ -89,13 +71,13 @@
 
 ; Key bindings (faster to type)
 (map! "C-k" #'switch-to-next-buffer)
-(map! :map magit-mode-map :n "C-k" #'centaur-tabs-forward)
-(map! :map vterm-mode-map :n "C-k" #'centaur-tabs-forward)
-(map! :map org-mode-map :n "C-k" #'centaur-tabs-forward)
+(map! :map magit-mode-map :n "C-k" #'switch-to-next-buffer)
+(map! :map vterm-mode-map :n "C-k" #'switch-to-next-buffer)
+(map! :map org-mode-map :n "C-k" #'switch-to-next-buffer)
 (map! "C-j" #'switch-to-prev-buffer)
-(map! :map magit-mode-map :n "C-j" #'centaur-tabs-backward)
-(map! :map vterm-mode-map :n "C-j" #'centaur-tabs-backward)
-(map! :map org-mode-map :n "C-j" #'centaur-tabs-backward)
+(map! :map magit-mode-map :n "C-j" #'switch-to-prev-buffer)
+(map! :map vterm-mode-map :n "C-j" #'switch-to-prev-buffer)
+(map! :map org-mode-map :n "C-j" #'switch-to-prev-buffer)
 
 
 ; Key bindings (slower to type)
@@ -170,9 +152,6 @@
 
 
 ; Functions for customizations
-(defun centaur-tabs-change-fonts-after-init ()
-  ""
-  (centaur-tabs-change-fonts "JetBrains Mono" 150))
 
 (defun magit-on-display-buffer ()
   ""
