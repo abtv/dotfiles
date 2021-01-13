@@ -1,16 +1,12 @@
 # defaults
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
-export JAVA_HOME=/usr/local/opt/openjdk@12
 
 # programs
 export PATH=/usr/local/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/bin:$PATH
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
-export PATH="$PATH:/Users/andrew/.dotnet/tools"
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
 # init oh my zsh aliases first and then being able to override them
 export ZSH=/Users/andrew/.oh-my-zsh
