@@ -20,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 alias ta="tmux attach"
 alias vi="nvim"
 alias em="emacs"
+alias h="htop"
 alias doom="~/.emacs.d/bin/doom"
 
 # Git aliases
@@ -32,6 +33,7 @@ alias glol="tig"
 
 # project aliases
 alias d="cd ~/dotfiles"
+alias a="cd ~/work/api"
 alias b="cd ~/work/backend"
 alias p="cd ~/work/portal-spa"
 alias si="cd ~/work/signup"
