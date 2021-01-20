@@ -15,6 +15,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'cormacrelf/vim-colors-github'
 " testing
 Plug 'janko-m/vim-test'
 " GraphQL
@@ -70,9 +71,13 @@ set expandtab
 filetype plugin on
 " enable 256 colors
 set t_Co=256
-colorscheme desert
-hi Pmenu ctermbg=gray guibg=gray
-hi MatchParen ctermbg=black ctermfg=blue
+colorscheme github
+let g:airline_theme = "github"
+let g:lightline = { 'colorscheme': 'github' }
+let g:github_colors_soft = 1
+set background=light
+hi Normal ctermfg=black ctermbg=252
+hi Pmenu ctermbg=252 ctermfg=black
 " save automatically when text is changed
 set updatetime=200
 autocmd CursorHold * silent! update
