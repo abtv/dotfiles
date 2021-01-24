@@ -44,9 +44,9 @@ Cmd-4 Postico
 
 Cmd-8 Telegram
 
-Cmd-9 Emacs
+Cmd-9 WebStorm
 
-Cmd-0 Workflowy (for task lists, agenda, etc)
+Cmd-0 MicroSoft ToDo (task list)
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
