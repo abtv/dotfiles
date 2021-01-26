@@ -21,6 +21,7 @@ alias ta="tmux attach"
 alias vi="nvim"
 alias em="emacs"
 alias h="htop"
+alias m="minikube"
 alias doom="~/.emacs.d/bin/doom"
 
 # Git aliases
