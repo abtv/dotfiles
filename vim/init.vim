@@ -18,6 +18,7 @@ Plug 'cormacrelf/vim-colors-github'
 " Git integration
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'tpope/vim-rhubarb'
 " testing
 Plug 'janko-m/vim-test'
 " GraphQL
