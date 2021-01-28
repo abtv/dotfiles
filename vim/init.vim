@@ -9,13 +9,15 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'cormacrelf/vim-colors-github'
+" Git integration
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 " testing
 Plug 'janko-m/vim-test'
 " GraphQL
