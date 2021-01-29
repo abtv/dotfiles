@@ -29,7 +29,8 @@ alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
 
 # Git aliases
-alias g="vi -c ':GV'"
+#alias g="vi -c ':GV'"
+alias g="tig"
 alias glol="tig"
 
 # project aliases
