@@ -28,8 +28,8 @@ alias doom="~/.emacs.d/bin/doom"
 alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
 
-# Tig aliases
-alias g="tig"
+# Git aliases
+alias g="vi -c ':GV'"
 alias glol="tig"
 
 # project aliases
