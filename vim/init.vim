@@ -81,6 +81,8 @@ let g:github_colors_soft = 1
 set background=light
 hi Normal ctermfg=black ctermbg=252
 hi Pmenu ctermbg=252 ctermfg=black
+hi diffAdded   ctermfg=254 ctermbg=108
+hi diffRemoved ctermfg=254 ctermbg=167
 " save automatically when text is changed
 set updatetime=200
 autocmd CursorHold * silent! update
