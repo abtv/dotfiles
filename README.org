@@ -1,6 +1,6 @@
-# My configs
+* My configs
 
-## Key principles
+** Key principles
 
 - do as much as possible without a mouse
 
@@ -11,7 +11,22 @@
 - development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
 
 
-## Setup
+** Tools
+
+- MS ToDo for task management
+
+- Workflowy to write down notes
+
+- WebStorm for web development
+
+- Doom Emacs to edit org files
+
+- Vim as a Git editor
+
+Usually I write notes down in Workflowy. Later I move interesting things to org files.
+
+
+** Setup
 
 1. Install `brew`
 
@@ -26,7 +41,7 @@
 6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
-## Karabiner
+** Karabiner
 
 Most useful settings are: Caps/Enter as Enter when nothing else is pressed and Caps/Enter as Conrol if pressed something else.
 
@@ -42,6 +57,8 @@ Cmd-3 Slack
 
 Cmd-4 Postico
 
+Cmd-7 Workflowy
+
 Cmd-8 Telegram
 
 Cmd-9 WebStorm
@@ -51,7 +68,43 @@ Cmd-0 MicroSoft ToDo (task list)
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
 
-## Emacs mappings
+** Tmux
+
+`ta`    run it in your terminal to attach to a running tmux session
+
+`Cmd-t` create a new window
+
+`Cmd-w` close current window (or you can use C-d)
+
+`Cmd-[` go to the left window
+
+`Cmd-]` go to the right window
+
+`Cmd-f` enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
+
+
+** Git
+
+`g`    git log
+
+`gst`  git status
+
+`gd`   git diff
+
+`gsps` git recent commit
+
+`gl`   git pull
+
+`gp`   git push
+
+`gm`   git merge
+
+`gca`  git commit -v -a
+
+`gca1` git commit -v -a --amend
+
+
+** Emacs mappings
 
 `SPC ,`   switch to workspace buffer
 
@@ -102,39 +155,3 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `SPC a i` open init.el file
 
 `SPC a p` open package.el file
-
-
-## Tmux
-
-`ta`    run it in your terminal to attach to a running tmux session
-
-`Cmd-t` create a new window
-
-`Cmd-w` close current window (or you can use C-d)
-
-`Cmd-[` go to the left window
-
-`Cmd-]` go to the right window
-
-`Cmd-f` enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
-
-
-## Git
-
-`g`    git log
-
-`gst`  git status
-
-`gd`   git diff
-
-`gsps` git recent commit
-
-`gl`   git pull
-
-`gp`   git push
-
-`gm`   git merge
-
-`gca`  git commit -v -a
-
-`gca1` git commit -v -a --amend
