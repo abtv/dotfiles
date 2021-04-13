@@ -13,7 +13,7 @@
 
 ** Tools
 
-- MS ToDo for task management
+- Focus To-Do for task management (it's also a Pomodoro timer)
 
 - Workflowy to write down notes
 
