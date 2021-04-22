@@ -14,6 +14,7 @@ brew install go
 brew install xmlstarlet
 brew install awscli
 brew install ansible
+brew install flyway
 brew cask install karabiner-elements
 brew cask install alacritty
 brew cask install visual-studio-code
