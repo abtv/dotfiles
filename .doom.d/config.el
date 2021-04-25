@@ -140,6 +140,9 @@
 (setq projectile-project-search-path '("~/sandbox/" "~/work/"))
 (projectile-discover-projects-in-search-path)
 
+; Autocompletion
+(setq company-minimum-prefix-length 2)
+(setq company-idle-delay 0.2)
 
 ; Vue mode
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . javascript-mode)) ; Enable JS mode for vue files
