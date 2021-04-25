@@ -159,3 +159,5 @@ Don't open these apps in fullscreen mode and you will switch between them immedi
 `SPC h v` describe variable
 
 `SPC h f` describe function
+
+`SPC m r` rename symbol under cursor

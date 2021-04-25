@@ -119,6 +119,9 @@
 (map! :map magit-revision-mode-map :nv "q" #'magit-kill-this-buffer-and-window)
 (setq magit-post-display-buffer-hook #'magit-on-display-buffer)
 
+; Refactoring
+(map! :leader :desc "Rename symbol" "m r" #'tide-rename-symbol)
+
 ; Projectile
 (map! :leader :desc "Switch project" "o" #'counsel-projectile-switch-project)
 
