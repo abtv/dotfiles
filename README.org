@@ -41,10 +41,6 @@ Usually I write notes down in Workflowy. Later I move interesting things to org 
 
 ** Karabiner
 
-Most useful settings are: Caps/Enter as Enter when nothing else is pressed and Caps/Enter as Conrol if pressed something else.
-
-I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in all applications.
-
 Keybindings:
 
 Cmd-1 Firefox
@@ -64,6 +60,29 @@ Cmd-9 WebStorm
 Cmd-0 Notion
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
+
+Most useful settings are: Caps/Enter as Enter when nothing else is pressed and Caps/Enter as Conrol if pressed something else.
+
+I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in all applications.
+
+
+** Workflowy
+
+`Cmd-?` toggle keyboard shortcuts toolbar
+
+`Esc` search
+
+`Cmd-.` zoom in
+
+`Cmd-,` zoom out
+
+`Cmd-Shift-Delete` delete current node
+
+`Cmd-Delete` delete current text
+
+`Shift-Enter` add a note
+
+`Cmd-Enter`
 
 
 ** Tmux
