@@ -23,7 +23,3 @@ ln -sf ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 # Vim as a Git editor
 git config --global core.editor /usr/local/bin/nvim
-
-# VSCode
-ln -sf ~/dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf ~/dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
