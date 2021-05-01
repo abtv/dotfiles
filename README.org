@@ -41,23 +41,19 @@ Usually I write notes down in Workflowy. Later I move interesting things to org 
 
 ** Karabiner
 
-Keybindings:
+|---------+-----------|
+| Command | Action    |
+|---------+-----------|
+| Cmd-1   | Firefox   |
+| Cmd-2   | Alacritty |
+| Cmd-3   | Slack     |
+| Cmd-4   | Postico   |
+| Cmd-7   | Workflowy |
+| Cmd-8   | Telegram  |
+| Cmd-9   | WebStorm  |
+| Cmd-0   | Notion    |
+|---------+-----------|
 
-Cmd-1 Firefox
-
-Cmd-2 Alacritty
-
-Cmd-3 Slack
-
-Cmd-4 Postico
-
-Cmd-7 Workflowy
-
-Cmd-8 Telegram
-
-Cmd-9 WebStorm
-
-Cmd-0 Notion
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
@@ -68,113 +64,82 @@ I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in al
 
 ** Workflowy
 
-`Cmd-?` toggle keyboard shortcuts toolbar
-
-`Esc` search
-
-`Cmd-.` zoom in
-
-`Cmd-,` zoom out
-
-`Cmd-Shift-Delete` delete current node
-
-`Cmd-Delete` delete current text
-
-`Shift-Enter` add a note
-
-`Cmd-Enter`
+|------------------+-----------------------------------|
+| Command          | Action                            |
+|------------------+-----------------------------------|
+| Cmd-?            | toggle keyboard shortcuts toolbar |
+| Esc              | search                            |
+| Cmd-.            | zoom in                           |
+| Cmd-,            | zoom out                          |
+| Cmd-Shift-Delete | delete current item               |
+| Cmd-Delete       | delete current text               |
+| Shift-Enter      | add a note                        |
+| Cmd-Enter        | complete current item             |
+|------------------+-----------------------------------|
 
 
 ** Tmux
 
-`ta`    run it in your terminal to attach to a running tmux session
-
-`Cmd-t` create a new window
-
-`Cmd-w` close current window (or you can use C-d)
-
-`Cmd-[` go to the left window
-
-`Cmd-]` go to the right window
-
-`Cmd-f` enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search
+|---------+-------------------------------------------------------------------------------------------------|
+| Command | Action                                                                                          |
+|---------+-------------------------------------------------------------------------------------------------|
+| ta      | run it in your terminal to attach to a running tmux session                                     |
+| Cmd-t   | create a new window                                                                             |
+| Cmd-w   | close current window (or you can use C-d)                                                       |
+| Cmd-[   | go to the left window                                                                           |
+| Cmd-]   | go to the right window                                                                          |
+| Cmd-f   | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
+|---------+-------------------------------------------------------------------------------------------------|
 
 
 ** Git
 
-`g`    git log
-
-`gst`  git status
-
-`gd`   git diff
-
-`gsps` git recent commit
-
-`gl`   git pull
-
-`gp`   git push
-
-`gm`   git merge
-
-`gca`  git commit -v -a
-
-`gca1` git commit -v -a --amend
+|---------+--------------------------|
+| Command | Action                   |
+|---------+--------------------------|
+| g       | git log                  |
+| gst     | git status               |
+| gd      | git diff                 |
+| gsps    | git show recent commit   |
+| gl      | git pull                 |
+| gp      | git push origin HEAD     |
+| gm      | git merge                |
+| gca     | git commit -v -a         |
+| gca1    | git commit -v -a --amend |
+|---------+--------------------------|
 
 
 ** Emacs mappings
 
-`SPC ,`   switch to workspace buffer
-
-`SPC .`   find file
-
-`SPC :`   run function from a list
-
-`SPC ;`   eval
-
-`SPC SPC` find file in the project
-
-`SPC o`   open another workspace
-
-`SPC i`   switch to opened workspace
-
-`SPC e e` delete (close) current workspace
-
-`SPC p`   toggle Treemacs
-
-`SPC s`   save current buffer
-
-`SPC f`   search in current project
-
-`SPC l`   toggle line numbers
-
-`SPC t`   start terminal fullscreen
-
-`SPC d`   delete current buffer
-
-`SPC g g` git status
-
-`SPC g l` git pull
-
-`SPC g p` git push
-
-`SPC g m` git merge
-
-`SPC b`   git branch
-
-`SPC B`   git blame
-
-`SPC j`   git log current branch
-
-`SPC k`   git log current file
-
-`SPC a c` open config.el file
-
-`SPC a i` open init.el file
-
-`SPC a p` open package.el file
-
-`SPC h v` describe variable
-
-`SPC h f` describe function
-
-`SPC m r` rename symbol under cursor
+|---------+----------------------------------|
+| Command | Action                           |
+|---------+----------------------------------|
+| SPC ,   | switch to workspace buffer       |
+| SPC .   | find file                        |
+| SPC :   | run function from a list         |
+| SPC ;   | eval                             |
+| SPC SPC | find file in the current project |
+| SPC o   | open another workspace           |
+| SPC i   | switch to opened workspace       |
+| SPC e e | delete (close) current workspace |
+| SPC p   | toggle Treemacs                  |
+| SPC s   | save current buffer              |
+| SPC f   | search in current project        |
+| SPC l   | toggle line numbers              |
+| SPC t   | start terminal fullscreen        |
+| SPC d   | delete current buffer            |
+| SPC g g | git status                       |
+| SPC g l | git pull                         |
+| SPC g p | git push                         |
+| SPC g m | git merge                        |
+| SPC b   | git branch                       |
+| SPC B   | git blame                        |
+| SPC j   | git log current branch           |
+| SPC k   | git log current file             |
+| SPC a c | open config.el file              |
+| SPC a i | open init.el file                |
+| SPC a p | open package.el file             |
+| SPC h v | describe variable                |
+| SPC h f | describe function                |
+| SPC m r | rename symbol under cursor       |
+|---------+----------------------------------|
