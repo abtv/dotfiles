@@ -13,9 +13,7 @@
 
 ** Tools
 
-- Focus To-Do for task management (it's also a Pomodoro timer)
-
-- Workflowy to write down notes
+- Workflowy for task management and notes
 
 - WebStorm for web development
 
@@ -63,7 +61,7 @@ Cmd-8 Telegram
 
 Cmd-9 WebStorm
 
-Cmd-0 MicroSoft ToDo (task list)
+Cmd-0 Notion
 
 Don't open these apps in fullscreen mode and you will switch between them immediately.
 
