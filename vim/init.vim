@@ -178,7 +178,7 @@ nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 
-nmap <Leader>l :set invnumber<CR>
+nmap <C-l> :set invnumber<CR>
 
 nmap <Leader>j :GV<CR>
 nmap <Leader>k :GV!<CR>
