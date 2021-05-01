@@ -71,6 +71,8 @@ I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in al
 | Esc              | search                            |
 | Cmd-.            | zoom in                           |
 | Cmd-,            | zoom out                          |
+| Cmd-Shift-j      | expand current item               |
+| Cmd-Shift-k      | collapse current item             |
 | Cmd-Shift-Delete | delete current item               |
 | Cmd-Delete       | delete current text               |
 | Shift-Enter      | add a note                        |
