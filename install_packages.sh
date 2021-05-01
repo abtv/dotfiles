@@ -9,7 +9,6 @@ brew install node@12
 brew install flyway
 brew install awscli
 brew install ansible
-brew install flyway
 
 brew cask install karabiner-elements
 brew cask install firefox

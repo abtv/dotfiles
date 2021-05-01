@@ -30,13 +30,15 @@ Usually I write notes down in Workflowy. Later I move interesting things to org 
 
 2. Install `oh-my-zsh`
 
-3. Clone the repo to ~/dotfiles.
+3. Clone the repo to ~/dotfiles
 
-4. Run `install.sh`
+4. Run `install_packages.sh`
 
-5. Clone Doom Emacs and run `doom sync`
+5. Run `install_configs.sh`
 
-6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
+6. Clone Doom Emacs and run `doom sync`
+
+7. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
 ** Karabiner

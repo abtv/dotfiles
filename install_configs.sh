@@ -4,14 +4,17 @@ ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
 # Alacritty
 mkdir -p ~/.config/alacritty
-ln -sf ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -sf ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # ZSH
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
+# Tmux
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+
 # Karabiner
 mkdir -p ~/.config/karabiner
-ln -sf ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 
 # Editor config
 ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
