@@ -13,15 +13,15 @@
 
 ** Tools
 
-- Workflowy for task management and notes
-
-- WebStorm for web development
-
-- Doom Emacs to edit org files
-
-- Vim as a Git editor
-
-Usually I write notes down in Workflowy. Later I move interesting things to org files.
+|--------------+---------------------------|
+| Tool         | Usage                     |
+|--------------+---------------------------|
+| Workflowy    | Task management and notes |
+| WebStorm     | Web development           |
+| Vim (NeoVim) | Git commits editor        |
+| Tig          | Git pager                 |
+| Emacs (Doom) | Org files editor          |
+|--------------+---------------------------|
 
 
 ** Setup
