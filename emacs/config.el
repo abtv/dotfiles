@@ -132,7 +132,7 @@
 (map! :leader :desc "Open terminal fullscreen" "t" #'+vterm/here)
 
 ; Line numbers toggle
-(map! :leader :desc "Toggle line numbers" "l" #'toggle-absolute-line-numbers)
+(map! "C-l" :desc "Toggle line numbers"  #'toggle-absolute-line-numbers)
 
 ; Jest
 (map! :leader :desc "Run Jest test" "y" #'jest-function)
