@@ -7,6 +7,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH="/usr/local/opt/node@12/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 
 # init oh my zsh aliases first and then being able to override them
 export ZSH=/Users/andrew/.oh-my-zsh
