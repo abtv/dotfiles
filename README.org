@@ -113,6 +113,16 @@ I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in al
 |---------+--------------------------|
 
 
+** Vim mappings
+
+|---------+--------------|
+| Command | Action       |
+|---------+--------------|
+| zc      | fold section |
+| zo      | open section |
+|---------+--------------|
+
+
 ** Emacs mappings
 
 |---------+----------------------------------|
