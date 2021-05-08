@@ -23,6 +23,7 @@ alias vi="nvim"
 alias em="emacs"
 alias h="htop"
 alias doom="~/.emacs.d/bin/doom"
+alias ws="webstorm ."
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
