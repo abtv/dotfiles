@@ -50,10 +50,9 @@ key_bindings: # to get a code run "sendkey -a" on a Linux system
   - { key: T,        mods: Command,       chars: "\x02c" }  # new tab
   - { key: RBracket, mods: Command|Shift, chars: "\x02n" }  # select next tab
   - { key: LBracket, mods: Command|Shift, chars: "\x02p" }  # select previous tab
-  - { key: R,        mods: Command,       chars: "\x02[" }  # enter copy mode
+  - { key: F,        mods: Command,       chars: "\x02[" }  # enter copy mode
   # for Emacs and Vim (see their configs for details)
   - { key: Semicolon, mods: Command,       chars: "\x20\x20" } # send SPC-SPC on Cmd-;
   - { key: I,         mods: Command,       chars: "\x20\x69" } # send SPC-I on Cmd-I
   - { key: O,         mods: Command,       chars: "\x20\x6f" } # send SPC-O on Cmd-O
   - { key: P,         mods: Command,       chars: "\x20\x70" } # send SPC-P on Cmd-P
-  - { key: F,         mods: Command,       chars: "\x20\x66" } # send SPC-F on Cmd-F
