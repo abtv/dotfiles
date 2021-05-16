@@ -2,13 +2,17 @@
 
 ** Key principles
 
-- do as much as possible without a mouse
+1. do as much as possible without a mouse
 
-- switch between applications with hotkeys and don't use window animations
+2. most used hotkeys must be pressed as a key with a modifier in one keystroke
 
-- most used hotkeys must be pressed as a key with a modifier
+  2.1. Good: Cmd+j (one keystroke)
 
-- development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
+  2.2. Bad: Space then j (two keystrokes)
+
+3. switch between applications with hotkeys and don't use window animations
+
+4. development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
 
 
 ** Tools
@@ -66,6 +70,8 @@ I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in al
 
 ** Workflowy
 
+I tried to use Emacs Org mode and found that Workflowy is more convenient for me because it works in the same way on all devices.
+
 |------------------+-----------------------------------|
 | Command          | Action                            |
 |------------------+-----------------------------------|
@@ -79,6 +85,20 @@ I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in al
 | Cmd-Delete       | delete current text               |
 | Shift-Enter      | add a note                        |
 | Cmd-Enter        | complete current item             |
+|------------------+-----------------------------------|
+
+
+** WebStorm
+
+|------------------+-----------------------------------|
+| Command          | Action                            |
+|------------------+-----------------------------------|
+| Cmd-o            | open recent project               |
+| Cmd-p            | toggle project tool window        |
+| Cmd-f            | find in files                     |
+| Cmd-;            | search everywhere                 |
+| Cmd-u            | autoformat code                   |
+| Ctrl-l           | toggle line numbers               |
 |------------------+-----------------------------------|
 
 
