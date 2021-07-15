@@ -6,3 +6,5 @@
 	email = andreybutov83@gmail.com
 [github]
 	user = abtv
+[init]
+	defaultBranch = master
