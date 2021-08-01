@@ -2,9 +2,6 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 " common
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'preservim/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -17,12 +14,8 @@ Plug 'prettier/vim-prettier', {
 Plug 'cormacrelf/vim-colors-github'
 " Git integration
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'tpope/vim-rhubarb'
 " testing
 Plug 'janko-m/vim-test'
-" GraphQL
-Plug 'jparise/vim-graphql'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 " Initialize plugin system
