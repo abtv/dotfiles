@@ -21,8 +21,7 @@ ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
 
 # Vim
 mkdir -p ~/.config/nvim
-ln -sf ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
-ln -sf ~/dotfiles/vim/coc-settings.json ~/.config/nvim/coc-settings.json
+ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
 
 # Vim as a Git editor
 git config --global core.editor /usr/local/bin/nvim
