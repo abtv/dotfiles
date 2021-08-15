@@ -27,9 +27,7 @@ call plug#end()
 " II. Keyboard config
 " Support for Russian keyboard
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
-" http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
-"
-" works only for OS X
+" Copy to/from clipboard (works only for OS X) http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
 let os=substitute(system('uname'), '\n', '', '')
 if os == 'Darwin' || os == 'Mac'
   set clipboard^=unnamed
@@ -68,7 +66,6 @@ filetype plugin on
 " enable 256 colors
 set t_Co=256
 colorscheme github
-let g:airline_theme = "github"
 let g:lightline = { 'colorscheme': 'github' }
 let g:github_colors_soft = 1
 set background=light
@@ -93,12 +90,6 @@ let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 let g:NERDTreeWinSize=45
-" Airline config
-let g:airline_extensions = ['tabline']
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme='silver'
-" Nerdcommenteer config
 
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
@@ -114,7 +105,7 @@ let test#javascript#jest#options = {
 \}
 
 " COC extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-omnisharp']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 
@@ -123,13 +114,6 @@ let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 let g:prettier#autoformat_config_present = 1
 
-" apexcode FileType Auto commands{{{
-augroup filetype_apexcode
-  :autocmd!
-  :autocmd FileType apexcode* :setlocal shiftwidth=4 tabstop=4 foldmethod=indent foldlevel=0 foldlevelstart=0
-augroup END
-" End apex FileType Auto commands}}}
-"
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -172,13 +156,6 @@ nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
 
 nmap <C-l> :set invnumber<CR>
-
-nmap <Leader>j :GV<CR>
-nmap <Leader>k :GV!<CR>
-
-" NerdCommenter key bindings
-let g:NERDCreateDefaultMappings = 0
-vmap <Leader>c :call NERDComment(0,"toggle")<CR>
 
 " Git keybindings
 nmap <Leader>gB :Gblame<CR>
