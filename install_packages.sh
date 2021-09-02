@@ -10,7 +10,6 @@ brew install openjdk@8
 brew install flyway
 brew install awscli
 brew install ansible
-brew install crystal
 
 brew cask install karabiner-elements
 brew cask install firefox
@@ -22,12 +21,8 @@ brew cask install telegram
 brew cask install notion
 brew cask install 1password
 brew cask install vlc
+brew cask install dropbox
 
 brew cask install docker
 
-brew cask install skype
-brew cask install microsoft-teams
-brew cask install sfdx
-
-brew cask install turbo-boost-switcher
 brew cask install google-chrome
