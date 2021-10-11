@@ -24,5 +24,7 @@ brew cask install vlc
 brew cask install dropbox
 
 brew cask install docker
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
 brew cask install google-chrome

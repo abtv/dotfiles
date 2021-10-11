@@ -33,8 +33,13 @@
 ; GPG configuration, email clients, file templates and snippets.
 (setq user-full-name "Andrey Butov"
       user-mail-address "")
+
 ; where to put org files
-(setq org-directory "~/org/")
+(setq org-directory "~/Dropbox/org/")
+; start calendar on Monday
+(setq calendar-week-start-day 1)
+(map! :leader :desc "Open org agenda" "m a" #'show-agenda)
+(add-hook 'after-init-hook 'show-agenda)
 
 ; Key bindings (faster to type)
 (map! "C-k" #'switch-to-next-buffer)
@@ -59,6 +64,11 @@
 
 ; Line numbers toggle
 (map! "C-l" :desc "Toggle line numbers"  #'toggle-absolute-line-numbers)
+
+(defun show-agenda ()
+  ""
+  (interactive)
+  (org-agenda-list 3 "+0d"))
 
 (defun toggle-absolute-line-numbers ()
   ""

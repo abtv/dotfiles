@@ -18,6 +18,7 @@ ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # common aliases
+alias t="terraform "
 alias ta="tmux attach"
 alias vi="nvim"
 alias em="emacs"
