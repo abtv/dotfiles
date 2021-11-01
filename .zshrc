@@ -26,6 +26,7 @@ alias h="htop"
 alias doom="~/.emacs.d/bin/doom"
 alias ws="webstorm ."
 alias n="nest "
+alias eng="sort --random-sort ~/sandbox/base/English\ upper-intermediate\ notes.md | grep --color=never - | head -n 40"
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
