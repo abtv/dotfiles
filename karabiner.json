@@ -24,17 +24,15 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "k",
+                                        "key_code": "f",
                                         "modifiers": [
-                                            "right_command"
+                                            "right_command",
+                                            "option"
                                         ]
                                     }
                                 ],
@@ -391,7 +389,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Notion.app/Contents/MacOS/Notion'"
+                                        "shell_command": "open -a '/System/Applications/Notes.app/Contents/MacOS/Notes'"
                                     }
                                 ],
                                 "type": "basic"
