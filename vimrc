@@ -94,6 +94,7 @@ let g:NERDTreeWinSize=45
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
 let g:ctrlp_match_window = 'min:4,max:25'
+let g:ctrlp_match_window_bottom = 0
 
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
