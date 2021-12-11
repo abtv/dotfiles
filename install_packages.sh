@@ -6,7 +6,7 @@ brew install tig
 brew install htop
 brew install tree
 brew install node@12
-brew install openjdk@8
+brew install openjdk
 brew install flyway
 brew install awscli
 brew install ansible
