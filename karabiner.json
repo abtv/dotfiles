@@ -16,31 +16,6 @@
                 },
                 "rules": [
                     {
-                        "description": "Change command + e to command + f for Workflowy",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": [
-                                            "right_command",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Change command + h/j/k/l to Arrows",
                         "manipulators": [
                             {
