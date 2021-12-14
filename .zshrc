@@ -38,12 +38,5 @@ alias glol="tig"
 
 # project aliases
 alias d="cd ~/dotfiles"
-alias a="cd ~/work/api"
-alias b="cd ~/work/backend"
-alias p="cd ~/work/portal-spa"
-alias si="cd ~/work/signup"
-alias sf="cd ~/work/salesforce"
-alias of="cd ~/work/office"
-alias sc="cd ~/work/scraper"
 
 # this is a shared file so DON'T put secrets here
