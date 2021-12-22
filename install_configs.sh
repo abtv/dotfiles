@@ -25,9 +25,3 @@ ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
 
 # Vim as a Git editor
 git config --global core.editor /usr/local/bin/nvim
-
-# Emacs
-mkdir -p ~/.doom.d
-ln -sf ~/dotfiles/emacs/config.el ~/.doom.d/config.el
-ln -sf ~/dotfiles/emacs/init.el ~/.doom.d/init.el
-ln -sf ~/dotfiles/emacs/packages.el ~/.doom.d/packages.el

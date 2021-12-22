@@ -1,6 +1,5 @@
 brew install tmux
 brew install nvim
-brew install emacs
 brew install ag
 brew install tig
 brew install htop

@@ -20,11 +20,11 @@
 |--------------+---------------------------|
 | Tool         | Usage                     |
 |--------------+---------------------------|
-| Workflowy    | Task management and notes |
+| Things       | Task management           |
+| Workflowy    | Notes                     |
 | WebStorm     | Web development           |
 | Vim (NeoVim) | Git commits editor        |
 | Tig          | Git pager                 |
-| Emacs (Doom) | Org files editor          |
 |--------------+---------------------------|
 
 
@@ -40,9 +40,7 @@
 
 5. Run `install_configs.sh`
 
-6. Clone Doom Emacs and run `doom sync`
-
-7. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
+6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
 ** Karabiner
@@ -141,39 +139,3 @@ I tried to use Emacs Org mode and found that Workflowy is more convenient for me
 | zc      | fold section |
 | zo      | open section |
 |---------+--------------|
-
-
-** Emacs mappings
-
-|---------+----------------------------------|
-| Command | Action                           |
-|---------+----------------------------------|
-| SPC ,   | switch to workspace buffer       |
-| SPC .   | find file                        |
-| SPC :   | run function from a list         |
-| SPC ;   | eval                             |
-| SPC SPC | find file in the current project |
-| SPC o   | open another workspace           |
-| SPC i   | switch to opened workspace       |
-| SPC e e | delete (close) current workspace |
-| SPC p   | toggle Treemacs                  |
-| SPC s   | save current buffer              |
-| SPC f   | search in current project        |
-| SPC l   | toggle line numbers              |
-| SPC t   | start terminal fullscreen        |
-| SPC d   | delete current buffer            |
-| SPC g g | git status                       |
-| SPC g l | git pull                         |
-| SPC g p | git push                         |
-| SPC g m | git merge                        |
-| SPC b   | git branch                       |
-| SPC B   | git blame                        |
-| SPC j   | git log current branch           |
-| SPC k   | git log current file             |
-| SPC a c | open config.el file              |
-| SPC a i | open init.el file                |
-| SPC a p | open package.el file             |
-| SPC h v | describe variable                |
-| SPC h f | describe function                |
-| SPC m r | rename symbol under cursor       |
-|---------+----------------------------------|
