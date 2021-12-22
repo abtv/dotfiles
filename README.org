@@ -57,7 +57,7 @@
 | Cmd-7   | Workflowy |
 | Cmd-8   | Telegram  |
 | Cmd-9   | WebStorm  |
-| Cmd-0   | Notion    |
+| Cmd-0   | Things    |
 |---------+-----------|
 
 
