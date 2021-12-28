@@ -12,7 +12,8 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'cormacrelf/vim-colors-github'
-" Git integration
+" Git integration (I need git blame only: everything else I usually do in
+" terminal)
 Plug 'tpope/vim-fugitive'
 " testing
 Plug 'janko-m/vim-test'
@@ -89,7 +90,7 @@ let NERDTreeIgnore = ['node_modules', 'dist']
 let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
-let g:NERDTreeWinSize=45
+let g:NERDTreeWinSize = 45
 
 " CtrlP config
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
@@ -147,8 +148,6 @@ nmap <Leader>f :Ag
 let g:ctrlp_map = '<Leader><Leader>'
 
 nmap <Leader>d :bd<CR>
-nmap <Leader>bb :buffers<CR>
-nmap <Leader>, :buffers<CR>
 
 nmap <Leader>wc :close<CR>
 nmap <Leader>wm :only<CR>
@@ -159,11 +158,7 @@ nmap <Leader>ws :split<CR>
 nmap <C-l> :set invnumber<CR>
 
 " Git keybindings
-nmap <Leader>gB :Gblame<CR>
-nmap <Leader>gg :Gstatus<CR>
-nmap <Leader>gm :Gmove 
-nmap <Leader>gp :Gpush<CR>
-nmap <Leader>gl :Gpull<CR>
+nmap <Leader>b :Git blame<CR>
 " Testing key bindings
 nmap <Leader>y :TestNearest<CR>
 " End of key bindings
