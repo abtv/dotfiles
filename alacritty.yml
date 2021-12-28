@@ -1,6 +1,8 @@
 window:
-  startup_mode: Maximized
   decorations: buttonless
+  dimensions:
+    columns: 120
+    lines: 35
 
 font:
   size: 15.0
