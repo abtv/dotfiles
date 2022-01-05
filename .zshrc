@@ -23,6 +23,7 @@ alias ta="tmux attach"
 alias vi="nvim"
 alias h="htop"
 alias ws="webstorm ."
+alias gtd='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/GTD/;vi tasks.md'
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
