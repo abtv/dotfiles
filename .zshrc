@@ -18,12 +18,10 @@ ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # common aliases
-alias t="terraform "
-alias ta="tmux attach"
 alias vi="nvim"
-alias h="htop"
 alias ws="webstorm ."
-alias gtd='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/GTD/;vi tasks.md'
+alias h="htop"
+alias work="cd ~/work/"
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
