@@ -22,6 +22,7 @@ alias vi="nvim"
 alias ws="webstorm ."
 alias h="htop"
 alias work="cd ~/work/"
+alias box="cd ~/box/"
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
