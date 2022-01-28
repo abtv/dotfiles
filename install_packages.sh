@@ -9,6 +9,7 @@ brew install openjdk
 brew install flyway
 brew install awscli
 brew install ansible
+brew install pdftk-java
 
 brew cask install karabiner-elements
 brew cask install firefox
