@@ -27,10 +27,7 @@ alias box="cd ~/box/"
 # Git aliases
 alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
-
-# Git aliases
 alias g="tig"
-alias glol="tig"
 
 # project aliases
 alias d="cd ~/dotfiles"
