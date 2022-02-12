@@ -60,7 +60,9 @@
 | Cmd-u            | autoformat code                   |
 | Ctrl-l           | toggle line numbers               |
 | Cmd-.            | run test                          |
-| Ctrl-.           | debug test                        |
+| Ctrl-.           | debug/resume test                 |
+| Cmd-i            | toggle breakpoint                 |
+| Cmd-d            | show errors                       |
 |------------------+-----------------------------------|
 
 
