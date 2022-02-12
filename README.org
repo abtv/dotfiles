@@ -105,6 +105,13 @@ I've found it [here](https://intellij-support.jetbrains.com/hc/en-us/community/p
 | gca1    | git commit -v -a --amend |
 |---------+--------------------------|
 
+Dot forget to run:
+
+```bash
+git config --global user.name "your-name"
+git config --global user.email "your-email"
+```
+
 
 ** Vim mappings
 
