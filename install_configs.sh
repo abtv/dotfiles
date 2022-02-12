@@ -1,7 +1,3 @@
-# Karabiner
-mkdir -p ~/.config/karabiner
-ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
-
 # Alacritty
 mkdir -p ~/.config/alacritty
 ln -sf ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -24,4 +20,4 @@ mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
 
 # Vim as a Git editor
-git config --global core.editor /usr/local/bin/nvim
+git config --global core.editor nvim

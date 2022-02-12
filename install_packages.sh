@@ -8,7 +8,6 @@ brew install node@16
 brew install awscli
 brew install ansible
 
-brew install --cask karabiner-elements
 brew install --cask alacritty
 brew install --cask postico
 brew install --cask docker
