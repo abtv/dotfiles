@@ -20,11 +20,11 @@
 |--------------+---------------------------|
 | Tool         | Usage                     |
 |--------------+---------------------------|
-| Things       | Task management           |
-| Workflowy    | Notes                     |
 | WebStorm     | Web development           |
 | Vim (NeoVim) | Git commits editor        |
 | Tig          | Git pager                 |
+| Things       | Task management           |
+| Workflowy    | Notes                     |
 |--------------+---------------------------|
 
 
@@ -43,27 +43,11 @@
 6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
-** Karabiner
+** MacOS settings
 
-|---------+-----------|
-| Command | Action    |
-|---------+-----------|
-| Cmd-1   | Firefox   |
-| Cmd-2   | Alacritty |
-| Cmd-3   | Slack     |
-| Cmd-4   | Postico   |
-| Cmd-7   | Workflowy |
-| Cmd-8   | Telegram  |
-| Cmd-9   | WebStorm  |
-| Cmd-0   | Things    |
-|---------+-----------|
+1. Don't open apps in fullscreen mode and to switch between them immediately without animations.
 
-
-Don't open these apps in fullscreen mode and you will switch between them immediately.
-
-Most useful settings are: Caps/Enter as Enter when nothing else is pressed and Caps/Enter as Conrol if pressed something else.
-
-I also mapped Cmd+hjkl to vim-like cursor movements in Mac OS. It's useful in all applications.
+2. Map CapsLock to Control.
 
 
 ** Workflowy
@@ -97,6 +81,8 @@ I tried to use Emacs Org mode and found that Workflowy is more convenient for me
 | Cmd-;            | search everywhere                 |
 | Cmd-u            | autoformat code                   |
 | Ctrl-l           | toggle line numbers               |
+| Cmd-.            | run test                          |
+| Ctrl-.           | debug test                        |
 |------------------+-----------------------------------|
 
 
