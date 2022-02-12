@@ -23,8 +23,6 @@
 | WebStorm     | Web development           |
 | Vim (NeoVim) | Git commits editor        |
 | Tig          | Git pager                 |
-| Things       | Task management           |
-| Workflowy    | Notes                     |
 |--------------+---------------------------|
 
 
@@ -48,26 +46,6 @@
 1. Don't open apps in fullscreen mode and to switch between them immediately without animations.
 
 2. Map CapsLock to Control.
-
-
-** Workflowy
-
-I tried to use Emacs Org mode and found that Workflowy is more convenient for me because it works in the same way on all devices.
-
-|------------------+-----------------------------------|
-| Command          | Action                            |
-|------------------+-----------------------------------|
-| Cmd-?            | toggle keyboard shortcuts toolbar |
-| Esc              | search                            |
-| Cmd-.            | zoom in                           |
-| Cmd-,            | zoom out                          |
-| Cmd-Shift-j      | expand current item               |
-| Cmd-Shift-k      | collapse current item             |
-| Cmd-Shift-Delete | delete current item               |
-| Cmd-Delete       | delete current text               |
-| Shift-Enter      | add a note                        |
-| Cmd-Enter        | complete current item             |
-|------------------+-----------------------------------|
 
 
 ** WebStorm
