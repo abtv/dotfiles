@@ -74,7 +74,7 @@
 | Cmd-w   | close current window (or you can use C-d)                                                       |
 | Cmd-[   | go to the left window                                                                           |
 | Cmd-]   | go to the right window                                                                          |
-| Cmd-r   | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
+| Cmd-f   | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
 |---------+-------------------------------------------------------------------------------------------------|
 
 
