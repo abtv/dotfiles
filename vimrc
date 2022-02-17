@@ -110,6 +110,9 @@ let test#javascript#jest#options = {
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-rename)
+nmap <silent> gm <Plug>(coc-references)
+nmap <silent> gu <Plug>(coc-format)
 
 " Prettier config
 let g:prettier#autoformat = 1
@@ -137,7 +140,7 @@ nmap <C-k> :bnext<CR>
 nmap <C-h> :noh<CR>
 
 let mapleader = "\<Space>"
-nmap <Leader>s :w<CR>
+nmap <Leader>s :wa<CR>
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>

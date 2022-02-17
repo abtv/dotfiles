@@ -31,7 +31,4 @@ alias g="tig"
 # project aliases
 alias d="cd ~/dotfiles"
 
-# use vi mode in terminal instead of emacs
-set -o vi
-
 # this is a shared file so DON'T put secrets here
