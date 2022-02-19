@@ -124,6 +124,7 @@ let g:prettier#autoformat_config_present = 1
 let g:floaterm_title = ''
 let g:floaterm_width = 0.9
 let g:floaterm_height = 0.9
+let g:floaterm_opener = 'edit'
 
 " End of plugin configs
 
@@ -131,10 +132,10 @@ let g:floaterm_height = 0.9
 
 " V. Key bindings
 " Faster line movements
-nnoremap J 7j
-nnoremap K 7k
-vnoremap J 7j
-vnoremap K 7k
+nnoremap J 10j
+nnoremap K 10k
+vnoremap J 10j
+vnoremap K 10k
 " Turn off linewise keys (normally, the `j' and `k' keys move the cursor down one entire line; useful with line wrapping)
 nmap j gj
 nmap k gk
