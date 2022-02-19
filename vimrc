@@ -170,6 +170,12 @@ nmap <C-l> :set invnumber<CR>
 nmap <Leader>b :Git blame<CR>
 " Testing key bindings
 nmap <Leader>y :TestNearest<CR>
+
+" Notes
+nmap <Leader>nt :edit ~/notes/todo.md<CR>
+nmap <Leader>ni :edit ~/notes/index.md<CR>
+nmap <Leader>nn :edit ~/notes/note.md<CR>
+
 " End of key bindings
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
