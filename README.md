@@ -20,8 +20,9 @@
 |--------------+---------------------------|
 | Tool         | Usage                     |
 |--------------+---------------------------|
-| WebStorm     | Web development           |
-| Vim (NeoVim) | Git commits editor        |
+| Alacritty    | Terminal emulator         |
+| Tmux         | Terminal multiplexer      |
+| NeoVim       | Code and text editor      |
 | Tig          | Git pager                 |
 |--------------+---------------------------|
 
@@ -48,39 +49,11 @@
 2. Map CapsLock to Control.
 
 
-** WebStorm
-
-|------------------+-----------------------------------|
-| Command          | Action                            |
-|------------------+-----------------------------------|
-| Cmd-2            | open built-in terminal            |
-| Cmd-o            | open recent project               |
-| Cmd-p            | toggle project tool window        |
-| Cmd-f            | find in files                     |
-| Cmd-;            | search everywhere                 |
-| Cmd-u            | autoformat code                   |
-| Ctrl-l           | toggle line numbers               |
-| Cmd-.            | run test                          |
-| Ctrl-.           | debug/resume test                 |
-| Cmd-i            | toggle breakpoint                 |
-| Cmd-d            | show errors                       |
-|------------------+-----------------------------------|
-
-You need to remap Cmd+hjkl to Left,Down,Up,Right in WebStorm.
-One caveat: Cmd+h is MacOS keybinding, so need to do the following:
-
-System Preferences > Keyboard > Shortcuts > App Shortcuts, hit the + button, select WebStorm, and set the Menu Title to (exactly) "Hide WebStorm".
-Then, click the Keyboard Shortcut box and create a shortcut that definitely won't interfere with your workflow. I chose `cmd+shift+ctrl+0`.
-
-I've found it [here](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000749630-macOS-Remap-cmd-h)
-
-
 ** Tmux
 
 |---------+-------------------------------------------------------------------------------------------------|
 | Command | Action                                                                                          |
 |---------+-------------------------------------------------------------------------------------------------|
-| ta      | run it in your terminal to attach to a running tmux session                                     |
 | Cmd-t   | create a new window                                                                             |
 | Cmd-w   | close current window (or you can use C-d)                                                       |
 | Cmd-[   | go to the left window                                                                           |
@@ -115,9 +88,16 @@ git config --global user.email "your-email"
 
 ** Vim mappings
 
-|---------+--------------|
-| Command | Action       |
-|---------+--------------|
-| zc      | fold section |
-| zo      | open section |
-|---------+--------------|
+|---------+------------------------|
+| Command | Action                 |
+|---------+------------------------|
+| SPC z   | send Vim to background |
+| SPC s   | save all buffers       |
+|---------+------------------------|
+| SPC n i | open notes/inbox.md    |
+| SPC n t | open notes/todo.md     |
+| SPC n n | open notes/note.md     |
+|---------+------------------------|
+| zc      | fold section           |
+| zo      | open section           |
+|---------+------------------------|

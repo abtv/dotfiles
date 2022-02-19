@@ -157,6 +157,7 @@ nmap <Leader>f :Ag
 let g:ctrlp_map = '<Leader><Leader>'
 
 nmap <Leader>d :bd<CR>
+nmap <Leader>z :sus<CR>
 
 nmap <Leader>wc :close<CR>
 nmap <Leader>wm :only<CR>
