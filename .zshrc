@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias vi="nvim"
+alias e="exit"
 alias ws="webstorm ."
 alias h="htop"
 alias work="cd ~/work/"
