@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
+Plug 'voldikss/vim-floaterm'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
@@ -118,6 +119,11 @@ nmap <silent> gu <Plug>(coc-format)
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 let g:prettier#autoformat_config_present = 1
+
+" Floaterm config
+let g:floaterm_title = ''
+let g:floaterm_width = 0.9
+let g:floaterm_height = 0.9
 
 " End of plugin configs
 
