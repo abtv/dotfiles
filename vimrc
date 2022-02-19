@@ -110,11 +110,6 @@ let test#javascript#jest#options = {
 
 " COC extensions
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-rename)
-nmap <silent> gm <Plug>(coc-references)
-nmap <silent> gu <Plug>(coc-format)
 
 " Prettier config
 let g:prettier#autoformat = 1
@@ -172,6 +167,13 @@ nmap <C-l> :set invnumber<CR>
 nmap <Leader>b :Git blame<CR>
 " Testing key bindings
 nmap <Leader>y :TestNearest<CR>
+
+" CoC
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <Leader>rr <Plug>(coc-rename)
+nmap <Leader>rm <Plug>(coc-references)
+nmap <Leader>ru <Plug>(coc-format)
 
 " Notes
 nmap <Leader>nt :edit ~/notes/todo.wiki<CR>
