@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
+Plug 'vimwiki/vimwiki'
 Plug 'voldikss/vim-floaterm'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
@@ -58,7 +59,7 @@ set splitright
 set splitbelow
 " status line should have file path, row numbers, column number, total rows, file type
 set statusline=[%f][%3lR/%3vC][%LR]%y
-syntax enable
+syntax on
 filetype on
 filetype indent on
 set tabstop=2
@@ -173,9 +174,9 @@ nmap <Leader>b :Git blame<CR>
 nmap <Leader>y :TestNearest<CR>
 
 " Notes
-nmap <Leader>nt :edit ~/notes/todo.md<CR>
-nmap <Leader>ni :edit ~/notes/index.md<CR>
-nmap <Leader>nn :edit ~/notes/note.md<CR>
+nmap <Leader>nt :edit ~/notes/todo.wiki<CR>
+nmap <Leader>ni :edit ~/notes/index.wiki<CR>
+nmap <Leader>nn :edit ~/notes/note.wiki<CR>
 
 " End of key bindings
 
