@@ -124,7 +124,6 @@ let g:prettier#autoformat_config_present = 1
 let g:floaterm_title = ''
 let g:floaterm_width = 0.9
 let g:floaterm_height = 0.9
-let g:floaterm_opener = 'edit'
 
 " End of plugin configs
 
