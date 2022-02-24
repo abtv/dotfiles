@@ -13,7 +13,6 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'jnurmine/Zenburn'
-Plug 'arcticicestudio/nord-vim'
 " Git integration (I need git blame only: everything else I usually do in
 " terminal)
 Plug 'tpope/vim-fugitive'
@@ -68,7 +67,7 @@ set expandtab
 filetype plugin on
 " enable 256 colors
 set t_Co=256
-colorscheme nord "zenburn/nord
+colorscheme zenburn
 
 " save automatically when text is changed
 set updatetime=200
