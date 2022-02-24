@@ -88,16 +88,19 @@ git config --global user.email "your-email"
 
 ** Vim mappings
 
-|---------+------------------------|
-| Command | Action                 |
-|---------+------------------------|
-| SPC z   | send Vim to background |
-| SPC s   | save all buffers       |
-|---------+------------------------|
-| SPC n i | open notes/inbox.md    |
-| SPC n t | open notes/todo.md     |
-| SPC n n | open notes/note.md     |
-|---------+------------------------|
-| zc      | fold section           |
-| zo      | open section           |
-|---------+------------------------|
+| --------------------------------- | ---------------------- |
+| Command                           | Action                 |
+| --------------------------------- | ---------------------- |
+| CMD f                             | grep in files          |
+| CMD ;                             | search in file names   |
+| --------------------------------- | ---------------------- |
+| SPC z                             | send Vim to background |
+| SPC s                             | save all buffers       |
+| --------------------------------- | ---------------------- |
+| zc                                | fold section           |
+| zo                                | open section           |
+| --------------------------------- | ---------------------- |
+| SPC n i                           | open notes/inbox.md    |
+| SPC n t                           | open notes/todo.md     |
+| SPC n n                           | open notes/note.md     |
+| --------------------------------- | ---------------------- |
