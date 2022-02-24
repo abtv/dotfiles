@@ -59,7 +59,7 @@ key_bindings: # to get a code run "showkey -a" on a Linux system and get hex cod
   - { key: T,        mods: Command,        chars: "\x02c" }  # new tab
   - { key: RBracket, mods: Command,        chars: "\x02n" }  # select next tab
   - { key: LBracket, mods: Command,        chars: "\x02p" }  # select previous tab
-  - { key: F,        mods: Command,        chars: "\x02[" }  # enter copy mode
+  - { key: D,        mods: Command,        chars: "\x02[" }  # enter copy mode
   # key movements
   - { key: H,        mods: Command,        chars: "\x1b\x5b\x44" }  # move cursor left
   - { key: J,        mods: Command,        chars: "\x1b\x5b\x42" }  # move cursor down
@@ -70,6 +70,7 @@ key_bindings: # to get a code run "showkey -a" on a Linux system and get hex cod
   - { key: I,         mods: Command,       chars: "\x20\x69" } # send SPC-I
   - { key: O,         mods: Command,       chars: "\x20\x6f" } # send SPC-O
   - { key: P,         mods: Command,       chars: "\x20\x70" } # send SPC-P
+  - { key: F,        mods: Command,        chars: "\x20\x66" }  # enter copy mode
   - { key: R,         mods: Command,       chars: "\x20\x72\x72" } # send SPCrr (mapped to coc-rename in vimrc)
   - { key: M,         mods: Command,       chars: "\x20\x72\x6d" } # send SPCrm (mapped to coc-references in vimrc)
   - { key: U,         mods: Command,       chars: "\x20\x72\x75" } # send SPCru (mapped to coc-format in vimrc)

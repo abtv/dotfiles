@@ -4,8 +4,8 @@ call plug#begin('~/.vim/plugged')
 " common
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'rking/ag.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
@@ -93,11 +93,6 @@ let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 let g:NERDTreeWinSize = 45
 
-" CtrlP config
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', '[ $PWD = $HOME ] && echo "Too many files" || find %s -type f']
-let g:ctrlp_match_window = 'min:4,max:25'
-let g:ctrlp_match_window_bottom = 0
-
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
 
@@ -115,10 +110,17 @@ let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 let g:prettier#autoformat_config_present = 1
 
-" Floaterm config
-let g:floaterm_title = ''
-let g:floaterm_width = 0.9
-let g:floaterm_height = 0.9
+" Telescope config
+lua <<EOF
+require('telescope').setup{
+  defaults = {
+    layout_strategy = 'flex',
+    layout_config = {
+      width = 0.9
+    }
+  }
+}
+EOF
 
 " End of plugin configs
 
@@ -147,9 +149,9 @@ nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
 
 nmap <Leader>p :NERDTreeToggle<CR>
-" there is a deliberate space after :Ag below:
-nmap <Leader>f :Ag 
-let g:ctrlp_map = '<Leader><Leader>'
+
+nmap <leader><Leader> <cmd>Telescope find_files<cr>
+nmap <Leader>f <cmd>Telescope live_grep<cr>
 
 nmap <Leader>d :bd<CR>
 nmap <Leader>z :sus<CR>
