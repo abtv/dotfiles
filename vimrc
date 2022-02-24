@@ -12,7 +12,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'jnurmine/Zenburn'
+Plug 'cormacrelf/vim-colors-github'
 " Git integration (I need git blame only: everything else I usually do in
 " terminal)
 Plug 'tpope/vim-fugitive'
@@ -67,8 +67,14 @@ set expandtab
 filetype plugin on
 " enable 256 colors
 set t_Co=256
-colorscheme zenburn
-
+colorscheme github
+let g:lightline = { 'colorscheme': 'github' }
+let g:github_colors_soft = 1
+set background=light
+hi Normal ctermfg=black ctermbg=252
+hi Pmenu ctermbg=252 ctermfg=black
+hi diffAdded   ctermfg=254 ctermbg=108
+hi diffRemoved ctermfg=254 ctermbg=167
 " save automatically when text is changed
 set updatetime=200
 autocmd CursorHold * silent! update
