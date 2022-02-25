@@ -1,4 +1,4 @@
-"I. Init plugins
+" 1. Init plugins
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 " common
@@ -26,7 +26,7 @@ call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" II. Keyboard config
+" 2. Keyboard config
 " Support for Russian keyboard
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 " Copy to/from clipboard (works only for OS X) http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
@@ -39,7 +39,7 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" III. General config
+" 3. General config
 " don't show intro message
 set shortmess+=I
 " no need to be compatible with some old stuff
@@ -81,11 +81,13 @@ autocmd CursorHold * silent! update
 
 set autoread
 autocmd CursorHold * checktime
+
+au BufNewFile,BufRead Jenkinsfile setf groovy
 " End of general config
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" IV. Plugin configs
+" 4. Plugin configs
 " NERDTree config
 let NERDTreeIgnore = ['node_modules', 'dist']
 let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
@@ -126,7 +128,7 @@ EOF
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" V. Key bindings
+" 5. Key bindings
 " Faster line movements
 nnoremap J 10j
 nnoremap K 10k
