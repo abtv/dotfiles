@@ -1,6 +1,6 @@
 brew install tmux
 brew install nvim
-brew install ag
+brew install ripgrep
 brew install tig
 brew install htop
 brew install tree
