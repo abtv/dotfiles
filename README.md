@@ -92,7 +92,9 @@ git config --global user.email "your-email"
 | Command                           | Action                 |
 | --------------------------------- | ---------------------- |
 | CMD f                             | grep in files          |
+| CMD o                             | open recent files      |
 | CMD ;                             | search in file names   |
+| CMD ,                             | search in open buffers |
 | --------------------------------- | ---------------------- |
 | SPC z                             | send Vim to background |
 | SPC s                             | save all buffers       |

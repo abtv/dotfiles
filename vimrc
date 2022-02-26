@@ -156,6 +156,8 @@ nmap <Leader>p :NERDTreeToggle<CR>
 
 nmap <leader><Leader> <cmd>Telescope find_files<cr>
 nmap <Leader>f <cmd>Telescope live_grep<cr>
+nmap <Leader>o <cmd>Telescope oldfiles<cr>
+nmap <Leader>, <cmd>Telescope buffers<cr>
 
 nmap <Leader>d :bd<CR>
 nmap <Leader>z :sus<CR>
