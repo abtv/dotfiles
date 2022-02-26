@@ -116,10 +116,12 @@ let g:prettier#autoformat_config_present = 1
 lua <<EOF
 require('telescope').setup{
   defaults = {
+    file_ignore_patterns = { "node_modules", "dist" },
     layout_strategy = 'flex',
     layout_config = {
       width = 0.9
-    }
+    },
+    preview = false
   }
 }
 EOF
