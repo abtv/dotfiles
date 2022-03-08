@@ -105,7 +105,7 @@ let test#javascript#jest#options = {
 \}
 
 " COC extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-phpls']
 
 " Prettier config
 let g:prettier#autoformat = 1
