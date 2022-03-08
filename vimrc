@@ -95,7 +95,7 @@ let test#javascript#jest#options = {
   \ 'all':   '--forceExit',
 \}
 
-" COC extensions
+" COC extensions (also available: 'coc-go')
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-phpls']
 
 " Prettier config
