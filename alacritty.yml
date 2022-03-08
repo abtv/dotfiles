@@ -68,10 +68,10 @@ key_bindings: # to get a code run "showkey -a" on a Linux system and get hex cod
   # for Vim
   - { key: Semicolon, mods: Command,       chars: "\x20\x20" } # send SPC-SPC
   - { key: I,         mods: Command,       chars: "\x20\x69" } # send SPC-I
-  - { key: O,         mods: Command,       chars: "\x20\x6f" } # send SPC-O
   - { key: P,         mods: Command,       chars: "\x20\x70" } # send SPC-P
   - { key: F,         mods: Command,       chars: "\x20\x66" } # enter copy mode
   - { key: Comma,     mods: Command,       chars: "\x20\x2c" } # send SPC-,
+  - { key: Period,    mods: Command,       chars: "\x20\x6f" } # send SPC-O
   - { key: R,         mods: Command,       chars: "\x20\x72\x72" } # send SPCrr (mapped to coc-rename in vimrc)
   - { key: M,         mods: Command,       chars: "\x20\x72\x6d" } # send SPCrm (mapped to coc-references in vimrc)
   - { key: U,         mods: Command,       chars: "\x20\x72\x75" } # send SPCru (mapped to coc-format in vimrc)
