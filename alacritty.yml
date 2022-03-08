@@ -75,3 +75,4 @@ key_bindings: # to get a code run "showkey -a" on a Linux system and get hex cod
   - { key: R,         mods: Command,       chars: "\x20\x72\x72" } # send SPCrr (mapped to coc-rename in vimrc)
   - { key: M,         mods: Command,       chars: "\x20\x72\x6d" } # send SPCrm (mapped to coc-references in vimrc)
   - { key: U,         mods: Command,       chars: "\x20\x72\x75" } # send SPCru (mapped to coc-format in vimrc)
+  - { key: Return,    mods: Command,       chars: "\x20\x72\x66" } # send SPCru (mapped to CocFix in vimrc)

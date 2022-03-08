@@ -181,6 +181,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <Leader>rr <Plug>(coc-rename)
 nmap <Leader>rm <Plug>(coc-references)
 nmap <Leader>ru <Plug>(coc-format)
+nmap <Leader>rf :CocFix<CR>
 
 " Notes
 nmap <Leader>nt :edit ~/notes/todo.wiki<CR>
