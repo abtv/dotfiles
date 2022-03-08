@@ -12,7 +12,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'cormacrelf/vim-colors-github'
 " Git integration (I need git blame only: everything else I usually do in
 " terminal)
 Plug 'tpope/vim-fugitive'
@@ -40,6 +39,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " 3. General config
+" always show line numbers
+set number
 " don't show intro message
 set shortmess+=I
 " no need to be compatible with some old stuff
@@ -65,16 +66,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 filetype plugin on
-" enable 256 colors
-set t_Co=256
-colorscheme github
-let g:lightline = { 'colorscheme': 'github' }
-let g:github_colors_soft = 1
-set background=light
-hi Normal ctermfg=black ctermbg=252
-hi Pmenu ctermbg=252 ctermfg=black
-hi diffAdded   ctermfg=254 ctermbg=108
-hi diffRemoved ctermfg=254 ctermbg=167
 " save automatically when text is changed
 set updatetime=200
 autocmd CursorHold * silent! update
@@ -189,5 +180,36 @@ nmap <Leader>ni :edit ~/notes/index.wiki<CR>
 nmap <Leader>nn :edit ~/notes/note.wiki<CR>
 
 " End of key bindings
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" 6. My color scheme
+
+" enable 256 colors
+set t_Co=256
+set background=light
+" use :hi to show current colors
+hi Normal      ctermfg=0 ctermbg=251
+hi Pmenu       ctermfg=0 ctermbg=252
+hi Visual      ctermbg=254
+hi Search      ctermbg=254
+hi PreProc     ctermfg=0
+hi EndOfBuffer ctermfg=246
+hi Type        ctermfg=18
+hi Special     ctermfg=18
+hi Statement   ctermfg=18
+hi Constant    ctermfg=0
+hi Character   ctermfg=0
+hi Function    ctermfg=0
+hi Define      ctermfg=0
+hi Keyword     ctermfg=18
+hi Identifier  ctermfg=18
+hi Comment     ctermfg=243
+hi String      ctermfg=28
+hi Number      ctermfg=19
+hi Boolean     ctermfg=4
+hi LineNr      ctermfg=248
+hi diffAdded   ctermfg=254 ctermbg=108
+hi diffRemoved ctermfg=254 ctermbg=167
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
