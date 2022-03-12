@@ -1,33 +1,31 @@
-* My configs
+# My configs
 
-** Key principles
+## Key principles
 
 1. do as much as possible without a mouse
 
 2. most used hotkeys must be pressed as a key with a modifier in one keystroke
 
-  2.1. Good: Cmd+j (one keystroke)
+  - 2.1. Good: Cmd+j (one keystroke)
 
-  2.2. Bad: Space then j (two keystrokes)
+  - 2.2. Bad: Space then j (two keystrokes)
 
 3. switch between applications with hotkeys and don't use window animations
 
 4. development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
 
 
-** Tools
+## Tools
 
-|--------------+---------------------------|
-| Tool         | Usage                     |
-|--------------+---------------------------|
-| Alacritty    | Terminal emulator         |
-| Tmux         | Terminal multiplexer      |
-| NeoVim       | Code and text editor      |
-| Tig          | Git pager                 |
-|--------------+---------------------------|
+| Tool      | Usage                |
+|-----------|----------------------|
+| Alacritty | Terminal emulator    |
+| Tmux      | Terminal multiplexer |
+| NeoVim    | Code and text editor |
+| Tig       | Git pager            |
 
 
-** Setup
+## Setup
 
 1. Install `brew`
 
@@ -42,31 +40,28 @@
 6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
-** MacOS settings
+## MacOS settings
 
 1. Don't open apps in fullscreen mode and to switch between them immediately without animations.
 
 2. Map CapsLock to Control.
 
 
-** Tmux
+## Tmux
 
-|---------+-------------------------------------------------------------------------------------------------|
 | Command | Action                                                                                          |
-|---------+-------------------------------------------------------------------------------------------------|
+|---------|-------------------------------------------------------------------------------------------------|
 | Cmd-t   | create a new window                                                                             |
 | Cmd-w   | close current window (or you can use C-d)                                                       |
 | Cmd-[   | go to the left window                                                                           |
 | Cmd-]   | go to the right window                                                                          |
 | Cmd-f   | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
-|---------+-------------------------------------------------------------------------------------------------|
 
 
-** Git
+## Git
 
-|---------+--------------------------|
 | Command | Action                   |
-|---------+--------------------------|
+|---------|--------------------------|
 | g       | git log                  |
 | gst     | git status               |
 | gd      | git diff                 |
@@ -76,7 +71,6 @@
 | gm      | git merge                |
 | gca     | git commit -v -a         |
 | gca1    | git commit -v -a --amend |
-|---------+--------------------------|
 
 Dot forget to run:
 
@@ -86,9 +80,8 @@ git config --global user.email "your-email"
 ```
 
 
-** Vim mappings
+## Vim mappings
 
-| --------------------------------- | ---------------------- |
 | Command                           | Action                 |
 | --------------------------------- | ---------------------- |
 | CMD f                             | grep in files          |
@@ -105,4 +98,3 @@ git config --global user.email "your-email"
 | SPC n i                           | open notes/inbox.md    |
 | SPC n t                           | open notes/todo.md     |
 | SPC n n                           | open notes/note.md     |
-| --------------------------------- | ---------------------- |
