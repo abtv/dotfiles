@@ -208,6 +208,9 @@ hi Comment     ctermfg=243
 hi String      ctermfg=28
 hi Number      ctermfg=19
 hi Boolean     ctermfg=4
+hi Underlined  ctermfg=19
+hi Title       ctermfg=22
+hi Folded      ctermfg=0 ctermbg=249
 hi LineNr      ctermfg=248
 hi diffAdded   ctermfg=254 ctermbg=108
 hi diffRemoved ctermfg=254 ctermbg=167
