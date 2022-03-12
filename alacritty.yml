@@ -9,7 +9,7 @@ window:
   decorations: buttonless
   dimensions:
     columns: 160
-    lines: 40
+    lines: 44
 
 font:
   size: 15.0
