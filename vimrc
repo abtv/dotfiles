@@ -117,6 +117,10 @@ require('telescope').setup{
 }
 EOF
 
+" Vimwiki
+let g:vimwiki_folding='list'
+autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
+
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
