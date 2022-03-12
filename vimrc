@@ -119,7 +119,6 @@ EOF
 
 " Vimwiki
 let g:vimwiki_folding='list'
-autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 
 " End of plugin configs
 
@@ -178,10 +177,10 @@ nmap <Leader>rm <Plug>(coc-references)
 nmap <Leader>ru <Plug>(coc-format)
 nmap <Leader>rf :CocFix<CR>
 
-" Notes
-nmap <Leader>nt :edit ~/notes/todo.wiki<CR>
-nmap <Leader>ni :edit ~/notes/index.wiki<CR>
-nmap <Leader>nn :edit ~/notes/note.wiki<CR>
+" Vimwiki
+nmap <Leader>nt :VimwikiIndex<CR>
+nmap <Leader>t :VimwikiToggleListItem<CR>
+autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 
 " End of key bindings
 
