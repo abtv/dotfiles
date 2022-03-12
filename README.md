@@ -6,9 +6,9 @@
 
 2. most used hotkeys must be pressed as a key with a modifier in one keystroke
 
-  - 2.1. Good: Cmd+j (one keystroke)
+  - Good: Cmd+j (one keystroke)
 
-  - 2.2. Bad: Space then j (two keystrokes)
+  - Bad: Space then j (two keystrokes)
 
 3. switch between applications with hotkeys and don't use window animations
 
@@ -17,12 +17,12 @@
 
 ## Tools
 
-| Tool      | Usage                |
-|-----------|----------------------|
-| Alacritty | Terminal emulator    |
-| Tmux      | Terminal multiplexer |
-| NeoVim    | Code and text editor |
-| Tig       | Git pager            |
+| Tool      | Usage                         |
+|-----------|-------------------------------|
+| Alacritty | Terminal emulator             |
+| Tmux      | Terminal multiplexer          |
+| NeoVim    | Code and text editor with LSP |
+| Tig       | Git pager                     |
 
 
 ## Setup
@@ -72,7 +72,7 @@
 | gca     | git commit -v -a         |
 | gca1    | git commit -v -a --amend |
 
-Dot forget to run:
+Don't forget to run:
 
 ```bash
 git config --global user.name "your-name"
@@ -88,13 +88,10 @@ git config --global user.email "your-email"
 | CMD ;                             | search in file names   |
 | CMD ,                             | show open buffers      |
 | CMD .                             | show recent files      |
-| --------------------------------- | ---------------------- |
 | SPC z                             | send Vim to background |
 | SPC s                             | save all buffers       |
-| --------------------------------- | ---------------------- |
 | zc                                | fold section           |
 | zo                                | open section           |
-| --------------------------------- | ---------------------- |
 | SPC n i                           | open notes/inbox.md    |
 | SPC n t                           | open notes/todo.md     |
 | SPC n n                           | open notes/note.md     |
