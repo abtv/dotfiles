@@ -108,11 +108,24 @@ lua <<EOF
 require('telescope').setup{
   defaults = {
     file_ignore_patterns = { "node_modules", "dist" },
-    layout_strategy = 'flex',
-    layout_config = {
-      width = 0.9
-    },
     preview = false
+  },
+  pickers = {
+    find_files = {
+      theme = "ivy"
+    },
+    live_grep = {
+      theme = "ivy"
+    },
+    oldfiles = {
+      theme = "ivy"
+    },
+    buffers = {
+      theme = "ivy"
+    },
+    git_branches = {
+      theme = "ivy"
+    },
   }
 }
 EOF
