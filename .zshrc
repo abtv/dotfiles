@@ -27,6 +27,10 @@ alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
 alias g="tig"
 
+# Test aliases
+alias u="NODE_ENV=test npx jest "
+alias e="NODE_ENV=test npx jest --config ./test/jest-e2e.json --runInBand "
+
 # project aliases
 alias d="cd ~/dotfiles"
 
