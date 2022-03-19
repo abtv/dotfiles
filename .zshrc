@@ -18,11 +18,8 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias vi="nvim"
-alias q="exit"
-alias ws="webstorm ."
 alias h="htop"
 alias work="cd ~/work/"
-alias notes="cd ~/notes/"
 alias box="cd ~/box/"
 
 # Git aliases
