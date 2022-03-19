@@ -154,7 +154,7 @@ nmap <C-k> :bnext<CR>
 nmap <C-h> :noh<CR>
 
 let mapleader = "\<Space>"
-nmap <Leader>s :wa<CR>
+nmap <Leader>s :w<CR>
 nmap <Leader>qq :q<CR>
 nmap <Leader>q! :q!<CR>
 nmap <Leader>q1 :q!<CR>
