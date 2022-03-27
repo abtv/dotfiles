@@ -91,6 +91,7 @@ let g:NERDTreeWinSize = 45
 " AirLine config
 let g:airline#extensions#tabline#enabled = 1 " show buffers as tabs
 let g:airline_theme='silver' " set AirLine color theme
+let g:airline#extensions#tabline#fnamemod = ':t' " show only file names in tabs
 
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
