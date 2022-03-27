@@ -19,6 +19,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 " markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -85,6 +87,10 @@ let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 let g:NERDTreeWinSize = 45
+
+" AirLine config
+let g:airline#extensions#tabline#enabled = 1 " show buffers as tabs
+let g:airline_theme='silver' " set AirLine color theme
 
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
