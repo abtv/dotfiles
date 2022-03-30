@@ -89,7 +89,7 @@ let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
 let g:NERDTreeWinSize = 45
 
 " AirLine config
-let g:airline#extensions#tabline#enabled = 1 " show buffers as tabs
+let g:airline#extensions#tabline#enabled = 0 " don't show buffers as tabs
 let g:airline_theme='silver' " set AirLine color theme
 let g:airline#extensions#tabline#fnamemod = ':t' " show only file names in tabs
 
