@@ -137,9 +137,6 @@ require('telescope').setup{
 }
 EOF
 
-" Vimwiki
-let g:vimwiki_folding='list'
-
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
