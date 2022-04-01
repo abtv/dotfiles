@@ -112,10 +112,16 @@ let g:prettier#autoformat_config_present = 1
 
 " Telescope config
 lua <<EOF
-require('telescope').setup{
+local actions = require("telescope.actions")
+require("telescope").setup{
   defaults = {
     file_ignore_patterns = { "node_modules", "dist" },
-    preview = false
+    preview = false,
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      }
+    }
   },
   pickers = {
     find_files = {
