@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 # common aliases
 alias vi="nvim"
+alias em="emacs"
 alias h="htop"
 alias work="cd ~/work/"
 alias box="cd ~/box/"
