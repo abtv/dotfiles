@@ -11,6 +11,7 @@
 (setq display-line-numbers-type t)
 (setq org-directory "~/org/")
 
+
 ; Set color theme
 (load-theme 'adwaita t)
 ; Make the default background not so bright
