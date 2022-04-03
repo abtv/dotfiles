@@ -21,7 +21,7 @@
   ; this needed for Emacs in terminal
   (custom-theme-set-faces
    'adwaita
-   '(default ((t (:background "#cccccc"))))))
+   '(default ((t (:background "#c8c8c8"))))))
 
 
 ;; Key bindings
