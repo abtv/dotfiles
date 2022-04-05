@@ -90,11 +90,21 @@ git config --global user.email "your-email"
 | CMD .                             | show recent files       |
 | SPC z                             | send Vim to background  |
 | SPC s                             | save current buffers    |
+| SPC g g                           | open Git status         |
 | zc                                | fold section            |
 | zo                                | open section            |
 | SPC n t                           | open VimWiki index page |
 | SPC t                             | toggle a VimWiki task   |
 
+## Git status mappings (after SPC g g)
+
+| Command | Action                                                      |
+| ------- | ----------------------------------------------------------- |
+| s       | stage file under cursor                                     |
+| u       | unstage file under cursor                                   |
+| cc      | commit changes                                              |
+| ca      | commit changes with amend                                   |
+| ce      | commit changes with amend without editing of commit message |
 
 ## Emacs mappings
 

@@ -188,7 +188,9 @@ nmap <Leader>ws :split<CR>
 nmap <C-l> :set invnumber<CR>
 
 " Git keybindings
-nmap <Leader>b :Git blame<CR>
+nmap <Leader>gg :Git<CR>
+nmap <Leader>gB :Git blame<CR>
+
 " Testing key bindings
 nmap <Leader>y :TestNearest<CR>
 
