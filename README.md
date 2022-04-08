@@ -90,13 +90,16 @@ git config --global user.email "your-email"
 | CMD .                             | show recent files       |
 | SPC z                             | send Vim to background  |
 | SPC s                             | save current buffers    |
-| SPC g g                           | open Git status         |
+| SPC d                             | close current buffer    |
+| SPC g                             | open Git status         |
+| SPC h                             | Git blame               |
+| SPC l                             | Git log                 |
 | zc                                | fold section            |
 | zo                                | open section            |
 | SPC n t                           | open VimWiki index page |
 | SPC t                             | toggle a VimWiki task   |
 
-## Git status mappings (after SPC g g)
+## Git status mappings (after SPC g)
 
 | Command | Action                                                      |
 | ------- | ----------------------------------------------------------- |
