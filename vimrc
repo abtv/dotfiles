@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
@@ -140,6 +141,15 @@ require("telescope").setup{
       theme = "ivy"
     },
   }
+}
+EOF
+
+" Treesitter config
+lua <<EOF
+require('nvim-treesitter.configs').setup {
+  ensure_installed = "all",
+  hightlight = { enable = true },
+  indent = { enable = true }
 }
 EOF
 
