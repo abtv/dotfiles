@@ -46,12 +46,12 @@ colors:
   bright:
     black: '0x383a42'
     red: '0xe45649'
-    green: '0x50a14f'
+    green: '0x008700'
     yellow: '0xc18401'
-    blue: '0x0184bc'
+    blue: '0x0000ff'
     magenta: '0xa626a4'
     cyan: '0x0997b3'
-    white: '0xfafafa'
+    white: '0xcccccc'
 
 key_bindings: # to get a code run "showkey -a" on a Linux system and get hex codes (example: 0x1b should be written as \x1b)
   # for Tmux
