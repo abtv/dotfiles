@@ -147,7 +147,7 @@ EOF
 " Treesitter config
 lua <<EOF
 require('nvim-treesitter.configs').setup {
-  ensure_installed = "all",
+  ensure_installed = "maintained",
   hightlight = { enable = true },
   indent = { enable = true }
 }
