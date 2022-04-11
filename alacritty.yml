@@ -33,25 +33,31 @@ colors:
     background: '0xcccccc'
     foreground: '0x383a42'
 
-  normal:
-    black: '0x383a42'
-    red: '0xe45649'
-    green: '0x50a14f'
-    yellow: '0xc18401'
-    blue: '0x0184bc'
-    magenta: '0xa626a4'
-    cyan: '0x0997b3'
-    white: '0xfafafa'
+  cursor:
+    text: '0xf3f3f3'
+    cursor: '0x4d4d4c'
 
+  # Normal colors
+  normal:
+    black:   '0xededed'
+    red:     '0xd7005f'
+    green:   '0x718c00'
+    yellow:  '0xd75f00'
+    blue:    '0x4271ae'
+    magenta: '0x8959a8'
+    cyan:    '0x3e999f'
+    white:   '0x4d4d4c'
+
+  # Bright colors
   bright:
-    black: '0x383a42'
-    red: '0xe45649'
-    green: '0x008700'
-    yellow: '0xc18401'
-    blue: '0x0000ff'
-    magenta: '0xa626a4'
-    cyan: '0x0997b3'
-    white: '0xcccccc'
+    black:   '0x949494'
+    red:     '0xd7005f'
+    green:   '0x718c00'
+    yellow:  '0xd75f00'
+    blue:    '0x4271ae'
+    magenta: '0x8959a8'
+    cyan:    '0x3e999f'
+    white:   '0xf5f5f5'
 
 key_bindings: # to get a code run "showkey -a" on a Linux system and get hex codes (example: 0x1b should be written as \x1b)
   # for Tmux
