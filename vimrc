@@ -22,6 +22,7 @@ Plug 'janko-m/vim-test'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'NLKNguyen/papercolor-theme'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -225,49 +226,4 @@ autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 " enable 256 colors
 set t_Co=256
 set background=light
-
-" Terminal colors - use only these colors
-" They are overridden in Alacritty
-" Left is normal, right is named bright but it's alternative
-" Most terminal apps use normal colors
-" Black = 0, 8
-" Red = 1, 9
-" Green = 2, 10
-" Yellow = 3, 11
-" Blue = 4, 12
-" Purple (magenta) = 5, 13
-" Cyan = 6, 14
-" White = 7, 15
-
-" use :hi to show current colors
-hi Normal      ctermfg=0 ctermbg=251
-hi Pmenu       ctermfg=0 ctermbg=252
-hi Visual      ctermbg=254
-hi Search      ctermbg=254
-hi PreProc     ctermfg=0
-hi EndOfBuffer ctermfg=246
-hi Type        ctermfg=18
-hi Special     ctermfg=18
-hi Statement   ctermfg=18
-hi Character   ctermfg=0
-hi Function    ctermfg=0
-hi Define      ctermfg=0
-hi Keyword     ctermfg=18
-hi Identifier  ctermfg=8
-hi Comment     ctermfg=243
-
-hi Constant    ctermfg=5
-
-hi String      ctermfg=10
-hi Boolean     ctermfg=6
-hi Number      ctermfg=4
-hi LineNr      ctermfg=4
-
-hi Underlined  ctermfg=19
-hi Title       ctermfg=22
-hi Folded      ctermfg=0 ctermbg=249
-
-hi diffAdded   ctermfg=15 ctermbg=2
-hi diffRemoved ctermfg=15 ctermbg=9
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme PaperColor
