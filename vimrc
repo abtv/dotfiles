@@ -227,3 +227,4 @@ autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 set t_Co=256
 set background=light
 colorscheme PaperColor
+hi Normal ctermbg=252
