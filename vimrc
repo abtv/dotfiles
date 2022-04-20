@@ -213,7 +213,7 @@ nmap <Leader>ru <Plug>(coc-format)
 nmap <Leader>rf :CocFix<CR>
 
 " Vimwiki
-nmap <Leader>nt :VimwikiIndex<CR>
+nmap <Leader>n :VimwikiIndex<CR>
 nmap <Leader>t :VimwikiToggleListItem<CR>
 autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 

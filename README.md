@@ -96,7 +96,7 @@ git config --global user.email "your-email"
 | SPC l                             | Git log                 |
 | zc                                | fold section            |
 | zo                                | open section            |
-| SPC n t                           | open VimWiki index page |
+| SPC n                             | open VimWiki index page |
 | SPC t                             | toggle a VimWiki task   |
 
 ## Git status mappings (after SPC g)
