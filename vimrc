@@ -154,6 +154,9 @@ require('nvim-treesitter.configs').setup {
 }
 EOF
 
+" Vimwiki config
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
