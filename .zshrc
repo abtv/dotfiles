@@ -29,11 +29,11 @@ alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
 alias g="tig"
 
-# Test/debugger aliases
+# Node.js aliases
+alias b="npm run build"
 alias u="NODE_ENV=test npx jest --runInBand "
 alias e="NODE_ENV=test npx jest --config ./test/jest-e2e.json --runInBand "
-alias b="NODE_ENV=test node --inspect-brk node_modules/.bin/jest --watch --runInBand " # chrome://inspect
-alias a="time (npm run build && u && e)"
+alias a="time (b && u && e)"
 
 # project aliases
 alias d="cd ~/dotfiles"
