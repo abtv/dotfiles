@@ -169,10 +169,10 @@ nmap j gj
 nmap k gk
 
 " General key bindings
-nmap <C-q> :q<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
 nmap <C-h> :noh<CR>
+nmap <C-l> :set invnumber<CR>
 
 let mapleader = "\<Space>"
 nmap <Leader>s :w<CR>
@@ -193,8 +193,6 @@ nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
-
-nmap <C-l> :set invnumber<CR>
 
 " Git keybindings
 nmap <Leader>g :Git<cr>:only<cr>
