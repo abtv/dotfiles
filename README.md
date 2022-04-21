@@ -4,15 +4,11 @@
 
 1. do as much as possible without a mouse
 
-2. most used hotkeys must be pressed as a key with a modifier in one keystroke
+2. switch between applications with hotkeys and don't use window animations
 
-  - Good: Cmd+j (one keystroke)
+3. development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
 
-  - Bad: Space then j (two keystrokes)
-
-3. switch between applications with hotkeys and don't use window animations
-
-4. development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
+4. development environment should be cross-platform (MacOS and Linux)
 
 
 ## Tools
@@ -84,20 +80,32 @@ git config --global user.email "your-email"
 
 | Command                           | Action                  |
 | --------------------------------- | ----------------------  |
-| CMD f                             | grep in files           |
-| CMD ;                             | search in file names    |
-| CMD ,                             | show open buffers       |
-| CMD .                             | show recent files       |
+| SPC SPC                           | search in file names    |
+| SPC f                             | grep in files           |
+| SPC ,                             | show open buffers       |
+| SPC .                             | show recent files       |
+|                                   |                         |
 | SPC z                             | send Vim to background  |
-| SPC s                             | save current buffers    |
+|                                   |                         |
+| SPC s                             | save current buffer     |
 | SPC d                             | close current buffer    |
+| :wa                               | save all buffers        |
+|                                   |                         |
 | SPC g                             | open Git status         |
 | SPC h                             | Git blame               |
 | SPC l                             | Git log                 |
-| zc                                | fold section            |
-| zo                                | open section            |
+| :Git push origin head             | Git push current branch |
+|                                   |                         |
+| SPC r r                           | refactoring: rename     |
+| SPC r m                           | refactoring: references |
+| SPC r u                           | refactoring: autoformat |
+| SPC r f                           | refactoring: autofix    |
+|                                   |                         |
 | SPC n                             | open VimWiki index page |
 | SPC t                             | toggle a VimWiki task   |
+|                                   |                         |
+| zc                                | fold section            |
+| zo                                | open section            |
 
 ## Git status mappings (after SPC g)
 
