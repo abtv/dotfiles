@@ -149,7 +149,7 @@ EOF
 lua <<EOF
 require('nvim-treesitter.configs').setup {
   ensure_installed = "maintained",
-  hightlight = { enable = true },
+  highlight = { enable = true },
   indent = { enable = true }
 }
 EOF
