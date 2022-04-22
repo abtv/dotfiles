@@ -231,3 +231,12 @@ set background=light
 colorscheme PaperColor
 hi Normal ctermbg=252
 hi NonText ctermbg=252
+hi Statement ctermfg=89 cterm=none
+hi Type ctermfg=88 cterm=none
+hi Typedef cterm=none
+hi Boolean cterm=none
+hi Structure cterm=none
+hi StorageClass cterm=none
+hi Conditional cterm=none
+hi Repeat cterm=none
+hi typescriptLabel cterm=none
