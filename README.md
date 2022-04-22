@@ -89,6 +89,7 @@ git config --global user.email "your-email"
 |                                   |                         |
 | SPC s                             | save current buffer     |
 | SPC d                             | close current buffer    |
+| SPC x                             | close all other buffers |
 | :wa                               | save all buffers        |
 |                                   |                         |
 | SPC g                             | open Git status         |

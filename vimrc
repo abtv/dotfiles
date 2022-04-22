@@ -189,6 +189,7 @@ nmap <Leader>. <cmd>Telescope oldfiles<cr>
 nmap <Leader>, <cmd>Telescope buffers<cr>
 
 nmap <Leader>d :bd<CR>
+nmap <Leader>x :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
 nmap <Leader>z :sus<CR>
 
 nmap <Leader>wc :close<CR>
