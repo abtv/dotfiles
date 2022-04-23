@@ -238,6 +238,7 @@ hi Typedef ctermfg=88
 hi Exception ctermfg=88
 hi Statement ctermfg=88 cterm=none
 hi Conditional ctermfg=88 cterm=none
+hi Repeat cterm=none
 
 hi Type ctermfg=23 cterm=none
 hi Number ctermfg=23 cterm=none
@@ -247,3 +248,12 @@ hi Typedef cterm=none
 hi Structure cterm=none
 hi StorageClass cterm=none
 hi typescriptLabel cterm=none
+
+hi NERDTreeDir ctermfg=25 cterm=none 
+hi NERDTreeDirSlash ctermfg=25 cterm=none
+hi NERDTreeOpenable ctermfg=25 cterm=none
+hi NERDTreeClosable ctermfg=25 cterm=none
+hi NERDTreeHelpKey ctermfg=28
+hi NERDTreeHelpCommand ctermfg=28
+hi VertSplit ctermbg=NONE
+hi VertSplit ctermfg=NONE
