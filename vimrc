@@ -230,12 +230,16 @@ autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 set t_Co=256
 set background=light
 colorscheme PaperColor
+
 hi Normal ctermbg=252
 hi NonText ctermbg=252
 hi Pmenu ctermbg=251
 
+hi Operator ctermfg=7
+hi Delimiter ctermfg=7
+hi Keyword ctermfg=18
+
 hi Include ctermfg=55
-hi Keyword ctermfg=88
 hi Typedef ctermfg=88
 hi Exception ctermfg=88
 hi Statement ctermfg=88 cterm=none
