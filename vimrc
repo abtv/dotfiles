@@ -238,16 +238,20 @@ hi Pmenu ctermbg=251
 hi Operator ctermfg=7
 hi Delimiter ctermfg=7
 hi Keyword ctermfg=18
+hi String ctermfg=28
+hi Function ctermfg=100
+hi Identifier ctermfg=54
+hi Constant ctermfg=14
 
-hi Include ctermfg=55
+hi Include ctermfg=18
 hi Typedef ctermfg=88
-hi Exception ctermfg=88
+hi Exception ctermfg=18
 hi Statement ctermfg=88 cterm=none
-hi Conditional ctermfg=88 cterm=none
-hi Repeat cterm=none
+hi Conditional ctermfg=18 cterm=none
+hi Repeat ctermfg=18 cterm=none
 
-hi Type ctermfg=23 cterm=none
-hi Number ctermfg=23 cterm=none
+hi Type ctermfg=7 cterm=none
+hi Number ctermfg=21 cterm=none
 hi Boolean cterm=none
 
 hi Typedef cterm=none
