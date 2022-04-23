@@ -241,7 +241,7 @@ hi Keyword ctermfg=18
 hi String ctermfg=28
 hi Function ctermfg=100
 hi Identifier ctermfg=54
-hi Constant ctermfg=14
+hi Constant ctermfg=7
 
 hi Include ctermfg=18
 hi Typedef ctermfg=88
