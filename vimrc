@@ -88,7 +88,7 @@ let NERDTreeIgnore = ['node_modules', 'dist']
 let NERDTreeQuitOnOpen = 1 " close NERDTree after opening a file
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1 " don't show help; you can press ? to call it
-let g:NERDTreeWinSize = 45
+let g:NERDTreeWinSize = 60
 
 " AirLine config
 let g:airline#extensions#tabline#enabled = 0 " don't show buffers as tabs
