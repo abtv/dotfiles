@@ -232,6 +232,7 @@ set background=light
 colorscheme PaperColor
 hi Normal ctermbg=252
 hi NonText ctermbg=252
+hi Pmenu ctermbg=251
 
 hi Include ctermfg=55
 hi Keyword ctermfg=88
