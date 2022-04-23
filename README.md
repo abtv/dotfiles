@@ -78,35 +78,37 @@ git config --global user.email "your-email"
 
 ## Vim mappings
 
-| Command                           | Action                  |
-| --------------------------------- | ----------------------  |
-| SPC SPC                           | search in file names    |
-| SPC f                             | grep in files           |
-| SPC ,                             | show open buffers       |
-| SPC .                             | show recent files       |
-|                                   |                         |
-| SPC z                             | send Vim to background  |
-|                                   |                         |
-| SPC s                             | save current buffer     |
-| SPC d                             | close current buffer    |
-| SPC x                             | close all other buffers |
-| :wa                               | save all buffers        |
-|                                   |                         |
-| SPC g                             | open Git status         |
-| SPC h                             | Git blame               |
-| SPC l                             | Git log                 |
-| :Git push origin head             | Git push current branch |
-|                                   |                         |
-| SPC r r                           | refactoring: rename     |
-| SPC r m                           | refactoring: references |
-| SPC r u                           | refactoring: autoformat |
-| SPC r f                           | refactoring: autofix    |
-|                                   |                         |
-| SPC n                             | open VimWiki index page |
-| SPC t                             | toggle a VimWiki task   |
-|                                   |                         |
-| zc                                | fold section            |
-| zo                                | open section            |
+| Command                           | Action                            |
+| --------------------------------- | --------------------------------- |
+| SPC SPC                           | search in file names              |
+| SPC p                             | open project tree                 |
+| SPC P                             | open current file in project tree |
+| SPC f                             | grep in files                     |
+| SPC ,                             | show open buffers                 |
+| SPC .                             | show recent files                 |
+|                                   |                                   |
+| SPC z                             | send Vim to background            |
+|                                   |                                   |
+| SPC s                             | save current buffer               |
+| SPC d                             | close current buffer              |
+| SPC x                             | close all other buffers           |
+| :wa                               | save all buffers                  |
+|                                   |                                   |
+| SPC g                             | open Git status                   |
+| SPC h                             | Git blame                         |
+| SPC l                             | Git log                           |
+| :Git push origin head             | Git push current branch           |
+|                                   |                                   |
+| SPC r r                           | refactoring: rename               |
+| SPC r m                           | refactoring: references           |
+| SPC r u                           | refactoring: autoformat           |
+| SPC r f                           | refactoring: autofix              |
+|                                   |                                   |
+| SPC n                             | open VimWiki index page           |
+| SPC t                             | toggle a VimWiki task             |
+|                                   |                                   |
+| zc                                | fold section                      |
+| zo                                | open section                      |
 
 ## Git status mappings (after SPC g)
 

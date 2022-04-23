@@ -182,6 +182,7 @@ nmap <Leader>s :w<CR>
 nmap <Leader>q :q<CR>
 
 nmap <Leader>p :NERDTreeToggle<CR>
+nmap <Leader>P :NERDTreeFind<CR>
 
 nmap <leader><Leader> <cmd>Telescope find_files<cr>
 nmap <Leader>f <cmd>Telescope live_grep<cr>
