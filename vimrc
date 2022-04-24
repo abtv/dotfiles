@@ -204,7 +204,7 @@ nmap <Leader>ws :split<CR>
 
 " Git keybindings
 nmap <Leader>g :Git<cr>:only<cr>
-nmap <Leader>h :Git blame<cr>
+nmap <Leader>h :Git blame --date=short <cr>
 nmap <Leader>l :Glol<cr><C-W>w:only<cr>
 
 " Testing key bindings
