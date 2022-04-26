@@ -158,7 +158,8 @@ EOF
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Fugitive config
-command -nargs=* Glol Git! log --graph --pretty=format:'%h | %ad | %s | %an' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
+command -nargs=* Log Git! log --graph --pretty=format:'%h | %ad | %s | %an' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
+command -nargs=* Push Git! push origin head <args>
 
 " End of plugin configs
 
@@ -205,7 +206,7 @@ nmap <Leader>ws :split<CR>
 " Git keybindings
 nmap <Leader>g :Git<cr>:only<cr>
 nmap <Leader>h :Git blame --date=short <cr>
-nmap <Leader>l :Glol<cr><C-W>w:only<cr>
+nmap <Leader>l :Log<cr><C-W>w:only<cr>
 
 " Testing key bindings
 nmap <Leader>y :TestNearest<CR>
