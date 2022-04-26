@@ -85,5 +85,5 @@ key_bindings:
   - { key: Return,    mods: Command,       chars: "\x20\x72\x66" } # send SPCrf (mapped to CocFix in vimrc)
   # Vim tabs
   - { key: W,         mods: Command,       chars: "\x20\x64" } # send SPC-d
-  - { key: RBracket,  mods: Command,       chars: "\x0a" }  # select next Vim tab
-  - { key: LBracket,  mods: Command,       chars: "\x0b" }  # select previous Vim tab
+  - { key: RBracket,  mods: Command,       chars: "\x0b" }  # select next Vim tab
+  - { key: LBracket,  mods: Command,       chars: "\x0a" }  # select previous Vim tab
