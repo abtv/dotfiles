@@ -59,26 +59,31 @@ colors:
     cyan:    '0x3e999f'
     white:   '0xf5f5f5'
 
-key_bindings: # to get a code run "showkey -a" on a Linux system and get hex codes (example: 0x1b should be written as \x1b)
-  # for Tmux
-  - { key: T,        mods: Command,        chars: "\x02c" }  # new tab
-  - { key: RBracket, mods: Command,        chars: "\x02n" }  # select next tab
-  - { key: LBracket, mods: Command,        chars: "\x02p" }  # select previous tab
-  - { key: D,        mods: Command,        chars: "\x02[" }  # enter copy mode
-  # key movements
+key_bindings:
+  # Hex codes are here: https://en.wikipedia.org/wiki/ASCII#Printable_characters
+  # Key movements
   - { key: H,        mods: Command,        chars: "\x1b\x5b\x44" }  # move cursor left
   - { key: J,        mods: Command,        chars: "\x1b\x5b\x42" }  # move cursor down
   - { key: K,        mods: Command,        chars: "\x1b\x5b\x41" }  # move cursor up
   - { key: L,        mods: Command,        chars: "\x1b\x5b\x43" }  # move cursor right
-  # for Vim
-  # hex codes are here: https://en.wikipedia.org/wiki/ASCII#Printable_characters
-  - { key: Semicolon, mods: Command,       chars: "\x20\x20" } # send SPC-SPC
+  # Tmux
+  - { key: T,        mods: Command,        chars: "\x02c" }  # new tab
+  - { key: RBracket, mods: Command|Shift,  chars: "\x02n" }  # select next Tmux tab
+  - { key: LBracket, mods: Command|Shift,  chars: "\x02p" }  # select previous Tmux tab
+  - { key: D,        mods: Command,        chars: "\x02[" }  # enter copy mode
+  # Vim project
   - { key: P,         mods: Command,       chars: "\x20\x70" } # send SPC-p
   - { key: P,         mods: Command|Shift, chars: "\x20\x50" } # send SPC-P
+  - { key: Semicolon, mods: Command,       chars: "\x20\x20" } # send SPC-SPC
   - { key: F,         mods: Command,       chars: "\x20\x66" } # send SPC-f
+  - { key: S,         mods: Command,       chars: "\x20\x73" } # send SPC-f
   - { key: Comma,     mods: Command,       chars: "\x20\x2c" } # send SPC-,
   - { key: Period,    mods: Command,       chars: "\x20\x2e" } # send SPC-.
-  - { key: W,         mods: Command,       chars: "\x20\x64" } # send SPC-d
+  # Vim CoC
   - { key: R,         mods: Command,       chars: "\x20\x72\x72" } # send SPCrr (mapped to coc-rename in vimrc)
   - { key: M,         mods: Command,       chars: "\x20\x72\x6d" } # send SPCrm (mapped to coc-references in vimrc)
   - { key: Return,    mods: Command,       chars: "\x20\x72\x66" } # send SPCrf (mapped to CocFix in vimrc)
+  # Vim tabs
+  - { key: W,         mods: Command,       chars: "\x20\x64" } # send SPC-d
+  - { key: RBracket,  mods: Command,       chars: "\x0a" }  # select next Vim tab
+  - { key: LBracket,  mods: Command,       chars: "\x0b" }  # select previous Vim tab
