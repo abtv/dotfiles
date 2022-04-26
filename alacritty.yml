@@ -61,7 +61,6 @@ colors:
 
 key_bindings: # to get a code run "showkey -a" on a Linux system and get hex codes (example: 0x1b should be written as \x1b)
   # for Tmux
-  - { key: W,        mods: Command,        chars: "\x02&" }  # close tab (kill)
   - { key: T,        mods: Command,        chars: "\x02c" }  # new tab
   - { key: RBracket, mods: Command,        chars: "\x02n" }  # select next tab
   - { key: LBracket, mods: Command,        chars: "\x02p" }  # select previous tab
@@ -79,6 +78,7 @@ key_bindings: # to get a code run "showkey -a" on a Linux system and get hex cod
   - { key: F,         mods: Command,       chars: "\x20\x66" } # send SPC-f
   - { key: Comma,     mods: Command,       chars: "\x20\x2c" } # send SPC-,
   - { key: Period,    mods: Command,       chars: "\x20\x2e" } # send SPC-.
+  - { key: W,         mods: Command,       chars: "\x20\x64" } # send SPC-d
   - { key: R,         mods: Command,       chars: "\x20\x72\x72" } # send SPCrr (mapped to coc-rename in vimrc)
   - { key: M,         mods: Command,       chars: "\x20\x72\x6d" } # send SPCrm (mapped to coc-references in vimrc)
   - { key: Return,    mods: Command,       chars: "\x20\x72\x66" } # send SPCrf (mapped to CocFix in vimrc)
