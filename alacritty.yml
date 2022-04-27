@@ -67,10 +67,14 @@ key_bindings:
   - { key: K,        mods: Command,        chars: "\x1b\x5b\x41" }  # move cursor up
   - { key: L,        mods: Command,        chars: "\x1b\x5b\x43" }  # move cursor right
   # Tmux
-  - { key: T,        mods: Command,        chars: "\x02c" }  # new tab
-  - { key: RBracket, mods: Command|Shift,  chars: "\x02n" }  # select next Tmux tab
-  - { key: LBracket, mods: Command|Shift,  chars: "\x02p" }  # select previous Tmux tab
-  - { key: D,        mods: Command,        chars: "\x02[" }  # enter copy mode
+  - { key: T,        mods: Command,        chars: "\x02c" }  # new tab (C-b c)
+  - { key: RBracket, mods: Command|Shift,  chars: "\x02n" }  # select next Tmux tab (C-b n)
+  - { key: LBracket, mods: Command|Shift,  chars: "\x02p" }  # select previous Tmux tab (C-b p)
+  - { key: D,        mods: Command,        chars: "\x02[" }  # enter copy mode (C-b [)
+  - { key: Key1,     mods: Command,        chars: "\x02\x30" } # open 1st tab (C-b 0)
+  - { key: Key2,     mods: Command,        chars: "\x02\x31" } # open 2nd tab (C-b 1)
+  - { key: Key3,     mods: Command,        chars: "\x02\x32" } # open 3rd tab (C-b 2)
+  - { key: Key4,     mods: Command,        chars: "\x02\x33" } # open 4th tab (C-b 3)
   # Vim project
   - { key: P,         mods: Command,       chars: "\x20\x70" } # send SPC-p
   - { key: P,         mods: Command|Shift, chars: "\x20\x50" } # send SPC-P
