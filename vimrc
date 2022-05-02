@@ -23,6 +23,7 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'jiangmiao/auto-pairs'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
