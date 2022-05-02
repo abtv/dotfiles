@@ -86,6 +86,7 @@ git config --global user.email "your-email"
 | SPC f                             | grep in files                     |
 | SPC ,                             | show open buffers                 |
 | SPC .                             | show recent files                 |
+| SPC /                             | toggle comment                    |
 |                                   |                                   |
 | SPC z                             | send Vim to background            |
 |                                   |                                   |

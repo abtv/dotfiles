@@ -24,6 +24,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jiangmiao/auto-pairs'
+Plug 'numToStr/Comment.nvim'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -155,6 +156,11 @@ require('nvim-treesitter.configs').setup {
 }
 EOF
 
+" Comment config
+lua << EOF
+require('Comment').setup()
+EOF
+
 " Vimwiki config
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
@@ -189,7 +195,7 @@ nmap <Leader>q :q<CR>
 nmap <Leader>p :NERDTreeToggle<CR>
 nmap <Leader>P :NERDTreeFind<CR>
 
-nmap <leader><Leader> <cmd>Telescope find_files<cr>
+nmap <Leader><Leader> <cmd>Telescope find_files<cr>
 nmap <Leader>f <cmd>Telescope live_grep<cr>
 nmap <Leader>. <cmd>Telescope oldfiles<cr>
 nmap <Leader>, <cmd>Telescope buffers<cr>
@@ -203,6 +209,9 @@ nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
 nmap <Leader>we :vsplit<CR>
 nmap <Leader>ws :split<CR>
+
+nmap <Leader>/ gcc
+vmap <Leader>/ gc
 
 " Git keybindings
 nmap <Leader>g :Git<cr>:only<cr>
