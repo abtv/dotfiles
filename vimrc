@@ -107,8 +107,8 @@ let test#javascript#jest#options = {
   \ 'all':   '--forceExit',
 \}
 
-" COC extensions (also available: 'coc-go')
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-phpls']
+" COC extensions 
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-phpls', 'coc-go']
 
 " Prettier config
 let g:prettier#autoformat = 1
@@ -153,7 +153,7 @@ EOF
 " Treesitter config
 lua <<EOF
 require('nvim-treesitter.configs').setup {
-  ensure_installed = "maintained",
+  ensure_installed = { "javascript", "typescript", "lua", "go", "php" },
   highlight = { enable = true },
   indent = { enable = true }
 }
