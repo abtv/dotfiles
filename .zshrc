@@ -32,7 +32,9 @@ alias g="tig"
 # Node.js aliases
 alias b="npm run build"
 alias u="NODE_ENV=test npx jest --runInBand "
+alias ud="NODE_ENV=test node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand --forceExit "
 alias e="NODE_ENV=test npx jest --config ./test/jest-e2e.json --runInBand "
+alias ed="NODE_ENV=test node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --config ./test/jest-e2e.json --runInBand --forceExit "
 alias a="time (b && u && e)"
 
 # project aliases

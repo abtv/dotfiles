@@ -54,6 +54,25 @@
 | Cmd-f   | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
 
 
+## Terminal aliases for Node.js
+
+| Alias | Action                                  |
+|-------|-----------------------------------------|
+| b     | build project                           |
+| u     | run unit tests                          |
+| du    | debug unit tests                        |
+| e     | run e2e tests                           |
+| de    | debug e2e tests                         |
+| a     | build project, run all unit & e2e tests |
+
+
+## Debugging
+
+1. Run `debugger;` in your code to put a breakpoint.
+2. Open Chrome and type `chrome://inspect` then click `Open dedicated DevTools for Node`.
+3. Run `du` or `de`. If need to restart tests just restart the command in terminal again.
+
+
 ## Git
 
 | Command | Action                   |
