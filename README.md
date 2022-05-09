@@ -68,7 +68,7 @@
 
 ## Debugging
 
-1. Run `debugger;` in your code to put a breakpoint.
+1. Type `debugger;` in your code to put a breakpoint.
 2. Open Chrome and type `chrome://inspect` then click `Open dedicated DevTools for Node`.
 3. Run `du` or `de`. If need to restart tests just restart the command in terminal again.
 
