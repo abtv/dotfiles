@@ -60,9 +60,9 @@
 |-------|-----------------------------------------|
 | b     | build project                           |
 | u     | run unit tests                          |
-| du    | debug unit tests                        |
+| ud    | debug unit tests                        |
 | e     | run e2e tests                           |
-| de    | debug e2e tests                         |
+| ed    | debug e2e tests                         |
 | a     | build project, run all unit & e2e tests |
 
 
