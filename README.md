@@ -33,7 +33,9 @@
 
 5. Run `install_configs.sh`
 
-6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
+6. Run `mac_increase_keyboard_repeat_rate.sh` and restart your Mac.
+
+7. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
 ## MacOS settings
