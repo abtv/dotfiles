@@ -1,4 +1,7 @@
-# Run this script and restart your Mac if you want to type faster.
-# I took it from here https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+# Run this script and restart your Mac:
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
+# Restore defaults:
+# defaults write -g InitialKeyRepeat -int 15
+# defaults write -g KeyRepeat -int 2
