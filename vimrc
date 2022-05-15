@@ -171,6 +171,16 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 command -nargs=* Log Git! log --graph --pretty=format:'%h | %ad | %s | %an' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
 command -nargs=* Push Git! push origin head <args>
 
+" Colortheme config
+let g:PaperColor_Theme_Options = {
+\   'theme': {
+\     'default': {
+\       'transparent_background': 1
+\     }
+\   }
+\ }
+
+
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -242,15 +252,13 @@ autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " 6. My color scheme
-
 " enable 256 colors
 set t_Co=256
 set background=light
 colorscheme PaperColor
 
-hi Normal ctermbg=252
-hi NonText ctermbg=252
-hi Pmenu ctermbg=251
+hi LineNr ctermfg=243
+hi Comment ctermfg=243
 
 hi Operator ctermfg=7
 hi Delimiter ctermfg=7
