@@ -171,16 +171,6 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 command -nargs=* Log Git! log --graph --pretty=format:'%h | %ad | %s | %an' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
 command -nargs=* Push Git! push origin head <args>
 
-" Colortheme config
-let g:PaperColor_Theme_Options = {
-\   'theme': {
-\     'default': {
-\       'transparent_background': 1
-\     }
-\   }
-\ }
-
-
 " End of plugin configs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -256,6 +246,14 @@ autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 set t_Co=256
 set background=light
 colorscheme PaperColor
+
+let g:PaperColor_Theme_Options = {
+\   'theme': {
+\     'default': {
+\       'transparent_background': 1
+\     }
+\   }
+\ }
 
 hi LineNr ctermfg=243
 hi Comment ctermfg=243
