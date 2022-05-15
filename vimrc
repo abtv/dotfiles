@@ -168,7 +168,7 @@ EOF
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Fugitive config
-command -nargs=* Log Git! log --graph --pretty=format:'%h | %ad | %s | %an' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
+command -nargs=* Log Git! log --graph --pretty=format:'%h - %ad - %s - <%an>' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
 command -nargs=* Push Git! push origin head <args>
 
 " End of plugin configs
@@ -242,11 +242,7 @@ autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " 6. My color scheme
-" enable 256 colors
-set t_Co=256
-set background=light
-colorscheme PaperColor
-
+set t_Co=256 " enable 256 colors
 let g:PaperColor_Theme_Options = {
 \   'theme': {
 \     'default': {
@@ -254,6 +250,8 @@ let g:PaperColor_Theme_Options = {
 \     }
 \   }
 \ }
+set background=light
+colorscheme PaperColor
 
 hi LineNr ctermfg=243
 hi Comment ctermfg=243
