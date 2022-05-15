@@ -30,7 +30,7 @@ font:
 
 colors:
   primary:
-    background: '0xcccccc'
+    background: '0xc0c0c0'
     foreground: '0x383a42'
 
   cursor:
