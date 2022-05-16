@@ -126,7 +126,7 @@ git config --global user.email "your-email"
 | SPC r u                           | refactoring: autoformat           |
 | SPC r f                           | refactoring: autofix              |
 |                                   |                                   |
-| SPC n                             | open VimWiki index page           |
+| SPC n                             | open projects.org file            |
 | SPC t                             | toggle a VimWiki task             |
 |                                   |                                   |
 | zc                                | fold section                      |

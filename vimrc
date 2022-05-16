@@ -26,6 +26,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jiangmiao/auto-pairs'
 Plug 'numToStr/Comment.nvim'
+Plug 'jceb/vim-orgmode'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -233,7 +234,7 @@ nmap <Leader>ru <Plug>(coc-format)
 nmap <Leader>rf :CocFix<CR>
 
 " Vimwiki
-nmap <Leader>n :VimwikiIndex<CR>
+nmap <Leader>n :e ~/work/projects.org<CR>
 nmap <Leader>t :VimwikiToggleListItem<CR>
 autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 
