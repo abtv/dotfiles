@@ -309,4 +309,4 @@ hi VertSplit ctermbg=NONE
 hi VertSplit ctermfg=NONE
 
 hi Title cterm=bold ctermfg=7
-hi Folded cterm=bold ctermfg=7 ctermbg=1
+hi Folded cterm=bold ctermfg=254 ctermbg=66
