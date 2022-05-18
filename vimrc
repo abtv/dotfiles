@@ -74,6 +74,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 filetype plugin on
+set nofoldenable
 " save automatically when text is changed
 set updatetime=200
 autocmd CursorHold * silent! update
@@ -306,3 +307,6 @@ hi NERDTreeHelpKey ctermfg=28
 hi NERDTreeHelpCommand ctermfg=28
 hi VertSplit ctermbg=NONE
 hi VertSplit ctermfg=NONE
+
+hi Title cterm=bold ctermfg=7
+hi Folded cterm=bold ctermfg=7 ctermbg=1
