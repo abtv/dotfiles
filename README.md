@@ -69,7 +69,7 @@ MacOS uses an animation when switches between full-screen windows. These animati
 
 6. Run `mac_increase_keyboard_repeat_rate.sh` and restart MacOS.
 
-7. (Optional) run `mac_heavy_font_smoothing.sh` if you DON'T have a 4k+ screen.
+7. (Optional) run `mac_heavy_font_smoothing.sh` if you have low pixel density (old display).
 
 8. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
@@ -114,36 +114,34 @@ git config --global user.email "your-email"
 
 | Command                           | Action                            |
 | --------------------------------- | --------------------------------- |
-| SPC SPC                           | search in file names              |
-| SPC p                             | open project tree                 |
-| SPC P                             | open current file in project tree |
-| SPC f                             | grep in files                     |
-| SPC ,                             | show open buffers                 |
-| SPC .                             | show recent files                 |
-| SPC /                             | toggle comment                    |
+| CMD+;                             | search in file names              |
+| CMD+p                             | open project tree                 |
+| CMD+P                             | open current file in project tree |
+| CMD+f                             | grep in files                     |
+| CMD+,                             | show open buffers                 |
+| CMD+.                             | show recent files                 |
+| CMD+/                             | toggle comment                    |
 |                                   |                                   |
-| SPC z                             | send Vim to background            |
-|                                   |                                   |
-| SPC s                             | save current buffer               |
-| SPC d                             | close current buffer              |
+| CMD+s                             | save current buffer               |
+| CMD+w                             | close current buffer              |
 | SPC x                             | close all other buffers           |
 | :wa                               | save all buffers                  |
 |                                   |                                   |
 | SPC g                             | open Git status                   |
 | SPC h                             | Git blame                         |
 | SPC l                             | Git log                           |
-| :Git push origin head             | Git push current branch           |
+| :Push                             | Git push current branch           |
 |                                   |                                   |
-| SPC r r                           | refactoring: rename               |
-| SPC r m                           | refactoring: references           |
-| SPC r u                           | refactoring: autoformat           |
-| SPC r f                           | refactoring: autofix              |
+| CMD+r                             | refactoring: rename               |
+| CMD+m                             | refactoring: references           |
+| CMD+Enter                         | refactoring: autofix              |
 |                                   |                                   |
-| SPC n                             | open projects.org file            |
-| SPC t                             | toggle a VimWiki task             |
+| CMD+n                             | open projects.org file            |
 |                                   |                                   |
 | zc                                | fold section                      |
 | zo                                | open section                      |
+|                                   |                                   |
+| SPC z                             | send Vim to background            |
 
 
 ## Git status mappings (after SPC g)
