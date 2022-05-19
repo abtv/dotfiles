@@ -3,12 +3,14 @@
 ## Key principles
 
 1. do as much as possible without a mouse
+ 
+2. do as much as possible with a single keystroke (like Cmd+p) instead of several keystrokes (like SPC p)
 
-2. switch between applications with hotkeys and don't use window animations
+3. don't use window animations
 
-3. development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
+4. development environment shouldn't consume a lot of CPU. It's useful when using a laptop on a battery.
 
-4. development environment should be cross-platform (MacOS and Linux)
+5. development environment should be cross-platform (MacOS and Linux)
 
 
 ## Tools
@@ -27,15 +29,13 @@
 
 2. Install `oh-my-zsh`
 
-3. Clone the repo to ~/dotfiles
+3. Clone the repo to `~/dotfiles`
 
 4. Run `install_packages.sh`
 
 5. Run `install_configs.sh`
 
-6. Run `mac_increase_keyboard_repeat_rate.sh` and restart your Mac.
-
-7. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
+6. Download and install JebBrains Mono font https://www.jetbrains.com/ru-ru/lp/mono/#how-to-install
 
 
 ## MacOS settings
@@ -44,35 +44,21 @@
 
 2. Map CapsLock to Control.
 
+3. Run `mac_increase_keyboard_repeat_rate.sh` and restart your Mac. You will type faster.
+
 
 ## Tmux
 
-| Command | Action                                                                                          |
-|---------|-------------------------------------------------------------------------------------------------|
-| Cmd-t   | create a new window                                                                             |
-| Cmd-w   | close current window (or you can use C-d)                                                       |
-| Cmd-[   | go to the left window                                                                           |
-| Cmd-]   | go to the right window                                                                          |
-| Cmd-f   | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
-
-
-## Terminal aliases for Node.js
-
-| Alias | Action                                  |
-|-------|-----------------------------------------|
-| b     | build project                           |
-| u     | run unit tests                          |
-| ud    | debug unit tests                        |
-| e     | run e2e tests                           |
-| ed    | debug e2e tests                         |
-| a     | build project, run all unit & e2e tests |
-
-
-## Debugging
-
-1. Type `debugger;` in your code to put a breakpoint.
-2. Open Chrome and type `chrome://inspect` then click `Open dedicated DevTools for Node`.
-3. Run `du` or `de`. If need to restart tests just restart the command in terminal again.
+| Command     | Action                                                                                          |
+|-------------|-------------------------------------------------------------------------------------------------|
+| Cmd-t       | create a new window                                                                             |
+| Cmd-1       | switch to 1st window                                                                            |
+| Cmd-2       | switch to 2nd window                                                                            |
+| Cmd-3       | switch to 3rd window                                                                            |
+| Cmd-4       | switch to 4th window                                                                            |
+| Cmd-Shift-[ | go to the left window (not recommended, better to use Cmd-number)                               |
+| Cmd-Shift-] | go to the right window (not recommended, better to use Cmd-number)                              |
+| Cmd-d       | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
 
 
 ## Git
@@ -141,6 +127,26 @@ git config --global user.email "your-email"
 | cc      | commit changes                                              |
 | ca      | commit changes with amend                                   |
 | ce      | commit changes with amend without editing of commit message |
+
+
+## Terminal aliases for Node.js
+
+| Alias | Action                                  |
+|-------|-----------------------------------------|
+| b     | build project                           |
+| u     | run unit tests                          |
+| ud    | debug unit tests                        |
+| e     | run e2e tests                           |
+| ed    | debug e2e tests                         |
+| a     | build project, run all unit & e2e tests |
+
+
+## Debugging
+
+1. Type `debugger;` in your code to put a breakpoint.
+2. Open Chrome and type `chrome://inspect` then click `Open dedicated DevTools for Node`.
+3. Run `du` or `de`. If need to restart tests just restart the command in terminal again.
+
 
 ## Emacs mappings
 
