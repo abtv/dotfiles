@@ -15,8 +15,10 @@
 ### 1. Alacritty as a terminal emulator
 
 There are 2 reasons to use Alacritty as a terminal emulator:
+
 First, Alacritty allows to override keybindings: for example, I use Cmd+H to move left instead of left arrow and I don't have to move my palm to arrow keys. Also I prefer single-keystroke (Cmd+P) over two keystokes (SPC P) and this is also mapped in Alacritty.
-Secondly, Alacritty is just fast.
+
+Second, Alacritty is just fast.
 
 
 ### 2. Tmux as a terminal multiplexer
@@ -27,6 +29,7 @@ I also use Tmux because Alacritty is just a terminal emulator and I need a termi
 ### 3. Vim as a code and text editor
 
 First, usually I work with several projects during a day and I want a unified interface which terminal provides easily. That's why I have 4 tabs open in my terminal. Each tab represents one project in Vim or just a folder.
+
 Second, Vim is a light-weight text editor with small latency and ergonomic typing. LSP makes it pretty smart: Vim can do all the things that VSCode can do. Vim and VSCode are pretty close but Vim works faster and it's easier to type in Vim for me.
 
 
@@ -37,17 +40,17 @@ Usually I use Tig if I don't have Vim opened or Vim Fugitive if I opened a proje
 
 ## Important decisions on MacOS
 
-## 1. Reduced key repeat rate
+### 1. Reduced key repeat rate
 
 I'm a touch-typist and I don't like standard MacOS repeat rate. I modified it with `mac_increase_keyboard_repeat_rate.sh` script because UI settings don't allow to make it fast enough (at least for me).
 
 
-## 2. Map CapsLock to Control
+### 2. Map CapsLock to Control
 
 It's easier to press CapsLock than Control.
 
 
-## 3. Don't open a window in full-screen mode
+### 3. Don't open a window in full-screen mode
 
 MacOS uses an animation when switches between full-screen windows. These animations are distracting me and that's why I don't open a window full-screen.
 
@@ -85,7 +88,7 @@ MacOS uses an animation when switches between full-screen windows. These animati
 | Cmd-d       | enter copy mode (use q or Enter to exit) and you can use vi movements (hjkl C-d C-u) and search |
 
 
-## Git
+## Git aliases
 
 | Command | Action                   |
 |---------|--------------------------|
