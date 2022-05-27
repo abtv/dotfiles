@@ -21,7 +21,7 @@ alias vi="nvim"
 alias em="emacs"
 alias doom="~/.emacs.d/bin/doom"
 alias h="htop"
-alias n="cd ~/notes/"
+alias n="cd ~/work/notes/"
 alias work="cd ~/work/"
 alias box="cd ~/box/"
 
