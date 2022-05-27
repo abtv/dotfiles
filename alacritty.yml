@@ -87,7 +87,10 @@ key_bindings:
   - { key: Comma,     mods: Command,       chars: "\x20\x2c" } # send SPC-,
   - { key: Period,    mods: Command,       chars: "\x20\x2e" } # send SPC-.
   - { key: Slash,     mods: Command,       chars: "\x20\x2f" } # send SPC-/
+  # Vim notes
+  - { key: I,         mods: Command,       chars: "\x20\x69" } # send SPC-i
   - { key: N,         mods: Command,       chars: "\x20\x6e" } # send SPC-n
+  - { key: B,         mods: Command,       chars: "\x20\x62" } # send SPC-b
   # Vim CoC
   - { key: R,         mods: Command,       chars: "\x20\x72\x72" } # send SPCrr (mapped to coc-rename in vimrc)
   - { key: M,         mods: Command,       chars: "\x20\x72\x6d" } # send SPCrm (mapped to coc-references in vimrc)
