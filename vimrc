@@ -251,9 +251,10 @@ nmap <Leader>rm <Plug>(coc-references)
 nmap <Leader>ru <Plug>(coc-format)
 nmap <Leader>rf :CocFix<CR>
 
-" Vimwiki
+" Notes
 nmap <Leader>n :e ~/work/notes/projects.org<CR>
-nmap <Leader>t :VimwikiToggleListItem<CR>
+nmap <Leader>i :e ~/work/notes/inbox.org<CR>
+nmap <Leader>b :e ~/work/notes/base.org<CR>
 autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 
 " End of key bindings
