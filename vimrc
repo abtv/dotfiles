@@ -252,9 +252,7 @@ nmap <Leader>ru <Plug>(coc-format)
 nmap <Leader>rf :CocFix<CR>
 
 " Notes
-nmap <Leader>n :e ~/work/notes/projects.org<CR>
-nmap <Leader>i :e ~/work/notes/inbox.org<CR>
-nmap <Leader>b :e ~/work/notes/base.org<CR>
+nmap <Leader>n :e ~/work/notes/notes.org<CR>
 autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
 
 " End of key bindings

@@ -136,7 +136,7 @@ git config --global user.email "your-email"
 | CMD+m                             | refactoring: references           |
 | CMD+Enter                         | refactoring: autofix              |
 |                                   |                                   |
-| CMD+n                             | open projects.org file            |
+| CMD+n                             | open notes.org file               |
 |                                   |                                   |
 | zc                                | fold section                      |
 | zo                                | open section                      |
