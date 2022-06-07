@@ -41,6 +41,9 @@ alias a="time (b && u && e)"
 # project aliases
 alias d="cd ~/dotfiles"
 
+# golang
+export GOPATH=~/go
+
 cd ~/work/
 
 # this is a shared file so DON'T put secrets here
