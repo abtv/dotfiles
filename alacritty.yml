@@ -8,7 +8,7 @@ shell:
 window:
   decorations: buttonless
   dimensions:
-    columns: 190
+    columns: 170
     lines: 50
 
 font:
