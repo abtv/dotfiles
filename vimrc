@@ -27,6 +27,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'jiangmiao/auto-pairs'
 Plug 'numToStr/Comment.nvim'
 Plug 'nvim-orgmode/orgmode'
+Plug 'MattesGroeger/vim-bookmarks'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -254,6 +255,10 @@ nmap <Leader>rf :CocFix<CR>
 " Notes
 nmap <Leader>n :e ~/work/notes/notes.org<CR>
 autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
+
+" Bookmarks
+let g:bookmark_sign = '⚑'
+let g:bookmark_annotation_sign = '⚑'
 
 " End of key bindings
 

@@ -141,6 +141,10 @@ git config --global user.email "your-email"
 | zc                                | fold section                      |
 | zo                                | open section                      |
 |                                   |                                   |
+| mi                                | insert bookmark                   |
+| mm                                | toggle bookmark                   |
+| ma                                | show all bookmarks                |
+|                                   |                                   |
 | SPC z                             | send Vim to background            |
 
 
