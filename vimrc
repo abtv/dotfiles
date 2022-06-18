@@ -28,6 +28,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'numToStr/Comment.nvim'
 Plug 'nvim-orgmode/orgmode'
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -151,6 +152,7 @@ require("telescope").setup{
 }
 -- fzf must be called after telescope.setup function call
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('vim_bookmarks')
 EOF
 
 " Treesitter config
@@ -221,7 +223,7 @@ nmap <Leader>P :NERDTreeFind<CR>
 nmap <Leader><Leader> <cmd>Telescope find_files<cr>
 nmap <Leader>f <cmd>Telescope live_grep<cr>
 nmap <Leader>. <cmd>Telescope oldfiles<cr>
-nmap <Leader>, <cmd>Telescope buffers<cr>
+nmap <Leader>, <cmd>Telescope vim_bookmarks all<cr>
 
 nmap <Leader>d :bd<CR>
 nmap <Leader>x :w <bar> %bd <bar> e# <bar> bd# <CR><CR>

@@ -118,7 +118,7 @@ git config --global user.email "your-email"
 | CMD+p                             | open project tree                 |
 | CMD+P                             | open current file in project tree |
 | CMD+f                             | grep in files                     |
-| CMD+,                             | show open buffers                 |
+| CMD+,                             | show bookmarks                    |
 | CMD+.                             | show recent files                 |
 | CMD+/                             | toggle comment                    |
 |                                   |                                   |
