@@ -46,4 +46,6 @@ export GOPATH=~/go
 
 cd ~/work/
 
+set -o vi
+
 # this is a shared file so DON'T put secrets here
