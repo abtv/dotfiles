@@ -25,7 +25,27 @@
    '(default ((t (:background "#cfcfcf"))))))
 
 
-;; Key bindings
-(map! :map general-override-mode-map
-      :n "C-j" #'previous-buffer
-      :n "C-k" #'next-buffer)
+;; Key bindings for better arrows
+(map! "s-h" #'left-char
+      "s-l" #'right-char
+      "s-j" #'next-line
+      "s-k" #'previous-line)
+
+
+;; Key bindings for buffers
+(map! "s-[" #'previous-buffer
+      "s-]" #'next-buffer
+      "s-w" #'kill-current-buffer)
+
+
+;; Key bindings to resemble my IDE
+(map! "s-p" #'+treemacs/toggle
+      "s-P" #'treemacs-find-file
+      "s-f" #'+default/search-project
+      "s-;" #'projectile-find-file
+      "s-," #'+vertico/switch-workspace-buffer
+      "s-." #'find-file)
+
+
+;; My inbox, projects, tasks and hints
+(map! "s-i" (lambda () (interactive) (find-file "~/work/notes/notes.org")))
