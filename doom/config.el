@@ -10,6 +10,7 @@
 (auto-save-visited-mode +1)
 (setq display-line-numbers-type t)
 (setq org-directory "~/org/")
+(setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 
 
 ; Set color theme
