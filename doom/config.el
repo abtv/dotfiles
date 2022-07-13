@@ -35,7 +35,8 @@
 ;; Key bindings for buffers
 (map! "s-[" #'previous-buffer
       "s-]" #'next-buffer
-      "s-w" #'kill-current-buffer)
+      "s-w" #'kill-current-buffer
+      "s-s" #'save-buffer)
 
 
 ;; Key bindings to resemble my IDE
