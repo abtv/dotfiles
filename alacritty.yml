@@ -12,7 +12,7 @@ window:
     lines: 48
 
 font:
-  use_thin_stroke: true
+  use_thin_strokes: false
   size: 15.0
   normal:
     family: JetBrains Mono
