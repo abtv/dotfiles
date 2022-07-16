@@ -1,32 +1,25 @@
 " 1. Init plugins
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
-" common
+" Plugins
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-" Git integration (I need git blame only: everything else I usually do in
-" terminal)
 Plug 'tpope/vim-fugitive'
-" testing
-Plug 'janko-m/vim-test'
-" markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jiangmiao/auto-pairs'
 Plug 'numToStr/Comment.nvim'
-Plug 'nvim-orgmode/orgmode'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 " Initialize plugin system
@@ -178,9 +171,6 @@ command -nargs=* Push Git! push origin head <args>
 
 " Org mode config
 lua << EOF
--- Load custom tree-sitter grammar for org filetype
-require('orgmode').setup_ts_grammar()
-
 -- Tree-sitter configuration
 require'nvim-treesitter.configs'.setup {
   -- If TS highlights are not enabled at all, or disabled via `disable` prop, highlighting will fallback to default Vim syntax highlighting
