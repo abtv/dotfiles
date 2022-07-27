@@ -20,8 +20,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jiangmiao/auto-pairs'
 Plug 'numToStr/Comment.nvim'
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 " Initialize plugin system
 call plug#end()
 " End of init plugins
@@ -98,12 +96,6 @@ let g:airline#extensions#tabline#fnamemod = ':t' " show only file names in tabs
 " Markdown config
 let g:vim_markdown_folding_disabled = 1
 
-" Test config
-let g:test#javascript#jest#file_pattern = 'test/.*\.js$'
-let test#javascript#jest#options = {
-  \ 'all':   '--forceExit',
-\}
-
 " COC extensions 
 let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-phpls', 'coc-go']
 
@@ -145,7 +137,6 @@ require("telescope").setup{
 }
 -- fzf must be called after telescope.setup function call
 require('telescope').load_extension('fzf')
-require('telescope').load_extension('vim_bookmarks')
 EOF
 
 " Treesitter config
@@ -161,9 +152,6 @@ EOF
 lua << EOF
 require('Comment').setup()
 EOF
-
-" Vimwiki config
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Fugitive config
 command -nargs=* Log Git! log --graph --pretty=format:'%h - %ad - %s - <%an>' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
@@ -198,8 +186,6 @@ nmap j gj
 nmap k gk
 
 " General key bindings
-nmap <C-j> :bprevious<CR>
-nmap <C-k> :bnext<CR>
 nmap <C-h> :noh<CR>
 nmap <C-l> :set invnumber<CR>
 
@@ -211,9 +197,9 @@ nmap <Leader>p :NERDTreeToggle<CR>
 nmap <Leader>P :NERDTreeFind<CR>
 
 nmap <Leader><Leader> <cmd>Telescope find_files<cr>
+nmap <Leader>; <cmd>Telescope find_files<cr>
 nmap <Leader>f <cmd>Telescope live_grep<cr>
 nmap <Leader>. <cmd>Telescope oldfiles<cr>
-nmap <Leader>, <cmd>Telescope vim_bookmarks all<cr>
 
 nmap <Leader>d :bd<CR>
 nmap <Leader>x :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
@@ -233,24 +219,32 @@ nmap <Leader>g :Git<cr>:only<cr>
 nmap <Leader>h :Git blame --date=short <cr>
 nmap <Leader>l :Log<cr><C-W>w:only<cr>
 
-" Testing key bindings
-nmap <Leader>y :TestNearest<CR>
-
 " CoC
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <Leader>rr <Plug>(coc-rename)
-nmap <Leader>rm <Plug>(coc-references)
-nmap <Leader>ru <Plug>(coc-format)
-nmap <Leader>rf :CocFix<CR>
+nmap <Leader>r <Plug>(coc-rename)
+nmap <Leader>m <Plug>(coc-references)
+nmap <Leader><CR> :CocFix<CR>
 
 " Notes
-nmap <Leader>n :e ~/work/notes/notes.org<CR>
-autocmd FileType vimwiki nnoremap <buffer> gd :VimwikiFollowLink<CR>
+nmap <Leader>n :e ~/work/notes/notes.txt<CR>
 
-" Bookmarks
-let g:bookmark_sign = '⚑'
-let g:bookmark_annotation_sign = '⚑'
+" Map buffer switcher
+nmap [[ :bprevious<CR>
+nmap ]] :bnext<CR>
+
+nnoremap <silent><nowait> [ [[
+nnoremap <silent><nowait> ] ]]
+
+function! MakeBracketMaps()
+    nnoremap <silent><nowait><buffer> [ :<c-u>exe 'normal '.v:count.'[['<cr>
+    nnoremap <silent><nowait><buffer> ] :<c-u>exe 'normal '.v:count.']]'<cr>
+endfunction
+
+augroup bracketmaps
+    autocmd!
+    autocmd FileType * call MakeBracketMaps()
+augroup END
 
 " End of key bindings
 
