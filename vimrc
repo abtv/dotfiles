@@ -300,3 +300,6 @@ hi VertSplit ctermfg=NONE
 
 hi Title cterm=bold ctermfg=7
 hi Folded cterm=bold ctermfg=254 ctermbg=66
+
+" Set font size
+set guifont=JetBrains\ Mono:h14
