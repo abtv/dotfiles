@@ -44,9 +44,9 @@
       "s-P" #'treemacs-find-file
       "s-f" #'+default/search-project
       "s-;" #'projectile-find-file
-      "s-," #'+vertico/switch-workspace-buffer
+      "s-," #'consult-recent-file
       "s-." #'find-file)
 
 
 ;; My inbox, projects, tasks and hints
-(map! "s-i" (lambda () (interactive) (find-file "~/work/notes/notes.org")))
+(map! "s-i" (lambda () (interactive) (find-file "~/work/notes/notes.txt")))
