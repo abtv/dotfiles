@@ -14,14 +14,14 @@
 
 
 ; Set color theme
-(load-theme 'adwaita t)
+(load-theme 'whiteboard t)
 ; Make the default background not so bright
-(with-eval-after-load "adwaita-theme"
+(with-eval-after-load "whiteboard-theme"
   ; this needed for Emacs with UI
-  (set-background-color "#d0d0d0")
+  (set-background-color "#e0e0e0")
   ; this needed for Emacs in terminal
   (custom-theme-set-faces
-   'adwaita
+   'whiteboard
    '(default ((t (:background "#cfcfcf"))))))
 
 
@@ -33,8 +33,8 @@
 
 
 ;; Key bindings for buffers
-(map! "s-[" #'previous-buffer
-      "s-]" #'next-buffer
+(map! "s-{" #'previous-buffer
+      "s-}" #'next-buffer
       "s-w" #'kill-current-buffer
       "s-s" #'save-buffer)
 
