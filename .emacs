@@ -1,3 +1,18 @@
+
+; UI
+(setq default-frame-alist
+       '((height . 60)
+         (width . 180)
+         (left . 350)
+         (top . 200)
+         (vertical-scroll-bars . nil)
+         (horizontal-scroll-bars . nil)
+         (tool-bar-lines . 0)))
+(blink-cursor-mode -1)
+(setq ring-bell-function 'ignore)
+(line-number-mode   t)
+(global-linum-mode  t)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 ;(package-refresh-contents)  ; ucomment it to update deps
@@ -58,20 +73,6 @@
 (define-key evil-normal-state-map (kbd "SPC e") (lambda () (interactive) (find-file "~/.emacs")))
 (define-key evil-normal-state-map (kbd "SPC n") (lambda () (interactive) (find-file "~/work/notes/notes.txt")))
 
-; UI
-(setq default-frame-alist
-       '((height . 60)
-         (width . 180)
-         (left . 350)
-         (top . 200)
-         (vertical-scroll-bars . nil)
-         (horizontal-scroll-bars . nil)
-         (tool-bar-lines . 0)))
-(blink-cursor-mode -1)
-(setq ring-bell-function 'ignore)
-(line-number-mode   t)
-(global-linum-mode  t)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Buffers
@@ -87,6 +88,16 @@
 (define-key evil-normal-state-map (kbd "SPC w h") 'split-window-horizontally)
 (define-key evil-normal-state-map (kbd "SPC w s") 'split-window-horizontally)
 (define-key evil-normal-state-map (kbd "SPC w v") 'split-window-vertically)
+
+; Navigation
+(defun previous-lines ()
+  (interactive)
+  (evil-previous-line 10))
+(defun next-lines ()
+  (interactive)
+  (evil-next-line 10))
+(define-key evil-normal-state-map (kbd "J") 'next-lines)
+(define-key evil-normal-state-map (kbd "K") 'previous-lines)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
