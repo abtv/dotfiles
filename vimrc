@@ -7,7 +7,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', {
@@ -139,15 +138,6 @@ require("telescope").setup{
 require('telescope').load_extension('fzf')
 EOF
 
-" Treesitter config
-lua <<EOF
-require('nvim-treesitter.configs').setup {
-  ensure_installed = { "javascript", "typescript", "lua", "go", "php" },
-  highlight = { enable = true },
-  indent = { enable = true }
-}
-EOF
-
 " Comment config
 lua << EOF
 require('Comment').setup()
@@ -156,20 +146,6 @@ EOF
 " Fugitive config
 command -nargs=* Log Git! log --graph --pretty=format:'%h - %ad - %s - <%an>' --date=format:'%Y-%m-%d %H:%M' --abbrev-commit <args>
 command -nargs=* Push Git! push origin head <args>
-
-" Org mode config
-lua << EOF
--- Tree-sitter configuration
-require'nvim-treesitter.configs'.setup {
-  -- If TS highlights are not enabled at all, or disabled via `disable` prop, highlighting will fallback to default Vim syntax highlighting
-  highlight = {
-    enable = true,
-    disable = {'org'}, -- Remove this to use TS highlighter for some of the highlights (Experimental)
-    additional_vim_regex_highlighting = {'org'}, -- Required since TS highlighter doesn't support all syntax features (conceal)
-  },
-  ensure_installed = {'org'}, -- Or run :TSUpdate org
-}
-EOF
 
 " End of plugin configs
 
