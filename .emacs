@@ -1,18 +1,21 @@
-
 ; UI
 (setq default-frame-alist
-       '((height . 60)
-         (width . 180)
-         (left . 350)
-         (top . 200)
+       '((height . 40)
+         (width . 120)
+         (left . 0)
+         (top . 0)
          (vertical-scroll-bars . nil)
          (horizontal-scroll-bars . nil)
          (tool-bar-lines . 0)))
+(set-face-attribute 'default nil :height 150) ; height = font_size * 10
 (blink-cursor-mode -1)
 (setq ring-bell-function 'ignore)
 (line-number-mode   t)
 (global-linum-mode  t)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Packages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 ;(package-refresh-contents)  ; ucomment it to update deps
@@ -21,12 +24,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Setup packages
-
 (setq packages
   '(evil
     evil-collection
     which-key
     gcmh
+    general
     ))
 
 (unless (package-installed-p 'use-package)
@@ -38,13 +41,17 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; CONFIG PACKAGES
+; Evil-mode
 (setq evil-want-integration t)
 (setq evil-want-keybinding nil)
 (setq evil-vsplit-window-right t)
 (setq evil-split-window-below t)
 (evil-mode)
 (evil-collection-init)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Which-key
 (which-key-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -62,42 +69,65 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; M-x
-(define-key evil-normal-state-map (kbd "SPC x") 'execute-extended-command)
-
 ; Dired
 (setq vc-follow-symlinks t)
-(global-set-key (kbd "s-o") (lambda () (interactive) (dired "~/work/")))
-
-; Files
-(define-key evil-normal-state-map (kbd "SPC e") (lambda () (interactive) (find-file "~/.emacs")))
-(define-key evil-normal-state-map (kbd "SPC n") (lambda () (interactive) (find-file "~/work/notes/notes.txt")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Buffers
+; Global keybindings
+(global-set-key (kbd "s-o") 'open-dired)
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-w") 'kill-current-buffer)
 (global-set-key (kbd "s-{") 'previous-buffer)
 (global-set-key (kbd "s-}") 'next-buffer)
 
-; Windows
-(define-key evil-normal-state-map (kbd "SPC w w") 'next-window-any-frame)
-(define-key evil-normal-state-map (kbd "SPC w m") 'delete-other-windows)
-(define-key evil-normal-state-map (kbd "SPC w c") 'delete-window)
-(define-key evil-normal-state-map (kbd "SPC w h") 'split-window-horizontally)
-(define-key evil-normal-state-map (kbd "SPC w s") 'split-window-horizontally)
-(define-key evil-normal-state-map (kbd "SPC w v") 'split-window-vertically)
+; Evil keybindings
+(general-evil-setup t)
+(nvmap :prefix "SPC"
+  "x" '(execute-extended-command :which-key "M-x")
+  "q" '(save-buffers-kill-emacs :which-key "Quit Emacs")
+  "d" '(kill-current-buffer :which-key "Close current buffer")
+  "o" '(open-dired :which-key "Open dired")
+
+  ; Files
+  "e" '(open-emacs-config :which-key "Open Emacs config")
+  "i" '(open-notes-txt :which-key "Open notes.txt")
+
+  ; Windows
+  "w w" '(next-window-any-frame :which-key "Switch to next window")
+  "w m" '(delete-other-windows :which-key "Maximize current window")
+  "w c" '(delete-window :which-key "Delete current window")
+  "w h" '(split-window-horizontally :which-key "Split window horizontally")
+  "w s" '(split-window-horizontally :which-key "Split window horizontally")
+  "w v" '(split-window-vertically :which-key "Split window vertically")
+  )
 
 ; Navigation
+(define-key evil-normal-state-map (kbd "J") 'next-lines)
+(define-key evil-normal-state-map (kbd "K") 'previous-lines)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; My small helpers
+(defun open-emacs-config ()
+  (interactive)
+  (find-file "~/.emacs"))
+
+(defun open-notes-txt ()
+  (interactive)
+  (find-file "~/work/notes/notes.txt"))
+
+(defun open-dired ()
+  (interactive)
+  (dired "~/work/"))
+
 (defun previous-lines ()
   (interactive)
   (evil-previous-line 10))
+
 (defun next-lines ()
   (interactive)
   (evil-next-line 10))
-(define-key evil-normal-state-map (kbd "J") 'next-lines)
-(define-key evil-normal-state-map (kbd "K") 'previous-lines)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
