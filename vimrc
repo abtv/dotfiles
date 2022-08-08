@@ -184,7 +184,7 @@ nmap <Leader>z :sus<CR>
 nmap <Leader>wc :close<CR>
 nmap <Leader>wm :only<CR>
 nmap <Leader>ww <C-W>w
-nmap <Leader>we :vsplit<CR>
+nmap <Leader>wv :vsplit<CR>
 nmap <Leader>ws :split<CR>
 
 nmap <Leader>/ gcc
