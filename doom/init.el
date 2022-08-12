@@ -49,6 +49,8 @@
        (eval +overlay)     ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation
        magit             ; a git porcelain for Emacs
+       tree-sitter
+       lsp
 
        :os
        (:if IS-MAC macos)  ; improve compatibility with macOS
@@ -59,6 +61,9 @@
        markdown          ; writing docs for people to ignore
        sh                ; she sells {ba,z,fi}sh shells on the C xor
        yaml              ; JSON, but readable
+       (javascript +lsp)
+       (php +lsp)
+       (go +lsp)
 
        :config
        ;;literate
