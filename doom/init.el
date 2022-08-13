@@ -61,9 +61,12 @@
        markdown          ; writing docs for people to ignore
        sh                ; she sells {ba,z,fi}sh shells on the C xor
        yaml              ; JSON, but readable
-       (javascript +lsp)
-       (php +lsp)
-       (go +lsp)
+       javascript
+       php
+       go
+       ;; (javascript +lsp)
+       ;; (php +lsp)
+       ;; (go +lsp)
 
        :config
        ;;literate
