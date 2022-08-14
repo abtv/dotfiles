@@ -12,18 +12,16 @@
 (setq org-directory "~/org/")
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 
-
 ; Set color theme
-(load-theme 'whiteboard t)
+(load-theme 'tango t)
 ; Make the default background not so bright
-(with-eval-after-load "whiteboard-theme"
+(with-eval-after-load "tango-theme"
   ; this needed for Emacs with UI
-  (set-background-color "#e0e0e0")
+  (set-background-color "#c0c0c0")
   ; this needed for Emacs in terminal
   (custom-theme-set-faces
    'whiteboard
    '(default ((t (:background "#cfcfcf"))))))
-
 
 ;; Key bindings for better arrows
 (map! "s-h" #'left-char
@@ -40,12 +38,13 @@
 
 
 ;; Key bindings to resemble my IDE
-(map! "s-p" #'+treemacs/toggle
-      "s-P" #'treemacs-find-file
-      "s-f" #'+default/search-project
-      "s-;" #'projectile-find-file
-      "s-," #'consult-recent-file
-      "s-." #'find-file)
+(map! "s-f" #'+default/search-project
+      "s-;" #'projectile-find-file)
+
+;; Disable the keys
+(map! "s-p" #'ignore
+      "s-," #'ignore
+      "s-." #'ignore)
 
 
 ;; My inbox, projects, tasks and hints
