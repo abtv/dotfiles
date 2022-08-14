@@ -20,7 +20,7 @@
   (set-background-color "#c0c0c0")
   ; this needed for Emacs in terminal
   (custom-theme-set-faces
-   'whiteboard
+   'tango
    '(default ((t (:background "#cfcfcf"))))))
 
 ;; Key bindings for better arrows
