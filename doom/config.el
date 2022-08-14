@@ -12,6 +12,7 @@
 (setq org-directory "~/org/")
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 
+
 ; Set color theme
 (load-theme 'tango t)
 ; Make the default background not so bright
@@ -22,6 +23,7 @@
   (custom-theme-set-faces
    'tango
    '(default ((t (:background "#cfcfcf"))))))
+
 
 ;; Key bindings for better arrows
 (map! "s-h" #'left-char
@@ -49,3 +51,13 @@
 
 ;; My inbox, projects, tasks and hints
 (map! "s-i" (lambda () (interactive) (find-file "~/work/notes/notes.txt")))
+
+(defun update-frame ()
+  (interactive)
+  (unless (eq 'maximised (frame-parameter nil 'fullscreen))
+    (add-to-list 'default-frame-alist '(height . 50))
+    (add-to-list 'default-frame-alist '(width . 140))
+    (modify-frame-parameters
+     nil '((user-position . t) (top . 0.16) (left . 0.2)))))
+
+(update-frame)
