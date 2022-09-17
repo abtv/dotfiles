@@ -43,6 +43,7 @@ alias d="cd ~/dotfiles"
 
 # golang
 export GOPATH=~/go
+export GOROOT=~/go
 
 cd ~/work/
 
