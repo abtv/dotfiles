@@ -1,0 +1,17 @@
+set clipboard+=unnamed
+nnoremap K 10k
+nnoremap J 10j
+
+let mapleader = " "
+
+nnoremap <leader>i :e ~/work/notes/notes.txt<CR>
+
+nnoremap <leader><leader> :action SearchEverywhere<CR>
+nnoremap <leader>f :action FindInPath<CR>
+nnoremap <leader>. :action RecentFiles<CR>
+
+nnoremap <leader>d :action CloseEditor<CR>
+nnoremap <leader>s :action SaveAll<CR>
+
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>u :action ShowUsages<CR>
