@@ -6,6 +6,7 @@ export TERM=xterm-256color
 export PATH=/usr/local/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 
 # init oh my zsh aliases first and then being able to override them
@@ -50,3 +51,4 @@ cd ~/work/
 set -o vi
 
 # this is a shared file so DON'T put secrets here
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
