@@ -332,7 +332,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Telegram.app/Contents/MacOS/Telegram'"
+                                        "shell_command": "open -a '/Applications/DBeaver.app/Contents/MacOS/dbeaver'"
                                     }
                                 ],
                                 "type": "basic"
