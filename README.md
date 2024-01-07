@@ -32,17 +32,17 @@
 |-----------|-------------------------|
 | Cmd-1     | Switch to Safari        |
 | Cmd-2     | Switch to iterm2        |
-| Cmd-3     | switch to Slack         |
-| Cmd-4     | switch to Postico       |
-| Cmd-7     | switch to IntelliJ Idea |
-| Cmd-8     | switch to Dbeaver       |
-| Cmd-9     | switch to PHPStorm      |
-| Cmd-0     | switch to LogSeq        |
+| Cmd-3     | Switch to Slack         |
+| Cmd-4     | Switch to Postico       |
+| Cmd-7     | Switch to IntelliJ Idea |
+| Cmd-8     | Switch to Dbeaver       |
+| Cmd-9     | Switch to PHPStorm      |
+| Cmd-0     | Switch to LogSeq        |
 
 
 ## Important decisions on MacOS
 
-### 1. Reduced a key repeat rate
+### 1. Increase a key repeat rate
 
 I'm a touch-typist and I don't like the standard MacOS key repeat rate. `install.sh` script will increase the keyboard repeat rate.
 
