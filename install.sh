@@ -6,6 +6,7 @@ brew install tree
 brew install node@20
 brew install awscli
 brew install kubernetes-cli
+brew install k6
 
 # Install UI programs
 brew install --cask karabiner-elements
