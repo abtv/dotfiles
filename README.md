@@ -12,15 +12,18 @@
 
 ## Tools
 
-| Tool      | Usage                   |
-|-----------|-------------------------|
-| karabiner | Better keyboard         |
-| iterm2    | Terminal emulator       |
-| tig       | Git pager               |
-| neovim    | Text editor             |
-| PHPStorm  | IDE                     |
-| IntelliJ  | Working notes           |
-| kubectl   | Kubernetes control      |
+| Tool      | Usage                      |
+|-----------|----------------------------|
+| karabiner | Better keyboard            |
+| kubectl   | Kubernetes control         |
+| iterm2    | Terminal emulator          |
+| neovim    | Text editor                |
+| tig       | Git pager                  |
+| Dbeaver   | Database client            |
+| IntelliJ  | Working notes              |
+| LogSeq    | Task list                  |
+| PHPStorm  | IDE for TypeScript and PHP |
+| Postico   | Postgres client            |
 
 
 ## Karabiner shortcuts
@@ -39,9 +42,9 @@
 
 ## Important decisions on MacOS
 
-### 1. Reduced key repeat rate
+### 1. Reduced a key repeat rate
 
-I'm a touch-typist and I don't like standard MacOS repeat rate. `install.sh` script will increase keyboard repeat rate.
+I'm a touch-typist and I don't like the standard MacOS key repeat rate. `install.sh` script will increase the keyboard repeat rate.
 
 
 ### 2. Map CapsLock to Control
@@ -49,9 +52,9 @@ I'm a touch-typist and I don't like standard MacOS repeat rate. `install.sh` scr
 It's easier to press CapsLock than Control.
 
 
-### 3. Don't open a window in full-screen mode
+### 3. Don't open a window in a full-screen mode
 
-MacOS uses an animation when switches between full-screen windows. These animations are distracting me and that's why I don't open a window full-screen.
+MacOS uses an animation when switches between full-screen windows. These animations are distracting me and that's why I don't open a window in a  full-screen mode.
 
 
 ## Git aliases
