@@ -8,12 +8,15 @@ brew install awscli
 brew install kubernetes-cli
 
 # Install UI programs
+brew install --cask karabiner-elements
 brew install --cask iterm2
 brew install --cask docker
-brew install --cask dbeaver-community
-brew install --cask postico
+brew install --cask intellij-idea-ce
+brew install --cask phpstorm
 brew install --cask logseq
 brew install --cask workflowy
+brew install --cask dbeaver-community
+brew install --cask postico
 brew install --cask vlc
 
 # Karabiner

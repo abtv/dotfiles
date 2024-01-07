@@ -12,6 +12,7 @@ let mapleader = " "
 " basic
 nnoremap <leader>q :q<CR>
 nnoremap <leader>s :w<CR>
+nnoremap <leader>d :bd<CR>
 nnoremap <leader>z :sus<CR>
 nnoremap <C-l> :set invnumber<CR>
 

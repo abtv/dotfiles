@@ -2,21 +2,24 @@
 
 ## Setup
 
-1. Install `brew`
+1. Install [brew](https://brew.sh).
 
-2. Install `oh-my-zsh`
+2. Install [oh-my-zsh](https://ohmyz.sh).
 
-3. Clone the repo to `~/dotfiles`
+3. Clone the repo to `~/dotfiles`.
 
-4. Run `install.sh`
+4. Run `install.sh`.
 
 ## Tools
 
 | Tool      | Usage                   |
 |-----------|-------------------------|
+| karabiner | Better keyboard         |
 | iterm2    | Terminal emulator       |
 | tig       | Git pager               |
 | neovim    | Text editor             |
+| PHPStorm  | IDE                     |
+| IntelliJ  | Working notes           |
 | kubectl   | Kubernetes control      |
 
 
@@ -55,7 +58,8 @@ MacOS uses an animation when switches between full-screen windows. These animati
 
 | Command | Action                   |
 |---------|--------------------------|
-| g       | git log                  |
+| g       | git log with tig         |
+| glol    | git log                  |
 | gst     | git status               |
 | gd      | git diff                 |
 | gsps    | git show recent commit   |
@@ -79,6 +83,7 @@ git config --global user.email "your-email"
 | --------------------------------- | --------------------------------- |
 | SPC q                             | quit Vim                          |
 | SPC w                             | write current buffer              |
+| SPC d                             | delete current buffer             |
 | SPC w s                           | split current buffer horizontally |
 | SPC w v                           | split current buffer vertically   |
 | SPC w w                           | maximize current window           |

@@ -300,7 +300,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Postico.app/Contents/MacOS/Postico'"
+                                        "shell_command": "open -a '/Applications/Postico 2.app/Contents/MacOS/Postico'"
                                     }
                                 ],
                                 "type": "basic"
@@ -348,7 +348,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/WebStorm.app/Contents/MacOS/webstorm'"
+                                        "shell_command": "open -a '/Applications/PhpStorm.app/Contents/MacOS/phpstorm'"
                                     }
                                 ],
                                 "type": "basic"
