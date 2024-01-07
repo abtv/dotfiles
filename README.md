@@ -89,7 +89,8 @@ git config --global user.email "your-email"
 | SPC d                             | delete current buffer             |
 | SPC w s                           | split current buffer horizontally |
 | SPC w v                           | split current buffer vertically   |
-| SPC w w                           | maximize current window           |
+| SPC w m                           | maximize current window           |
+| SPC w w                           | go to the next window             |
 | SPC z                             | send Vim to background            |
 |                                   |                                   |
 | zc                                | fold section                      |
