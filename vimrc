@@ -9,12 +9,16 @@ vnoremap J 10j
 
 let mapleader = " "
 
+" file system
+nnoremap <leader><leader> :Ntree<CR>
+
 " basic
 nnoremap <leader>q :q<CR>
 nnoremap <leader>s :w<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>z :sus<CR>
 nnoremap <C-l> :set invnumber<CR>
+nnoremap <C-h> :noh<CR>
 
 " windows
 nnoremap <Leader>wc :close<CR>

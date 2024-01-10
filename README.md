@@ -95,3 +95,6 @@ git config --global user.email "your-email"
 |                                   |                                   |
 | zc                                | fold section                      |
 | zo                                | open section                      |
+
+## Logseq settings
+- Bullet journal theme https://github.com/stdword/logseq-bujo-theme
