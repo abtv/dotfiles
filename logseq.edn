@@ -10,7 +10,7 @@
 ;;                :ui/toggle-brackets "t b"}}
 
 {:shortcuts {:go/electron-find-in-page []
- :go/search ["meta+f"]
+ :go/search ["meta+;"]
  :go/backward ["mod+open-square-bracket" "shift+meta+open-square-bracket"]
  :go/forward ["mod+close-square-bracket" "shift+meta+close-square-bracket"]
  :go/graph-view []

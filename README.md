@@ -15,15 +15,15 @@
 | Tool      | Usage                      |
 |-----------|----------------------------|
 | karabiner | Better keyboard            |
-| kubectl   | Kubernetes control         |
 | iterm2    | Terminal emulator          |
 | neovim    | Text editor                |
 | tig       | Git pager                  |
-| Dbeaver   | Database client            |
 | IntelliJ  | Working notes              |
-| LogSeq    | Task list                  |
 | PHPStorm  | IDE for TypeScript and PHP |
+| Logseq    | Task list                  |
 | Postico   | Postgres client            |
+| Dbeaver   | Other database client      |
+| kubectl   | Kubernetes control         |
 
 
 ## Karabiner shortcuts
@@ -96,5 +96,19 @@ git config --global user.email "your-email"
 | zc                                | fold section                      |
 | zo                                | open section                      |
 
+
+## Logseq mappings
+
+| Command     | Action                      |
+|-------------|-----------------------------|
+| Cmd + ;     | Search pages and blocks     |
+| Cmd + .     | Go inside the current block |
+| Cmd + ,     | Go to the parent block      |
+| Cmd + ]     | Go to the next page         |
+| Tab         | Indent block                |
+| Shift + Tab | Revert block indentation    |
+
+
 ## Logseq settings
-- Bullet journal theme https://github.com/stdword/logseq-bujo-theme
+
+Bullet journal theme https://github.com/stdword/logseq-bujo-theme
