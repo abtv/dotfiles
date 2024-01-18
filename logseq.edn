@@ -9,13 +9,17 @@
 ;;   {:shortcuts {:ui/toggle-theme "t z"
 ;;                :ui/toggle-brackets "t b"}}
 
-{:shortcuts {:go/electron-find-in-page []
- :go/search ["meta+;"]
- :go/backward ["mod+open-square-bracket" "shift+meta+open-square-bracket"]
- :go/forward ["mod+close-square-bracket" "shift+meta+close-square-bracket"]
+{:shortcuts {:go/backward ["mod+open-square-bracket" "shift+meta+open-square-bracket"]
  :go/graph-view []
- :plugin.logseq-vim-shortcuts/vim-shortcut-top-0 ["g g"]}
- :default-home {:page "main"}
- 
- 
+ :go/search ["meta+;"]
+ :editor/copy-text ["meta+c"]
+ :go/forward ["mod+close-square-bracket" "shift+meta+close-square-bracket"]
+ :editor/copy []
+ :go/electron-find-in-page []
+ :plugin.logseq-vim-shortcuts/vim-shortcut-top-0 ["g g"]
+ :ui/toggle-brackets []
+ :sidebar/clear []
+ :search/re-index []
+ :misc/copy []}
+ :default-home {:page "main"} 
  }
