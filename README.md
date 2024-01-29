@@ -18,9 +18,8 @@
 | iterm2    | Terminal emulator          |
 | neovim    | Text editor                |
 | tig       | Git pager                  |
-| IntelliJ  | Working notes              |
+| Zed       | Working notes              |
 | PHPStorm  | IDE for TypeScript and PHP |
-| Zed       | New editor, assesing it    |
 | Logseq    | Task list                  |
 | Postico   | Postgres client            |
 | Dbeaver   | Other database client      |
@@ -35,7 +34,7 @@
 | Cmd-2     | Switch to iterm2        |
 | Cmd-3     | Switch to Slack         |
 | Cmd-4     | Switch to Postico       |
-| Cmd-7     | Switch to IntelliJ Idea |
+| Cmd-7     | Switch to Zed           |
 | Cmd-8     | Switch to Dbeaver       |
 | Cmd-9     | Switch to PHPStorm      |
 | Cmd-0     | Switch to LogSeq        |
