@@ -12,6 +12,7 @@
 {:shortcuts {:go/backward ["mod+open-square-bracket" "shift+meta+open-square-bracket"]
  :go/graph-view []
  :go/search ["meta+;"]
+ :ui/toggle-left-sidebar ["t l" "meta+p"]
  :editor/copy-text ["meta+c"]
  :go/forward ["mod+close-square-bracket" "shift+meta+close-square-bracket"]
  :editor/copy []
