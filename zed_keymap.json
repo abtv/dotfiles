@@ -1,0 +1,9 @@
+[
+  {
+    "bindings": {
+      "cmd-i": "workspace::NewTerminal",
+      "cmd-p": "workspace::ToggleLeftDock",
+      "cmd-;": "file_finder::Toggle"
+    }
+  }
+]

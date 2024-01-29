@@ -20,6 +20,7 @@
 | tig       | Git pager                  |
 | IntelliJ  | Working notes              |
 | PHPStorm  | IDE for TypeScript and PHP |
+| Zed       | New editor, assesing it    |
 | Logseq    | Task list                  |
 | Postico   | Postgres client            |
 | Dbeaver   | Other database client      |

@@ -42,6 +42,11 @@ git config --global core.editor nvim
 mkdir -p ~/.logseq/config
 ln -sf ~/dotfiles/logseq.edn ~/.logseq/config/config.edn
 
+# Zed
+mkdir -p ~/.config/zed
+ln -sf ~/dotfiles/zed_keymap.json ~/.config/zed/keymap.json
+ln -sf ~/dotfiles/zed_settings.json ~/.config/zed/settings.json
+
 # Increaase keyboard repeat rate
 defaults write -g InitialKeyRepeat -int 10 # default 15
 defaults write -g KeyRepeat -int 1         # default 2
