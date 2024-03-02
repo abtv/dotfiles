@@ -12,18 +12,18 @@
 
 ## Tools
 
-| Tool      | Usage                      |
-|-----------|----------------------------|
-| karabiner | Better keyboard            |
-| iterm2    | Terminal emulator          |
-| neovim    | Text editor                |
-| tig       | Git pager                  |
-| Zed       | Working notes              |
-| PHPStorm  | IDE for TypeScript and PHP |
-| Logseq    | Task list                  |
-| Postico   | Postgres client            |
-| Dbeaver   | Other database client      |
-| kubectl   | Kubernetes control         |
+| Tool          | Usage                      |
+|---------------|----------------------------|
+| karabiner     | Better keyboard            |
+| iterm2        | Terminal emulator          |
+| neovim        | Text editor                |
+| tig           | Git pager                  |
+| IntelliJ Idea | Working notes              |
+| PHPStorm      | IDE for TypeScript and PHP |
+| Workflowy     | Task list                  |
+| Postico       | Postgres client            |
+| NoSQLBooster  | MongoDb client             |
+| kubectl       | Kubernetes control         |
 
 
 ## Karabiner shortcuts
@@ -34,10 +34,10 @@
 | Cmd-2     | Switch to iterm2        |
 | Cmd-3     | Switch to Slack         |
 | Cmd-4     | Switch to Postico       |
-| Cmd-7     | Switch to Zed           |
-| Cmd-8     | Switch to Dbeaver       |
+| Cmd-7     | Switch to IntelliJ      |
+| Cmd-8     | Switch to NoSQLBooster  |
 | Cmd-9     | Switch to PHPStorm      |
-| Cmd-0     | Switch to LogSeq        |
+| Cmd-0     | Switch to Workflowy     |
 
 
 ## Important decisions on MacOS
@@ -95,20 +95,3 @@ git config --global user.email "your-email"
 |                                   |                                   |
 | zc                                | fold section                      |
 | zo                                | open section                      |
-
-
-## Logseq mappings
-
-| Command     | Action                      |
-|-------------|-----------------------------|
-| Cmd + ;     | Search pages and blocks     |
-| Cmd + .     | Go inside the current block |
-| Cmd + ,     | Go to the parent block      |
-| Cmd + ]     | Go to the next page         |
-| Tab         | Indent block                |
-| Shift + Tab | Revert block indentation    |
-
-
-## Logseq settings
-
-Bullet journal theme https://github.com/stdword/logseq-bujo-theme
