@@ -29,3 +29,4 @@ nnoremap <Leader>ws :split<CR>
 
 " IntelliJ
 nnoremap <leader>r :action RecentFiles<CR>
+nnoremap <leader>a :action ActivateDatabaseToolWindow<CR>
