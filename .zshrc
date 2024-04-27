@@ -28,4 +28,9 @@ alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
 alias g="tig"
 
+# AWS aliases
+alias aws-config="aws configure sso"
+alias aws-login="aws sso login --profile ProfileName"
+alias aws-creds="vi ~/.aws/credentials"
+
 # this is a shared file so DON'T put secrets here
