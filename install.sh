@@ -37,7 +37,7 @@ ln -sf ~/dotfiles/vimrc ~/.ideavimrc
 # Vim as a Git editor
 git config --global core.editor nvim
 
-# Increaase keyboard repeat rate
+# Increase keyboard repeat rate
 defaults write -g InitialKeyRepeat -int 10 # default 15
 defaults write -g KeyRepeat -int 1         # default 2
 

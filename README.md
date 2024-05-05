@@ -12,32 +12,36 @@
 
 ## Tools
 
-| Tool          | Usage                      |
-|---------------|----------------------------|
-| karabiner     | Better keyboard            |
-| iterm2        | Terminal emulator          |
-| neovim        | Text editor                |
-| tig           | Git pager                  |
-| IntelliJ Idea | Working notes              |
-| PHPStorm      | IDE for TypeScript and PHP |
-| Workflowy     | Task list                  |
-| Postico       | Postgres client            |
-| NoSQLBooster  | MongoDb client             |
-| kubectl       | Kubernetes control         |
+| Tool            | Usage                      |
+|-----------------|----------------------------|
+| Karabiner       | Better keyboard            |
+| iterm2          | Terminal emulator          |
+| neovim          | Text editor                |
+| tig             | Git pager                  |
+| IntelliJ Idea   | Working notes              |
+| PHPStorm        | IDE for TypeScript and PHP |
+| Postico         | Postgres client            |
+| NoSQLBooster    | MongoDb client             |
+| kubectl         | Kubernetes control         |
+| Workflowy       | Idea list                  |
+| Apple Reminders | Task list                  |
+| Apple Notes     | Personal notes             |
 
 
-## Karabiner shortcuts
+## Shortcuts
 
-| Command   | Action                  |
-|-----------|-------------------------|
-| Cmd-1     | Switch to Safari        |
-| Cmd-2     | Switch to iterm2        |
-| Cmd-3     | Switch to Slack         |
-| Cmd-4     | Switch to Postico       |
-| Cmd-7     | Switch to IntelliJ      |
-| Cmd-8     | Switch to NoSQLBooster  |
-| Cmd-9     | Switch to PHPStorm      |
-| Cmd-0     | Switch to Workflowy     |
+| Command  | Action                 |
+|----------|------------------------|
+| Cmd-1    | Switch to Safari       |
+| Cmd-2    | Switch to iterm2       |
+| Cmd-3    | Switch to Slack        |
+| Cmd-4    | Switch to Postico      |
+| Cmd-7    | Switch to IntelliJ     |
+| Cmd-8    | Switch to NoSQLBooster |
+| Cmd-9    | Switch to PHPStorm     |
+| Cmd-0    | Switch to Apple Notes  |
+| Cmd-Spc  | Swith language         |
+| Ctrl-Spc | Open Spotlight         |
 
 
 ## Important decisions on MacOS
@@ -82,16 +86,19 @@ git config --global user.email "your-email"
 
 ## Vim mappings
 
-| Command                           | Action                            |
-| --------------------------------- | --------------------------------- |
-| SPC q                             | quit Vim                          |
-| SPC w                             | write current buffer              |
-| SPC d                             | delete current buffer             |
-| SPC w s                           | split current buffer horizontally |
-| SPC w v                           | split current buffer vertically   |
-| SPC w m                           | maximize current window           |
-| SPC w w                           | go to the next window             |
-| SPC z                             | send Vim to background            |
-|                                   |                                   |
-| zc                                | fold section                      |
-| zo                                | open section                      |
+| Command | Action                            |
+|---------|-----------------------------------|
+| SPC SPC | Choose a file                     |
+| SPC s   | Save current buffer               |
+| SPC q   | Quit Vim                          |
+| SPC w   | Write current buffer              |
+| SPC d   | Delete current buffer             |
+| SPC w s | Split current buffer horizontally |
+| SPC w v | Split current buffer vertically   |
+| SPC w m | Maximize current window           |
+| SPC w w | Go to the next window             |
+| SPC z   | Send Vim to background            |
+| Ctrl-l  | Toggle line numbers               |
+| Ctrl-h  | No highlight                      |
+| zc      | Fold section                      |
+| zo      | Open section                      |
