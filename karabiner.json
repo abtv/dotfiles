@@ -364,7 +364,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Applications/Reminders.app/Contents/MacOS/Reminders'"
+                                        "shell_command": "open -a '/Applications/WorkFlowy.app/Contents/MacOS/WorkFlowy'"
                                     }
                                 ],
                                 "type": "basic"

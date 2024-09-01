@@ -23,8 +23,7 @@
 | Postico         | Postgres client            |
 | NoSQLBooster    | MongoDb client             |
 | kubectl         | Kubernetes control         |
-| Workflowy       | Idea list                  |
-| Apple Reminders | Task list                  |
+| Workflowy       | Personal notes             |
 
 
 ## Shortcuts
@@ -38,7 +37,7 @@
 | Cmd-7    | Switch to IntelliJ     |
 | Cmd-8    | Switch to NoSQLBooster |
 | Cmd-9    | Switch to RustRover    |
-| Cmd-0    | Switch to Apple Notes  |
+| Cmd-0    | Switch to WorkFlowy    |
 | Cmd-Spc  | Swith language         |
 | Ctrl-Spc | Open Spotlight         |
 
