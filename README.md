@@ -25,7 +25,6 @@
 | kubectl         | Kubernetes control         |
 | Workflowy       | Idea list                  |
 | Apple Reminders | Task list                  |
-| Apple Notes     | Personal notes             |
 
 
 ## Shortcuts
@@ -38,7 +37,7 @@
 | Cmd-4    | Switch to Postico      |
 | Cmd-7    | Switch to IntelliJ     |
 | Cmd-8    | Switch to NoSQLBooster |
-| Cmd-9    | Switch to PHPStorm     |
+| Cmd-9    | Switch to RustRover    |
 | Cmd-0    | Switch to Apple Notes  |
 | Cmd-Spc  | Swith language         |
 | Ctrl-Spc | Open Spotlight         |
