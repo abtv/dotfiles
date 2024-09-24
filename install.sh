@@ -7,6 +7,7 @@ brew install node@20
 brew install awscli
 brew install kubernetes-cli
 brew install k6
+brew install rust
 
 # Install UI programs
 brew install --cask karabiner-elements
@@ -17,7 +18,7 @@ brew install --cask phpstorm
 brew install --cask workflowy
 brew install --cask nosqlbooster-for-mongodb
 brew install --cask postico
-brew install --cask vlc
+brew install --cask emacs
 
 # Karabiner
 mkdir -p ~/.config/karabiner
@@ -36,6 +37,12 @@ ln -sf ~/dotfiles/vimrc ~/.ideavimrc
 
 # Vim as a Git editor
 git config --global core.editor nvim
+
+# Doom Emacs
+mkdir -p ~/.config/doom
+ln -s ~/dotfiles/doom/config.el config.el
+ln -s ~/dotfiles/doom/init.el init.el
+ln -s ~/dotfiles/doom/packages.el packages.el
 
 # Increase keyboard repeat rate
 defaults write -g InitialKeyRepeat -int 10 # default 15

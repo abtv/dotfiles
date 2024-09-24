@@ -18,11 +18,11 @@
 | iterm2          | Terminal emulator          |
 | neovim          | Text editor                |
 | tig             | Git pager                  |
-| IntelliJ Idea   | Working notes              |
 | PHPStorm        | IDE for TypeScript and PHP |
 | Postico         | Postgres client            |
 | NoSQLBooster    | MongoDb client             |
 | kubectl         | Kubernetes control         |
+| Doom Emacs      | Working notes              |
 | Workflowy       | Personal notes             |
 
 
@@ -37,8 +37,8 @@
 | Cmd-7    | Switch to IntelliJ     |
 | Cmd-8    | Switch to NoSQLBooster |
 | Cmd-9    | Switch to RustRover    |
-| Cmd-0    | Switch to WorkFlowy    |
-| Cmd-Spc  | Swith language         |
+| Cmd-0    | Switch to Doom Emacs   |
+| Cmd-Spc  | Switch language        |
 | Ctrl-Spc | Open Spotlight         |
 
 

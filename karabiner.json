@@ -364,7 +364,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/WorkFlowy.app/Contents/MacOS/WorkFlowy'"
+                                        "shell_command": "open -a '/Applications/Emacs.app/Contents/MacOS/Emacs'"
                                     }
                                 ],
                                 "type": "basic"
