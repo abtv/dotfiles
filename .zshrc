@@ -27,6 +27,7 @@ alias work="cd ~/work/"
 alias gca1="git commit -a -v --amend"
 alias gp="git push origin HEAD"
 alias g="tig"
+alias save="git add .;git commit -a -m 'Update'"
 
 # AWS aliases
 alias aws-config="aws configure sso"
