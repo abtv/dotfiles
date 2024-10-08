@@ -24,7 +24,4 @@
 (evil-global-set-key 'normal "J" 'evil-scroll-down)
 (evil-global-set-key 'normal "K" 'evil-scroll-up)
 
-(projectile-clear-known-projects)
-(projectile-add-known-project "~/org")
-
 (add-hook 'window-setup-hook (lambda () (find-file "~/org/main/main.org")))
