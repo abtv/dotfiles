@@ -2,7 +2,7 @@
 
 (add-to-list 'initial-frame-alist '(width . 120))
 (add-to-list 'initial-frame-alist '(height . 40))
-(setq doom-theme 'doom-zenburn) ; tango doom-zenburn doom-acario-light
+(setq doom-theme 'doom-homage-white) ; tango doom-zenburn doom-acario-light
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15 ))
 (setq display-line-numbers-type nil)
 (setq confirm-kill-emacs nil)
@@ -38,6 +38,7 @@
 (global-set-key (kbd "s-f") '+default/search-project)
 (global-set-key (kbd "s-;") 'projectile-find-file)
 (global-set-key (kbd "C-l") 'doom/toggle-line-numbers)
+(map! :leader "d" 'kill-current-buffer)
 
 ;; Make vterm bigger
 (after! vterm
