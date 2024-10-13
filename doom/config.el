@@ -1,9 +1,10 @@
-(setq frame-title-format "%b %f")
+(setq frame-title-format "Notes")
 
 (add-to-list 'initial-frame-alist '(width . 120))
 (add-to-list 'initial-frame-alist '(height . 40))
+(set-frame-position (selected-frame) 400 150)
 (setq doom-theme 'doom-homage-white) ; tango doom-zenburn doom-acario-light
-(setq doom-font (font-spec :family "JetBrains Mono" :size 15 ))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 (setq display-line-numbers-type nil)
 (setq confirm-kill-emacs nil)
 
@@ -18,10 +19,11 @@
 (setq-default org-download-heading-lvl nil)
 (setq-default org-download-image-dir "~/org/images")
 (setq org-image-actual-width 1200)
+(setq org-agenda-span 30)
 
 ;; Zoom in and zoom out for Org mode
-(map! :after org :map org-mode-map "s-." #'org-narrow-to-subtree)
-(map! :after org :map org-mode-map "s-," #'widen)
+(map! :after org :map org-mode-map "s-." 'org-narrow-to-subtree)
+(map! :after org :map org-mode-map "s-," 'widen)
 
 ;; Setup J and K keys
 (defun previous-lines ()
@@ -38,10 +40,35 @@
 (global-set-key (kbd "s-f") '+default/search-project)
 (global-set-key (kbd "s-;") 'projectile-find-file)
 (global-set-key (kbd "C-l") 'doom/toggle-line-numbers)
-(map! :leader "d" 'kill-current-buffer)
+(map! :desc "Delete current buffer" :leader "d" 'kill-current-buffer)
 
 ;; Make vterm bigger
 (after! vterm
   (set-popup-rule! "*doom:vterm-popup:main" :size 0.75 :vslot -4 :select t :quit nil :ttl 0 :side 'bottom))
 
+;; Toggle big/small screen size (I use small mode to take notes during meetings and big mode for focused work)
+(defvar big-frame t)
+
+(defun set-width (width)
+  (set-frame-width (selected-frame) width))
+
+(defun toggle-frame-size ()
+  (interactive)
+  (if (eq big-frame 'nil)
+      (progn
+        (set-width 120)
+        (set-frame-position (selected-frame) 400 150))
+    (progn
+      (set-width 50)
+      (set-frame-position (selected-frame) 1250 0)))
+  (setq big-frame (not big-frame)))
+
+(map! :desc "Toggle frame size" :leader "v" 'toggle-frame-size)
+;; End of toggle big/small screen size
+
+;; Open journal on startup
 (add-hook 'window-setup-hook (lambda () (find-file "~/org/journal.org")))
+
+;; TODO adjust to an external display
+;;(display-pixel-width)
+;;(display-pixel-height)
