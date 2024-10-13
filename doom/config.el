@@ -2,7 +2,6 @@
 
 (add-to-list 'initial-frame-alist '(width . 120))
 (add-to-list 'initial-frame-alist '(height . 40))
-(set-frame-position (selected-frame) 400 150)
 (setq doom-theme 'doom-homage-white) ; tango doom-zenburn doom-acario-light
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 (setq display-line-numbers-type nil)
@@ -47,21 +46,29 @@
   (set-popup-rule! "*doom:vterm-popup:main" :size 0.75 :vslot -4 :select t :quit nil :ttl 0 :side 'bottom))
 
 ;; Toggle big/small screen size (I use small mode to take notes during meetings and big mode for focused work)
-(defvar big-frame t)
+(defvar centered-frame t)
 
 (defun set-width (width)
   (set-frame-width (selected-frame) width))
 
+(defun set-centered-frame ()
+  (set-width 120)
+  (if (<= (display-pixel-width) 1440)
+      (set-frame-position (selected-frame) 200 50)
+    (set-frame-position (selected-frame) 400 150)))
+
+(defun set-right-side-frame ()
+  (set-width 50)
+  (if (<= (display-pixel-width) 1440)
+      (set-frame-position (selected-frame) 970 0)
+    (set-frame-position (selected-frame) 1250 0)))
+
 (defun toggle-frame-size ()
   (interactive)
-  (if (eq big-frame 'nil)
-      (progn
-        (set-width 120)
-        (set-frame-position (selected-frame) 400 150))
-    (progn
-      (set-width 50)
-      (set-frame-position (selected-frame) 1250 0)))
-  (setq big-frame (not big-frame)))
+  (if (eq centered-frame 'nil)
+      (set-centered-frame)
+    (set-right-side-frame))
+  (setq centered-frame (not centered-frame)))
 
 (map! :desc "Toggle frame size" :leader "v" 'toggle-frame-size)
 ;; End of toggle big/small screen size
@@ -69,6 +76,4 @@
 ;; Open journal on startup
 (add-hook 'window-setup-hook (lambda () (find-file "~/org/journal.org")))
 
-;; TODO adjust to an external display
-;;(display-pixel-width)
-;;(display-pixel-height)
+(set-centered-frame)
