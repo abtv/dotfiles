@@ -2,7 +2,7 @@
 
 (add-to-list 'initial-frame-alist '(width . 120))
 (add-to-list 'initial-frame-alist '(height . 40))
-(load-theme 'doom-homage-white t)
+(setq doom-theme 'doom-homage-white) ; tango doom-zenburn doom-acario-light
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 (setq display-line-numbers-type nil)
 (setq confirm-kill-emacs nil)
@@ -88,5 +88,6 @@
 
 (map! :desc "Quick commit" :leader "g s" (lambda () (interactive) (shell-command "git add .;git commit -a -m 'Update'")))
 
-(set-centered-frame)
-(set-background-color "#d0d0d0")
+(add-hook 'window-setup-hook (lambda ()
+                               (set-centered-frame)
+                               (set-background-color "#d0d0d0")))
