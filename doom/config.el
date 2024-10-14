@@ -2,7 +2,7 @@
 
 (add-to-list 'initial-frame-alist '(width . 120))
 (add-to-list 'initial-frame-alist '(height . 40))
-(setq doom-theme 'doom-homage-white) ; tango doom-zenburn doom-acario-light
+(load-theme 'doom-homage-white t)
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 (setq display-line-numbers-type nil)
 (setq confirm-kill-emacs nil)
@@ -55,13 +55,23 @@
   (set-width 120)
   (if (<= (display-pixel-width) 1440)
       (set-frame-position (selected-frame) 200 50)
-    (set-frame-position (selected-frame) 400 150)))
+    (if (<= (display-pixel-width) 1728)
+        (set-frame-position (selected-frame) 320 150)
+      (if (<= (display-pixel-width) 1920)
+          (set-frame-position (selected-frame) 400 180)
+        (set-frame-position (selected-frame) 400 180) ;; update it later if I have a bigger screen
+        ))))
 
 (defun set-right-side-frame ()
   (set-width 50)
   (if (<= (display-pixel-width) 1440)
       (set-frame-position (selected-frame) 970 0)
-    (set-frame-position (selected-frame) 1250 0)))
+    (if (<= (display-pixel-width) 1728)
+        (set-frame-position (selected-frame) 1250 0)
+      (if (<= (display-pixel-width) 1920)
+          (set-frame-position (selected-frame) 1450 0)
+        (set-frame-position (selected-frame) 1450 0) ;; update it later if I have a bigger screen
+        ))))
 
 (defun toggle-frame-size ()
   (interactive)
@@ -76,4 +86,7 @@
 ;; Open journal on startup
 (add-hook 'window-setup-hook (lambda () (find-file "~/org/journal.org")))
 
+(map! :desc "Quick commit" :leader "g s" (lambda () (interactive) (shell-command "git add .;git commit -a -m 'Update'")))
+
 (set-centered-frame)
+(set-background-color "#d0d0d0")
