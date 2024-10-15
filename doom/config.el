@@ -1,4 +1,4 @@
-(setq frame-title-format "Notes")
+(setq frame-title-format "Emacs")
 
 (add-to-list 'initial-frame-alist '(width . 120))
 (add-to-list 'initial-frame-alist '(height . 40))
@@ -86,7 +86,9 @@
 ;; Open journal on startup
 (add-hook 'window-setup-hook (lambda () (find-file "~/org/journal.org")))
 
-(map! :desc "Quick commit" :leader "g s" (lambda () (interactive) (shell-command "git add .;git commit -a -m 'Update'")))
+(map! :desc "Quick commit" :leader "g s" (lambda ()
+                                           (interactive)
+                                           (shell-command "git add .;git commit -a -m 'Update'")))
 
 (add-hook 'window-setup-hook (lambda ()
                                (set-centered-frame)
