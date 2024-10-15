@@ -8,6 +8,7 @@ brew install awscli
 brew install kubernetes-cli
 brew install k6
 brew install rust
+brew install graphviz
 
 # Install UI programs
 brew install --cask karabiner-elements
