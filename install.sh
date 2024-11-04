@@ -7,6 +7,7 @@ brew install node@20
 brew install awscli
 brew install kubernetes-cli
 brew install k6
+brew install k9s
 brew install rust
 brew install graphviz
 

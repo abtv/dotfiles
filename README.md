@@ -21,7 +21,7 @@
 | PHPStorm        | IDE for TypeScript and PHP |
 | Postico         | Postgres client            |
 | NoSQLBooster    | MongoDb client             |
-| kubectl         | Kubernetes control         |
+| k9s             | Kubernetes control         |
 | Doom Emacs      | Working notes              |
 | Workflowy       | Personal notes             |
 
@@ -36,7 +36,7 @@
 | Cmd-4    | Switch to Postico      |
 | Cmd-7    | Switch to IntelliJ     |
 | Cmd-8    | Switch to NoSQLBooster |
-| Cmd-9    | Switch to RustRover    |
+| Cmd-9    | Switch to PhpStorm     |
 | Cmd-0    | Switch to Doom Emacs   |
 | Cmd-Spc  | Switch language        |
 | Ctrl-Spc | Open Spotlight         |
@@ -57,7 +57,6 @@ It's easier to press CapsLock than Control.
 ### 3. Don't open a window in a full-screen mode
 
 MacOS uses an animation when switches between full-screen windows. These animations are distracting me and that's why I don't open a window in a  full-screen mode.
-
 
 ## Git aliases
 
