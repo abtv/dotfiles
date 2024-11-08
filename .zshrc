@@ -22,6 +22,7 @@ alias vi="nvim"
 alias h="htop"
 alias d="cd ~/dotfiles/"
 alias work="cd ~/work/"
+alias dps="docker ps"
 
 # Git aliases
 alias gca1="git commit -a -v --amend"
