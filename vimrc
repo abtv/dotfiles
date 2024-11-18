@@ -1,3 +1,8 @@
+call plug#begin()
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }"
+call plug#end()
+
 " better clipboard
 set clipboard+=unnamed
 
@@ -10,7 +15,9 @@ vnoremap J 10j
 let mapleader = " "
 
 " file system
-nnoremap <leader><leader> :Ntree<CR>
+nnoremap <leader><leader> :Telescope find_files<CR>
+nnoremap <leader>f :Telescope live_grep<CR>
+nnoremap <leader>p :Ntree<CR>
 
 " basic
 nnoremap <leader>q :q<CR>
