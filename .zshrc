@@ -4,10 +4,8 @@ export TERM=xterm-256color
 
 # programs
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/opt/node@22/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
-export PATH=~/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/opt/node@20/bin:$PATH
 
 # init oh my zsh aliases first
 export ZSH=/Users/andrew/.oh-my-zsh

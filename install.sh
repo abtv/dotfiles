@@ -1,26 +1,18 @@
 # Install CLI programs
 brew install neovim
+brew install ripgrep
 brew install tig
 brew install htop
 brew install tree
-brew install node@20
+brew install node@22
 brew install awscli
 brew install kubernetes-cli
 brew install k6
 brew install k9s
-brew install rust
-brew install graphviz
 
 # Install UI programs
-brew install --cask karabiner-elements
 brew install --cask iterm2
-brew install --cask docker
-brew install --cask intellij-idea-ce
-brew install --cask phpstorm
-brew install --cask workflowy
-brew install --cask nosqlbooster-for-mongodb
-brew install --cask postico
-brew install --cask emacs
+brew install --cask karabiner-elements
 
 # Karabiner
 mkdir -p ~/.config/karabiner
@@ -39,12 +31,6 @@ ln -sf ~/dotfiles/vimrc ~/.ideavimrc
 
 # Vim as a Git editor
 git config --global core.editor nvim
-
-# Doom Emacs
-mkdir -p ~/.config/doom
-ln -s ~/dotfiles/doom/config.el config.el
-ln -s ~/dotfiles/doom/init.el init.el
-ln -s ~/dotfiles/doom/packages.el packages.el
 
 # Increase keyboard repeat rate
 defaults write -g InitialKeyRepeat -int 10 # default 15
