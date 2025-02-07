@@ -18,12 +18,8 @@
 | iterm2          | Terminal emulator          |
 | neovim          | Text editor                |
 | tig             | Git pager                  |
-| PHPStorm        | IDE for TypeScript and PHP |
-| Postico         | Postgres client            |
-| NoSQLBooster    | MongoDb client             |
 | k9s             | Kubernetes control         |
-| Doom Emacs      | Working notes              |
-| Workflowy       | Personal notes             |
+| k6              | Load testing               |
 
 
 ## Shortcuts
@@ -33,11 +29,9 @@
 | Cmd-1    | Switch to Safari       |
 | Cmd-2    | Switch to iterm2       |
 | Cmd-3    | Switch to Slack        |
-| Cmd-4    | Switch to Postico      |
 | Cmd-7    | Switch to IntelliJ     |
 | Cmd-8    | Switch to NoSQLBooster |
 | Cmd-9    | Switch to PhpStorm     |
-| Cmd-0    | Switch to Doom Emacs   |
 | Cmd-Spc  | Switch language        |
 | Ctrl-Spc | Open Spotlight         |
 
@@ -88,7 +82,6 @@ git config --global user.email "your-email"
 | SPC SPC | Choose a file                     |
 | SPC s   | Save current buffer               |
 | SPC q   | Quit Vim                          |
-| SPC w   | Write current buffer              |
 | SPC d   | Delete current buffer             |
 | SPC w s | Split current buffer horizontally |
 | SPC w v | Split current buffer vertically   |
