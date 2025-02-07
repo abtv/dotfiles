@@ -5,6 +5,7 @@ export TERM=xterm-256color
 # programs
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/opt/node@22/bin:$PATH
+export PATH=/usr/local/opt/rustup/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
 
 # init oh my zsh aliases first

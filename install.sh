@@ -1,18 +1,22 @@
+# Install UI programs
+brew install --cask iterm2
+brew install --cask karabiner-elements
+
 # Install CLI programs
 brew install neovim
 brew install ripgrep
 brew install tig
 brew install htop
 brew install tree
-brew install node@22
 brew install awscli
 brew install kubernetes-cli
 brew install k6
 brew install k9s
 
-# Install UI programs
-brew install --cask iterm2
-brew install --cask karabiner-elements
+# Install programming languages
+brew install node@22
+brew install rustup
+rustup default stable
 
 # Karabiner
 mkdir -p ~/.config/karabiner
