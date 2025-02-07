@@ -40,4 +40,8 @@ git config --global core.editor nvim
 defaults write -g InitialKeyRepeat -int 10 # default 15
 defaults write -g KeyRepeat -int 1         # default 2
 
+# For VS Code
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
+
 # Don't forget to restart your machine!
