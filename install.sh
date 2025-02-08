@@ -17,6 +17,8 @@ brew install k9s
 brew install node@22
 brew install rustup
 rustup default stable
+brew install clojure
+brew install leiningen
 
 # Karabiner
 mkdir -p ~/.config/karabiner
