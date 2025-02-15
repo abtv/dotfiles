@@ -1,6 +1,7 @@
 # Install UI programs
 brew install --cask iterm2
 brew install --cask karabiner-elements
+brew install --cask logseq
 
 # Install CLI programs
 brew install neovim

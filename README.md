@@ -31,7 +31,8 @@
 | Cmd-3    | Switch to Slack        |
 | Cmd-7    | Switch to IntelliJ     |
 | Cmd-8    | Switch to NoSQLBooster |
-| Cmd-9    | Switch to PhpStorm     |
+| Cmd-9    | Switch to VS Code      |
+| Cmd-0    | Switch to LogSeq       |
 | Cmd-Spc  | Switch language        |
 | Ctrl-Spc | Open Spotlight         |
 

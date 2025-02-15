@@ -364,7 +364,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Obsidian.app/Contents/MacOS/Obsidian'"
+                                        "shell_command": "open -a '/Applications/Logseq.app/Contents/MacOS/Logseq'"
                                     }
                                 ],
                                 "type": "basic"

@@ -1,0 +1,15 @@
+{
+  :shortcuts {
+    :go/search ["meta+semicolon"]
+    :editor/down ["down" "j"]
+    :editor/up ["up" "k"]
+    :editor/move-block-up ["shift+k"]
+    :editor/move-block-down ["shift+j"]
+    :editor/collapse-block-children ["h"]
+    :editor/expand-block-children ["l"]
+    :editor/delete-selection ["meta+backspace y"]
+  }
+  :default-home { :page "Main" }
+  :feature/enable-flashcards? false
+  :feature/enable-whiteboards? false
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: #C0C0C0;
+}
+
+.ls-page-title {
+  display: none;
+}
+
+.references {
+  display: none;
+}
+
+.block-highlight,.contnet .selected {
+  background-color: #B6DAFD;
+  transition: background-color .2s cubic-bezier(0,1,0,1);
+}
+
+.bullet-container:not(.typed-list).bullet-closed {
+  background-color: #868686;
+}
+
+.bullet-container:not(.typed-list) .bullet {
+  background-color: #303030;
+  transition: transform .2s;
+}
+
+.left-sidebar-inner {
+  background-color: #EEEEEE;
+}
