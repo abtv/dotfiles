@@ -5,7 +5,7 @@
       "cmd-;": "file_finder::Toggle",
       "cmd-f": "pane::DeploySearch",
       "cmd-p": "workspace::ToggleLeftDock",
-      "cmd-i": "workspace::NewTerminal"
+      "cmd-i": "workspace::ToggleBottomDock"
     }
   },
   {
@@ -13,7 +13,7 @@
     "bindings": {
       "cmd-;": "file_finder::Toggle",
       "cmd-f": "pane::DeploySearch",
-      "cmd-i": "workspace::NewTerminal",
+      "cmd-i": "workspace::ToggleBottomDock",
       "ctrl-l": "editor::ToggleLineNumbers"
     }
   },
