@@ -1,0 +1,27 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-;": "file_finder::Toggle",
+      "cmd-f": "pane::DeploySearch",
+      "cmd-p": "workspace::ToggleLeftDock",
+      "cmd-i": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-;": "file_finder::Toggle",
+      "cmd-f": "pane::DeploySearch",
+      "cmd-i": "workspace::NewTerminal",
+      "ctrl-l": "editor::ToggleLineNumbers"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd": null
+    }
+  }
+]
