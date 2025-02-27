@@ -6,6 +6,7 @@ brew install --cask logseq
 # Install CLI programs
 brew install neovim
 brew install ripgrep
+brew install fzf
 brew install tig
 brew install htop
 brew install tree
