@@ -1,5 +1,5 @@
 # Install UI programs
-brew install --cask iterm2
+brew install --cask ghostty
 brew install --cask karabiner-elements
 brew install --cask logseq
 
