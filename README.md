@@ -12,29 +12,27 @@
 
 ## Tools
 
-| Tool            | Usage                      |
-|-----------------|----------------------------|
-| Karabiner       | Better keyboard            |
-| iterm2          | Terminal emulator          |
-| neovim          | Text editor                |
-| tig             | Git pager                  |
-| k9s             | Kubernetes control         |
-| k6              | Load testing               |
+| Tool            | Usage              |
+|-----------------|--------------------|
+| Karabiner       | Better keyboard    |
+| Ghostty         | Terminal emulator  |
+| neovim          | Text editor        |
+| tig             | Git pager          |
+| k9s             | Kubernetes control |
+| k6              | Load testing       |
 
 
 ## Shortcuts
 
-| Command  | Action                 |
-|----------|------------------------|
-| Cmd-1    | Switch to Safari       |
-| Cmd-2    | Switch to iterm2       |
-| Cmd-3    | Switch to Slack        |
-| Cmd-7    | Switch to IntelliJ     |
-| Cmd-8    | Switch to NoSQLBooster |
-| Cmd-9    | Switch to VS Code      |
-| Cmd-0    | Switch to LogSeq       |
-| Cmd-Spc  | Switch language        |
-| Ctrl-Spc | Open Spotlight         |
+| Command  | Action            |
+|----------|-------------------|
+| Cmd-1    | Switch to Safari  |
+| Cmd-2    | Switch to Ghostty |
+| Cmd-3    | Switch to Slack   |
+| Cmd-9    | Switch to Zed     |
+| Cmd-0    | Switch to LogSeq  |
+| Cmd-Spc  | Switch language   |
+| Ctrl-Spc | Open Spotlight    |
 
 
 ## Important decisions on MacOS
