@@ -16,6 +16,7 @@
 |-----------------|--------------------|
 | Karabiner       | Better keyboard    |
 | Ghostty         | Terminal emulator  |
+| Zed             | Code editor        |
 | neovim          | Text editor        |
 | tig             | Git pager          |
 | k9s             | Kubernetes control |
