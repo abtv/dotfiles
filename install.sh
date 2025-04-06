@@ -27,6 +27,10 @@ brew install leiningen
 mkdir -p ~/.config/karabiner
 ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 
+# Ghostty
+mkdir -p ~/Library/Application\ Support/com.mitchellh.ghostty
+ln -sf ~/dotfiles/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
+
 # Git
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
