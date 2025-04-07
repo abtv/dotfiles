@@ -8,6 +8,7 @@ brew install --cask logseq
 brew install neovim
 brew install ripgrep
 brew install fzf
+brew install eza
 brew install tig
 brew install htop
 brew install tree

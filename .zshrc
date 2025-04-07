@@ -19,6 +19,9 @@ source $ZSH/oh-my-zsh.sh
 # common aliases
 alias vi="nvim"
 alias h="htop"
+alias ff="fzf"
+alias ls="eza"
+alias la="eza -la"
 alias d="cd ~/dotfiles/"
 alias work="cd ~/work/"
 alias dps="docker ps"
