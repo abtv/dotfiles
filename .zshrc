@@ -16,6 +16,9 @@ plugins=(git fzf)
 ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
+# init zoxide
+eval "$(zoxide init zsh)"
+
 # common aliases
 alias vi="nvim"
 alias h="htop"

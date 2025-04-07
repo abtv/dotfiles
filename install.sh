@@ -9,6 +9,7 @@ brew install neovim
 brew install ripgrep
 brew install fzf
 brew install eza
+brew install zoxide
 brew install tig
 brew install htop
 brew install tree
