@@ -11,10 +11,11 @@
   {
     "context": "Editor",
     "bindings": {
+      "ctrl-l": "editor::ToggleLineNumbers",
       "cmd-;": "file_finder::Toggle",
       "cmd-f": "pane::DeploySearch",
       "cmd-i": "workspace::ToggleBottomDock",
-      "ctrl-l": "editor::ToggleLineNumbers",
+      "cmd-u": "editor::Format",
       "cmd-m": "editor::FindAllReferences"
     }
   },
