@@ -16,6 +16,9 @@ plugins=(git fzf)
 ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+
 # init zoxide
 eval "$(zoxide init zsh)"
 
