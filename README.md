@@ -31,7 +31,7 @@
 | Cmd-2    | Switch to Ghostty |
 | Cmd-3    | Switch to Slack   |
 | Cmd-9    | Switch to Zed     |
-| Cmd-0    | Switch to LogSeq  |
+| Cmd-0    | Switch to Notes   |
 | Cmd-Spc  | Switch language   |
 | Ctrl-Spc | Open Spotlight    |
 

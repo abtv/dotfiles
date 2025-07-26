@@ -2,7 +2,6 @@
 brew install --cask karabiner-elements
 brew install --cask ghostty
 brew install --cask zed
-brew install --cask logseq
 
 # Install CLI programs
 brew install neovim
@@ -10,7 +9,6 @@ brew install ripgrep
 brew install fzf
 brew install fd
 brew install eza
-brew install zoxide
 brew install tig
 brew install htop
 brew install tree
