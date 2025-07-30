@@ -3,9 +3,11 @@
     "context": "Workspace",
     "bindings": {
       "cmd-;": "file_finder::Toggle",
+      "cmd-b": null,
       "cmd-f": "pane::DeploySearch",
       "cmd-p": "workspace::ToggleLeftDock",
-      "cmd-i": "workspace::ToggleBottomDock"
+      "cmd-i": "workspace::ToggleBottomDock",
+      "cmd-o": "projects::OpenRecent"
     }
   },
   {
@@ -16,7 +18,9 @@
       "cmd-f": "pane::DeploySearch",
       "cmd-i": "workspace::ToggleBottomDock",
       "cmd-u": "editor::Format",
-      "cmd-m": "editor::FindAllReferences"
+      "cmd-b": "git::Blame",
+      "cmd-m": "editor::FindAllReferences",
+      "cmd-o": "projects::OpenRecent"
     }
   },
   {

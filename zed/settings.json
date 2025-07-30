@@ -14,5 +14,9 @@
   "cursor_blink": false,
   "vim_mode": true,
   "ui_font_size": 15,
-  "buffer_font_size": 15
+  "buffer_font_size": 15,
+  "autosave": "on_focus_change",
+  "gutter": {
+    "line_numbers": false
+  }
 }
