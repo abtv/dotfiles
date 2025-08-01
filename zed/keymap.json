@@ -1,13 +1,33 @@
 [
   {
+    "bindings": {
+      "cmd-o": "projects::OpenRecent",
+      "cmd-shift-o": "workspace::Open"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "shift-j": ["editor::MoveDownByLines", { "lines": 10 }],
+      "shift-k": ["editor::MoveUpByLines", { "lines": 10 }]
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "cmd-;": "file_finder::Toggle",
       "cmd-b": null,
       "cmd-f": "pane::DeploySearch",
-      "cmd-p": "workspace::ToggleLeftDock",
       "cmd-i": "workspace::ToggleBottomDock",
-      "cmd-o": "projects::OpenRecent"
+      "cmd-p": "workspace::ToggleLeftDock",
+      "cmd-r": null
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-r": "project_panel::Rename",
+      "cmd-y": "workspace::CloseActiveDock"
     }
   },
   {
@@ -15,12 +35,16 @@
     "bindings": {
       "ctrl-l": "editor::ToggleLineNumbers",
       "cmd-;": "file_finder::Toggle",
+      "cmd-.": "editor::GoToImplementation",
+      "cmd-enter": "editor::ToggleCodeActions",
+      "cmd-b": "git::Blame",
+      "cmd-d": "editor::Hover",
       "cmd-f": "pane::DeploySearch",
       "cmd-i": "workspace::ToggleBottomDock",
-      "cmd-u": "editor::Format",
-      "cmd-b": "git::Blame",
       "cmd-m": "editor::FindAllReferences",
-      "cmd-o": "projects::OpenRecent"
+      "cmd-o": "projects::OpenRecent",
+      "cmd-r": "editor::Rename",
+      "cmd-u": "editor::Format"
     }
   },
   {
@@ -28,6 +52,12 @@
     "use_key_equivalents": true,
     "bindings": {
       "cmd": null
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal"
     }
   }
 ]

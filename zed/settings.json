@@ -7,16 +7,82 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "theme": "Alabaster",
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
+  "auto_update": false,
+  "auto_install_extensions": {
+    "angular": true,
+    "ansible": true,
+    "clojure": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "groovy": true,
+    "helm": true,
+    "html": true,
+    "make": true,
+    "php": true,
+    "pylsp": true,
+    "sql": true,
+    "terraform": true
+  },
   "cursor_blink": false,
   "vim_mode": true,
-  "ui_font_size": 15,
-  "buffer_font_size": 15,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "autosave": "on_focus_change",
+  "use_system_path_prompts": false,
+  "agent": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "git_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "project_panel": {
+    "default_width": 350
+  },
+  "terminal": {
+    "default_height": 800
+  },
+  "title_bar": {
+    "show_sign_in": false
+  },
   "gutter": {
+    "folds": false,
+    "breakpoints": false,
+    "runnables": false,
     "line_numbers": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "experimental.theme_overrides": {
+    "editor.background": "#c9c9c9",
+    "terminal.background": "#c9c9c9",
+    "editor.gutter.background": "#c9c9c9",
+    "syntax": {
+      "function": {
+        "color": "#00627a"
+      },
+      "string": {
+        "color": "#205408"
+      },
+      "keyword": {
+        "color": "#143c9c"
+      },
+      "constant": {
+        "color": "#871094"
+      }
+    }
   }
 }
