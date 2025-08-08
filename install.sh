@@ -19,6 +19,7 @@ brew install k9s
 
 # Install programming languages
 brew install node@22
+brew install poetry
 
 # Karabiner
 mkdir -p ~/.config/karabiner
