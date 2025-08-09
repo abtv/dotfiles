@@ -39,4 +39,10 @@ alias aws-config="aws configure sso"
 alias aws-login="aws sso login --profile ProfileName"
 alias aws-creds="vi ~/.aws/credentials"
 
+# Kubernetes aliases
+alias kpnspc="k9s --config ~/.kube/prod -n namespace"
+alias knnspc="k9s --config ~/.kube/nonprod -n namespace"
+alias hpnspc="helm --config ~/.kube/prod -n namespace"
+alias hnnspc="helm --config ~/.kube/nonprod -n namespace"
+
 # this is a shared file so DON'T put secrets here

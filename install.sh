@@ -16,6 +16,7 @@ brew install awscli
 brew install kubernetes-cli
 brew install k6
 brew install k9s
+brew install helm
 
 # Install programming languages
 brew install node@22
