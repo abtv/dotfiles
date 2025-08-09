@@ -33,6 +33,9 @@ ln -sf ~/dotfiles/ghostty/config ~/Library/Application\ Support/com.mitchellh.gh
 # Git
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
+# Tig
+ln -sf ~/dotfiles/.tigrc ~/.tigrc
+
 # Editor config
 ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
 

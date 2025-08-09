@@ -1,0 +1,4 @@
+
+bind main   <Enter> view-diff
+bind log    <Enter> view-diff
+bind status <Enter> view-diff
