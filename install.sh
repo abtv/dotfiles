@@ -18,6 +18,9 @@ brew install k6
 brew install k9s
 brew install helm
 
+# Install fonts
+brew install --cask font-jetbrains-mono
+
 # Install programming languages
 brew install node@22
 brew install poetry
