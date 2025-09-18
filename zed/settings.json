@@ -7,12 +7,31 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "theme": "Alabaster",
+  // Basics
+  "auto_update": false,
+  "autosave": "on_focus_change",
+  "format_on_save": "off",
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
-  "auto_update": false,
+  "use_system_path_prompts": false,
+  // Vim mode
+  "cursor_blink": false,
+  "vim_mode": true,
+  // Fonts
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 14,
+  "buffer_font_weight": 300,
+  "buffer_line_height": {
+    "custom": 1.433
+  },
+  "ui_font_family": "JetBrains Mono",
+  "ui_font_size": 13,
+  "indent_guides": {
+    "coloring": "fixed"
+  },
+  // Languages
   "auto_install_extensions": {
     "angular": true,
     "ansible": true,
@@ -28,60 +47,126 @@
     "sql": true,
     "terraform": true
   },
-  "cursor_blink": false,
-  "vim_mode": true,
-  "ui_font_size": 14,
-  "buffer_font_size": 14,
-  "autosave": "on_focus_change",
-  "use_system_path_prompts": false,
+  // User interface
   "agent": {
     "button": false
+  },
+  "chat_panel": {
+    "button": "never"
   },
   "collaboration_panel": {
     "button": false
   },
-  "git_panel": {
+  "debugger": {
     "button": false
   },
-  "outline_panel": {
-    "button": false
-  },
-  "project_panel": {
-    "default_width": 350
-  },
-  "terminal": {
-    "default_height": 800
-  },
-  "title_bar": {
-    "show_sign_in": false
-  },
-  "gutter": {
-    "folds": false,
-    "breakpoints": false,
-    "runnables": false,
-    "line_numbers": false
+  "diagnostics": {
+    "button": false,
+    "include_warnings": false
   },
   "git": {
     "inline_blame": {
       "enabled": false
     }
   },
+  "git_panel": {
+    "button": false
+  },
+  "gutter": {
+    "min_line_number_digits": 1,
+    "folds": false,
+    "breakpoints": false,
+    "runnables": false,
+    "line_numbers": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "project_panel": {
+    "default_width": 350,
+    "button": false
+  },
+  "search": {
+    "button": false
+  },
+  "terminal": {
+    "default_height": 800,
+    "font_size": 14,
+    "font_family": "JetBrains Mono",
+    "font_weight": 300,
+    "line_height": "standard",
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "button": false
+  },
+  "title_bar": {
+    "show_branch_name": true,
+    "show_project_items": true,
+    "show_onboarding_banner": false,
+    "show_sign_in": false,
+    "show_user_picture": false,
+    "show_branch_icon": false,
+    "show_menus": false
+  },
+  // Color theme
+  "theme": "Alabaster",
   "experimental.theme_overrides": {
-    "editor.background": "#c9c9c9",
-    "terminal.background": "#c9c9c9",
-    "editor.gutter.background": "#c9c9c9",
+    "editor.active_line.background": "#fff9df",
+    "editor.background": "#c0c0c0",
+    "editor.gutter.background": "#c0c0c0",
+    "editor.highlighted_line.background": "#f0f0f0",
+    "terminal.background": "#c0c0c0",
     "syntax": {
-      "function": {
-        "color": "#00627a"
+      "boolean": {
+        "color": "#000080",
+        "font_weight": 600
       },
-      "string": {
-        "color": "#205408"
-      },
-      "keyword": {
-        "color": "#143c9c"
+      "comment": {
+        "color": "#808080",
+        "font_style": "italic",
+        "font_weight": 400
       },
       "constant": {
-        "color": "#871094"
+        "color": "#871094",
+        "font_weight": 400
+      },
+      "element.selected": {
+        "color": "#000000"
+      },
+      "function": {
+        "color": "#141414",
+        "font_weight": 400
+      },
+      "keyword": {
+        "color": "#000080",
+        "font_weight": 600
+      },
+      "number": {
+        "color": "#0000ff",
+        "font_weight": 400
+      },
+      "punctuation": {
+        "color": "#303030",
+        "font_weight": 400
+      },
+      "punctuation.delimeter.variable": {
+        "color": "#ffa500"
+      },
+      "string": {
+        "color": "#008000",
+        "font_weight": 600
+      },
+      "variable": {
+        "color": "#660000",
+        "font_weight": 400
+      },
+      "variable.parameter": {
+        "color": "#660000",
+        "font_weight": 600
       }
     }
   }
