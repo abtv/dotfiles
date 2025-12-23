@@ -1,6 +1,7 @@
 # Install UI programs
-brew install --cask karabiner-elements
 brew install --cask ghostty
+brew install --cask karabiner-elements
+brew install --cask raycast
 brew install --cask zed
 
 # Install CLI programs
