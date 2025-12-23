@@ -21,7 +21,7 @@
   "vim_mode": true,
   // Fonts
   "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 14,
+  "buffer_font_size": 15,
   "buffer_font_weight": 300,
   "buffer_line_height": {
     "custom": 1.433
@@ -94,7 +94,7 @@
   },
   "terminal": {
     "default_height": 800,
-    "font_size": 14,
+    "font_size": 15,
     "font_family": "JetBrains Mono",
     "font_weight": 300,
     "line_height": "standard",
@@ -113,61 +113,8 @@
     "show_menus": false
   },
   // Color theme
-  "theme": "Alabaster",
   "experimental.theme_overrides": {
-    "editor.active_line.background": "#fff9df",
-    "editor.background": "#c0c0c0",
-    "editor.gutter.background": "#c0c0c0",
-    "editor.highlighted_line.background": "#f0f0f0",
-    "terminal.background": "#c0c0c0",
-    "syntax": {
-      "boolean": {
-        "color": "#000080",
-        "font_weight": 600
-      },
-      "comment": {
-        "color": "#808080",
-        "font_style": "italic",
-        "font_weight": 400
-      },
-      "constant": {
-        "color": "#871094",
-        "font_weight": 400
-      },
-      "element.selected": {
-        "color": "#000000"
-      },
-      "function": {
-        "color": "#141414",
-        "font_weight": 400
-      },
-      "keyword": {
-        "color": "#000080",
-        "font_weight": 600
-      },
-      "number": {
-        "color": "#0000ff",
-        "font_weight": 400
-      },
-      "punctuation": {
-        "color": "#303030",
-        "font_weight": 400
-      },
-      "punctuation.delimeter.variable": {
-        "color": "#ffa500"
-      },
-      "string": {
-        "color": "#008000",
-        "font_weight": 600
-      },
-      "variable": {
-        "color": "#660000",
-        "font_weight": 400
-      },
-      "variable.parameter": {
-        "color": "#660000",
-        "font_weight": 600
-      }
-    }
+    "editor.background": "#ebebec",
+    "terminal.background": "#ebebec"
   }
 }
