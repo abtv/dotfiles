@@ -47,6 +47,7 @@ ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
 mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/vimrc ~/.ideavimrc
+ln -sf ~/dotfiles/vimrc ~/.vimrc
 
 # Vim as a Git editor
 git config --global core.editor nvim
