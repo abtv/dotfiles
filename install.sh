@@ -52,6 +52,11 @@ ln -sf ~/dotfiles/vimrc ~/.vimrc
 # Vim as a Git editor
 git config --global core.editor nvim
 
+# Zed
+mkdir -p ~/.config/zed
+ln -sf ~/dotfiles/zed/settings.json ~/.config/zed/settings.json
+ln -sf ~/dotfiles/zed/keymap.json ~/.config/zed/keymap.json
+
 # Increase keyboard repeat rate
 defaults write -g InitialKeyRepeat -int 10 # default 15
 defaults write -g KeyRepeat -int 1         # default 2
