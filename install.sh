@@ -9,6 +9,7 @@ brew install ripgrep
 brew install fzf
 brew install fd
 brew install eza
+brew install zoxide
 brew install tig
 brew install htop
 brew install tree
