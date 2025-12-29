@@ -20,6 +20,7 @@
       "cmd-f": "pane::DeploySearch",
       "cmd-i": "workspace::ToggleBottomDock",
       "cmd-p": "workspace::ToggleLeftDock",
+      "cmd-P": "workspace::ToggleLeftDock",
       "cmd-r": null
     }
   },
