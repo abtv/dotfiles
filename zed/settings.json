@@ -51,9 +51,6 @@
   "agent": {
     "button": false
   },
-  "chat_panel": {
-    "button": "never"
-  },
   "collaboration_panel": {
     "button": false
   },
