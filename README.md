@@ -17,6 +17,7 @@
 | Karabiner       | Better keyboard    |
 | Ghostty         | Terminal emulator  |
 | Zed             | Code editor        |
+| Claude          | Co-pilot           |
 | neovim          | Text editor        |
 | tig             | Git pager          |
 | k9s             | Kubernetes control |
@@ -25,15 +26,16 @@
 
 ## Shortcuts
 
-| Command  | Action            |
-|----------|-------------------|
-| Cmd-1    | Switch to Safari  |
-| Cmd-2    | Switch to Ghostty |
-| Cmd-3    | Switch to Slack   |
-| Cmd-9    | Switch to Zed     |
-| Cmd-0    | Switch to Notes   |
-| Cmd-Spc  | Switch language   |
-| Ctrl-Spc | Open Spotlight    |
+| Command  | Action             |
+|----------|--------------------|
+| Cmd-1    | Switch to Safari   |
+| Cmd-2    | Switch to Ghostty  |
+| Cmd-3    | Switch to Slack    |
+| Cmd-7    | Switch to IntelliJ |
+| Cmd-9    | Switch to Zed      |
+| Cmd-0    | Switch to Notes    |
+| Cmd-Spc  | Switch language    |
+| Ctrl-Spc | Open Spotlight     |
 
 
 ## Important decisions on MacOS
