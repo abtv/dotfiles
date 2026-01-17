@@ -54,6 +54,17 @@ It's easier to press CapsLock than Control.
 
 MacOS uses an animation when switches between full-screen windows. These animations are distracting me and that's why I don't open a window in a  full-screen mode.
 
+
+### 4. Reduce motion
+
+System Settings => Accessibility => Motion => Reduce motion => toggle On
+
+
+### 5. Reduce transparency
+
+System Settings => Accessibility => Display => Reduce transparency => toggle On
+
+
 ## Git aliases
 
 | Command | Action                   |
