@@ -28,3 +28,19 @@
 
 (global-set-key (kbd "C-l") 'doom/toggle-line-numbers)
 (map! :desc "Delete current buffer" :leader "d" 'kill-current-buffer)
+
+;; Center Doom Emacs frame on startup
+(defun center-frame ()
+  "Center the frame on the screen."
+  (let ((frame (selected-frame)))
+    (set-frame-position frame
+                        (/ (- (display-pixel-width) (frame-pixel-width)) 2)
+                        (/ (- (display-pixel-height) (frame-pixel-height)) 2))))
+
+(add-hook 'window-setup-hook #'center-frame)
+
+;; Open ~/work/notes.yaml on startup if it exists
+(add-hook 'emacs-startup-hook (lambda ()
+                                (let ((notes-file (expand-file-name "~/work/notes.yaml")))
+                                  (when (file-exists-p notes-file)
+                                    (find-file notes-file)))))
